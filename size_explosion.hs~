@@ -1,0 +1,2 @@
+concat_one x y = x:y
+main = putStrLn "Hello!!"
