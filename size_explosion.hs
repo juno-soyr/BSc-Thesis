@@ -1,2 +1,1 @@
-Data abs = ??
-a
+type
