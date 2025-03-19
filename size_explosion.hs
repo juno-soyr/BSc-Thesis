@@ -1,6 +1,6 @@
 type VarName = String
-
 data Term =
-    TmVar VarName
-    | TmAbs VarName Term
-    | TmApp Term Term deriving (Eq, Show)
+  TmApp Term Term
+  | TmAbs VarName Term
+  | TmVar VarName
+ deriving (Eq, Show)
