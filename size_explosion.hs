@@ -1,5 +1,4 @@
 type VarName = String
-
 data Term =
   TmVar VarName
   | TmAbs VarName Term
