@@ -6,8 +6,15 @@ data Term =
   | Var VarName
  deriving (Eq, Show)
 
-freeVar ::  Term -> [VarName]
-freeVar term  = []
+removeVar :: VarName -> [VarName] -> [VarName]
+removeVar _ [] = []
+removeVar x (y:ys)
+  |x == y = removeVar x ys
+  |otherwise = y : removeVar x ys
 
+freeVar :: Term -> [VarName]
+freeVar (Var a) = [a]
+freeVar (App a b) = freeVar a ++ freeVar b
+freeVar (Abs x a) = removeVar x (freeVar a)
 -- lo_red :: Term -> [Term]
 -- lo_red TmAbs VarName Term =
