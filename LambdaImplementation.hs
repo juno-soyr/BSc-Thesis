@@ -30,6 +30,10 @@ freeVar (Var a) = [a]
 freeVar (App a b) = rmDup (freeVar a ++ freeVar b)
 freeVar (Abs x a) = removeVar x (freeVar a)
 -- Get the set of bound variables -> TODO
+boundVar :: Term -> [VarName]
+boundVar (Var a) = []
+boundVar (App a b) = rmDup (boundVar a ++ boundVar b)
+boundVar (Abs x a) = x : boundVar a
 
 -- lo_red :: Term -> [Term]
 -- lo_red TmAbs VarName Term =
