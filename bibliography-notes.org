@@ -1,0 +1,5 @@
+#+title: Bibliography Notes
+1. Main Document to build upon: Beta reduction Is Invariant, Indeed (Beniamino Accattoli and Ugo Dal Lago, 2018 revision.)
+2. Expansion on size explosion and verification of the first: Lambda calculus invariant in size and time --> TODO.
+3. On tape versus core. (Slot and Van Emder Boas) --> TODO.
+4. Alonzo Church Lambda introduction.

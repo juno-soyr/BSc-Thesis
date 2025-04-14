@@ -1,39 +1,21 @@
 module LambdaImplementation where
-type VarName = String
+import qualified Data.Set as S
+type VarName = Int
 data Term =
-  App Term Term
+  Var VarName
+  | App Term Term
   | Abs VarName Term
-  | Var VarName
  deriving (Eq, Show)
 
--- Look up sources
--- Based on femke's notes on lambda calculus
+replace :: VarName -> Term -> Term -> Term
+replace y x (Var z)
+  | z == y = x
+  | otherwise = Var z
+replace y x (App z w) = App (replace y x z) (replace y x w)
+replace y x (Abs z w) = Abs z (replace y x w)
 
--- Remove a variable from a list of variables
-removeVar :: VarName -> [VarName] -> [VarName]
-removeVar _ [] = []
-removeVar x (y:ys)
-  |x == y = removeVar x ys
-  |otherwise = y : removeVar x ys
-
--- remove duplicate free variables
-rmDup :: [VarName] -> [VarName]
-rmDup [] = []
-rmDup (x:xs)
-  | x `elem` xs = rmDup xs
-  | otherwise = x : rmDup xs
-
-
--- Get the set of free variables -> Make sure no duplicates(Proper set)
-freeVar :: Term -> [VarName]
-freeVar (Var a) = [a]
-freeVar (App a b) = rmDup (freeVar a ++ freeVar b)
-freeVar (Abs x a) = removeVar x (freeVar a)
--- Get the set of bound variables -> TODO
-boundVar :: Term -> [VarName]
-boundVar (Var a) = []
-boundVar (App a b) = rmDup (boundVar a ++ boundVar b)
-boundVar (Abs x a) = x : boundVar a
-
--- lo_red :: Term -> [Term]
--- lo_red TmAbs VarName Term =
+loBeta :: Term -> Term
+loBeta (App (Abs x y) z) = replace x y z
+loBeta (App x y) = App (loBeta x) (loBeta y)
+lobeta (Abs x y) = Abs x (loBeta y)
+loBeta (Var x) = Var x

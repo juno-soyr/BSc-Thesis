@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d46ac5b8-1cfb-47ab-b497-9bfdfec022fb
+:CUSTOM_ID: Thesis_Notes
+:END:
+#+title: Thesis Draft
+Name: Haileselassie Gaspar
+Title: An application of invariance in Lambda Calculus
+Supervisors : Femke Van Raamsdonk, Jörg Endrullis
+* Index
+** [[#Abstract][Abstract]]
+** [[#Intro][Introduction]]
+* TODO Abstract
+:PROPERTIES:
+:CUSTOM_ID: Abstract
+:END:
+* Introduction
+:PROPERTIES:
+:CUSTOM_ID: Intro
+:END:
+In recent years, there has been an academic interest in order to relate Lambda Calculus with complexity classes.
