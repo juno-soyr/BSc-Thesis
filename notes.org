@@ -29,3 +29,10 @@ A lambda term of size $n$ that in $O(n)$ steps produces an outpot of size $O(2^n
 *** Proof of LO to LOU and LOU to RAM.
 **** Find RAM to TURING or RAM to P.
 - Found an encoding of turing machine in lambda! Can I use this to prove the invariance thesis or at least showcase it?
+** Reduce the level of complexity of the High Level Implementation Syste
+*** Look up notes from EP
+*** Research Question:
+A description of high level implementation systems in the LSC.
+** Lambda Implementation
+*** Use debruijn ?
+** Look into adbmal notation for lambda calculus.
