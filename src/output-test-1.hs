@@ -3,4 +3,4 @@
 module Main where
 import LambdaImplementation
 main = do
-  show (Lam ( App Var Var ))
+  print $ Lam ( App Var Var )

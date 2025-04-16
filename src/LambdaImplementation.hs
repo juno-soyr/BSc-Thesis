@@ -10,11 +10,10 @@ data Term =
   deriving (Eq)
 
 instance Show Term where
-  show Var = "x"
+  show Var = "x "
   show (App x y) = show x ++ show y
-  show (Lam x) = show "\\x" ++ show x
-  show (Mal x) = show "/x" ++ show x
+  show (Lam x) = "\\x." ++ show x
+  show (Mal x) = "/x" ++ show x
 -- ADBMAL Notation / DeBruijn Notation for solving capturing issues
 -- Look into making specific formatting for Mal term
-main = do
-  Lam ( App Var Var )
+
