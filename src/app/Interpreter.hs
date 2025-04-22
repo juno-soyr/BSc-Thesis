@@ -4,12 +4,8 @@ import LambdaImplementation
 import Control.Monad (unless)
 import System.IO (hFlush, stdout)
 
--- stringToLambda :: String -> Term
---stringToLambda "x" = Var
---stringToLambda ('l':'x':xs) = Lam ( stringToLambda xs )
---stringToLambda x = App( stringToLambda y) (stringToLambda ys) where
- -- y = head (words x)
--- ys = tail (words x)
+lambdaParser :: String -> Term
+
 
 repl :: IO ()
 repl = do
@@ -17,6 +13,5 @@ repl = do
     hFlush stdout
     line <- getLine
     unless (line == ":q") $ do
-        let term = read line
-        print term
+        print line
         repl
