@@ -2,10 +2,12 @@
 module Interpreter where
 import LambdaImplementation
 
-main = do
-    line <- getLine
-    if null line
-        then return ()
-        else do
-            show line
-            main
+
+findSpace :: String -> Maybe [String, String]
+findSpace "" = Nothing
+findSpace x:xs = if x == ' ' then
+
+stringToLambda :: String -> Term
+stringToLambda "x" = Var
+stringToLambda ('l':'x':xs) = Lam ( stringToLambda xs )
+stringToLambda x = App ( stringToLambda xs stringToLambda xy )
