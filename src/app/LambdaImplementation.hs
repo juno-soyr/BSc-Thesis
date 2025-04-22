@@ -3,17 +3,13 @@
 module LambdaImplementation where
 import qualified Data.Set as S
 data Term =
-  Var
+  Var String
   | App Term Term
-  | Lam Term
-  | Mal Term
-  deriving (Eq)
-
+  | Lam String Term
+  deriving (Eq,Read)
+-- type Env = ('')
 instance Show Term where
-  show Var = " x "
+  show (Var x) = show x
   show (App x y) = " (" ++ show x ++ show y ++ ") "
-  show (Lam x) = " ( \\x." ++ show x ++ ") "
-  show (Mal x) = "/x" ++ show x
--- ADBMAL Notation / DeBruijn Notation for solving capturing issues
--- Look into making specific formatting for Mal term
-
+  show (Lam x y) = " ( \\" ++ show x ++ "." ++ show y ++ ") "
+-- Look into Alpha conversion
