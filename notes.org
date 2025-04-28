@@ -35,4 +35,6 @@ A lambda term of size $n$ that in $O(n)$ steps produces an outpot of size $O(2^n
 A description of high level implementation systems in the LSC.
 ** Lambda Implementation
 *** Use debruijn ?
-** Look into adbmal notation for lambda calculus.
+*** Look into adbmal notation for lambda calculus.
+*** Finished a basic build without any notation right now.
+It is up to the user in this case to provide an accurate description of the term. Maybe using applicative functors?

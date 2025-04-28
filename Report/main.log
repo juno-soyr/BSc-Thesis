@@ -1,78 +1,32 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdftex 2025.4.4)  9 APR 2025 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.4.4)  28 APR 2025 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\nonstopmode\input main.tex
-(./main.tex
-! Undefined control sequence.
-l.1 \documentclass
-                  [12pt]{article}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+**/home/haile/Documents/working_name_thesis/Report/main.tex
+(/home/haile/Documents/working_name_thesis/Report/main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 
-! Undefined control sequence.
-l.4 \title
-          {An Application of Invariance In Lambda-Calculus}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+! LaTeX Error: File `l3backend-pdftex.def' not found.
 
-! Undefined control sequence.
-l.5 \author
-           {Haileselassie Gaspar}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: def)
 
-! Undefined control sequence.
-l.7 \begin
-          {document}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.4 \begin{document}
+                    ^^M
+End of file on the terminal!
 
-! Undefined control sequence.
-l.9 \maketitle
-              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.10 \section
-             {Abstract}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.11 \section
-             {Introduction}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on main.pdf (1 page, 15598 bytes).
-PDF statistics:
- 12 PDF objects out of 1000 (max. 8388607)
- 7 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 
+Here is how much of TeX's memory you used:
+ 41 strings out of 475171
+ 1050 string characters out of 5767096
+ 386848 words of memory out of 5000000
+ 23137 multiletter control sequences out of 15000+600000
+ 558837 words of font info for 36 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 25i,0n,29p,141b,40s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
