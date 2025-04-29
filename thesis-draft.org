@@ -9,6 +9,7 @@ Supervisors : Femke Van Raamsdonk, Jörg Endrullis
 * Index
 ** [[#Abstract][Abstract]]
 ** [[#Intro][Introduction]]
+** [[#TheoreticalBasis][Theoretical Basis]]
 * TODO Abstract
 :PROPERTIES:
 :CUSTOM_ID: Abstract
@@ -18,3 +19,12 @@ Supervisors : Femke Van Raamsdonk, Jörg Endrullis
 :CUSTOM_ID: Intro
 :END:
 In recent years, there has been an academic interest in order to relate Lambda Calculus with complexity classes.
+* Theoretical Basis
+:PROPERTIES:
+:CUSTOM_ID: TheoreticalBasis
+:END:
+As stated before the measure employed to analyze the time invariance of lambda calculus, or, said differently, its universality, is the number of transitions in a turing machine. If the implementation introduced in *Beta reduction invariance Paper citation* is correct, then by means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines. The proof will be dividied into two sections, and this paper will focus on the implementation of the first in Haskell.
+** High Level Implementation systems
+The purpose of the high level implementation system definition is to provide a rewriting system invariant to lambda calculus. This step is a bridge of sorts in between lambda calculus and turing machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to lambda calculus.
+*** Definition
+- introduce here the definition -
