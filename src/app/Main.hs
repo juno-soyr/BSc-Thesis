@@ -2,5 +2,10 @@
 
 module Main where
 import Interpreter
+
+main :: IO()
 main = do
-    repl
+    parseAndStep "([o)(ooo)"
+    parseAndStep "([[o)(ooo)"
+    parseAndStep "([[o(]o))(ooo)"
+    parseAndStep "([[o(]o)(]]o))(ooo)"

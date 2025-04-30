@@ -6,14 +6,6 @@
 ** What is the purpose of my paper?
 Is lambda calculus a /reasonable machine/? (Slot and van Emde Boas) And therefore, could we represent a turing machine, and therefore any complexity class in lambda calculus?
 * Introduction
-** Small review of the abstract
-*** Read up on said thesis and define a reasonable machine
-All standard models of computing devices are sufficinetly equivalent
-This means that every computing device can simulate each other with constant factor overhead in space. (NP-Complete relation?)
-- Proof of the invariance thesis -- Lookup reference
-- Random Access Machine
-- REDUCTIONS?? Automata and Complexity?
-
 ** Why is the problem hard?
 *** Size-explosion
 A lambda term of size $n$ that in $O(n)$ steps produces an outpot of size $O(2^n)$
@@ -21,14 +13,14 @@ A lambda term of size $n$ that in $O(n)$ steps produces an outpot of size $O(2^n
 ** Rewriting terms
 *** LSC explanation
 ** Aim of the thesis
+- Why Leftmost Outermost?
+  - Normalizing requirements and proofs
 - Analyze and explain the use of lambda calculus to represent complexity class(es).
 - Start with some simple problem in P and represent it through lambda calculus.
 *** Weak Call-by-value Lambda calculus vs Linear head substitution.
 - Questions: encoding of strings over $\Sigma$? Kleene star?.
 ** Lets get to it
 *** Proof of LO to LOU and LOU to RAM.
-**** Find RAM to TURING or RAM to P.
-- Found an encoding of turing machine in lambda! Can I use this to prove the invariance thesis or at least showcase it?
 ** Reduce the level of complexity of the High Level Implementation Syste
 *** Look up notes from EP
 *** Research Question:
@@ -38,3 +30,6 @@ A description of high level implementation systems in the LSC.
 *** Look into adbmal notation for lambda calculus.
 *** Finished a basic build without any notation right now.
 It is up to the user in this case to provide an accurate description of the term. Maybe using applicative functors?
+** Examples to run
+- Size exploding families
+- Exponentiation of church numerals
