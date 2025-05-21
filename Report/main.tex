@@ -1,27 +1,42 @@
 \documentclass[12pt]{article}
 
-\usepackage{asmath}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
 
-\title{\bold{An analysis on the invariance of $\lambda$-calculus}}
+\title{An analysis on the invariance of $\lambda$-calculus}
 \author{Haileselassie Gaspar}
 
 \begin{document}
 \maketitle
 
 \section{Abstract}
-The notion of lambda calculus has been with us since -citation needed-, and it has had an significant impact on the field of computability and eventually, functional
-programming. One of the main reasons for this, is the fact that certain reduction strategies in
+The notion of lambda calculus has been a part of computational theory ever since Alan Turing proved that it was an equivalent model to Turing machines, and it has had an significant impact on the field of computability and functional programming.
 \section{Introduction}
 
 \section{Lambda Calculus}
-We write $M, N, P....$ to denote arbitrary $\lambda$-terms, $x,y,z...$ to denote variables and
+In order to talk about the invariance of $\lambda$-calculus it is first necesary to define some notation that will be used in this paper.
+\paragraph{Definition.}$M, N, P....$ denote arbitrary $\lambda$-terms, $x,y,z...$ denote variables and
 the set of $\lambda$-terms $\Lambda$ is inductively defined as:
 \begin{equation}
-  \begin{aligned}
-x \in \Lambda \\
-  & M \in \Lambda \then (\lambda x.M) \in \Lambda \\
-  & M, N \in \Lambda \then (MN) \in \Lambda
-  \end{aligned}
+  \begin{align}
+  &\text{Variables: } x \in \Lambda \\
+  &\text{Abstraction: }M \in \Lambda \then (\lambda x.M) \in \Lambda \\
+  &\text{Application: }M, N \in \Lambda \then (MN) \in \Lambda
+  \end{align}
+\end{equation}
+
+\paragraph{Definition.} $FV(M)$ is the set of free variables in $M$ and it includes every variable in $M$ not bound by an abstraction.
+
+For further reading on the syntax and axioms of the lambda calculus, refer to -Barendegt book-. It is necesary however to introduce the notion of reduction in the lambda calculus.
+
+\paragraph{Definition.} Let $\textbf{R}$ be a notion of reduction on $\Lambda$. Then $\textbf{R}$ induces the binary relations:
+\begin{equation}
+  \begin{align}
+          &1.  \rightarrow_{R} \ \textit{one step R-reduction} \\
+          &2. \rightarrow_{R}^{*} \textit{R-reduction} \\
+          &3. =_{R} \ \textit{R-equality or R-convertibility}
+  \end{align}
 \end{equation}
 
 \section{Proof Overview}
