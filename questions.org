@@ -30,13 +30,3 @@ A description of high level implementation systems in the LSC.
 *** Look into adbmal notation for lambda calculus.
 *** Finished a basic build without any notation right now.
 It is up to the user in this case to provide an accurate description of the term. Maybe using applicative functors?
-** Examples to run
-- Size exploding families
-- Exponentiation of church numerals
-** 12 - 05 -2025
-- Explain Leftmost Outermost in a context to compare.
-- Find a measure for counting steps in my implementations.
-- Prove that the bound is quadratic.
-- Examples:
-  - Exponentiation in church numerals
-  - Size exploding families.

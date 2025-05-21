@@ -1,5 +1,8 @@
 \documentclass[12pt]{article}
-\title{Thesis}
+
+\usepackage{asmath}
+
+\title{\bold{An analysis on the invariance of $\lambda$-calculus}}
 \author{Haileselassie Gaspar}
 
 \begin{document}
@@ -9,10 +12,19 @@
 The notion of lambda calculus has been with us since -citation needed-, and it has had an significant impact on the field of computability and eventually, functional
 programming. One of the main reasons for this, is the fact that certain reduction strategies in
 \section{Introduction}
-when Alonzo Church designed it to join the foundations
-of mathematics and a basic set of logical notions. Although this system proved inconsistent, it still provided a useful way to analyze computability of functions. 
-\section{Theoretical Basis}
+
+\section{Lambda Calculus}
+We write $M, N, P....$ to denote arbitrary $\lambda$-terms, $x,y,z...$ to denote variables and
+the set of $\lambda$-terms $\Lambda$ is inductively defined as:
+\begin{equation}
+  \begin{aligned}
+x \in \Lambda \\
+  & M \in \Lambda \then (\lambda x.M) \in \Lambda \\
+  & M, N \in \Lambda \then (MN) \in \Lambda
+  \end{aligned}
+\end{equation}
+
+\section{Proof Overview}
 As stated before the measure employed to analyze the time invariance of lambda calculus, or, said differently, its universality, is the number of transitions in a turing machine. If the implementation introduced in \textbf{Beta reduction invariance Paper citation --} is correct, then by means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines. The proof will be dividied into two sections, and this paper will focus on the implementation of the first in Haskell.
-\subsection{High-Level Implementation}
 
 \end{document}
