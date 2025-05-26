@@ -4,7 +4,7 @@
 \usepackage{cite}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
-\title{An analysis on the invariance of $\lambda$-calculus}
+\title{An analysis on the Invariance of $\lambda$-calculus with respect to Turing machines}
 \author{Haileselassie Gaspar}
 
 \begin{document}
@@ -28,7 +28,11 @@ the set of $\lambda$-terms $\Lambda$ is inductively defined as:
 
 \paragraph{Definition.} $FV(M)$ is the set of free variables in $M$ and it includes every variable in $M$ not bound by an abstraction.
 
-For further reading on the syntax and axioms of the lambda calculus, refer to -Barendegt book-. It is necesary however to introduce the notion of reduction in the lambda calculus.
+In order to analyze reduction strategies in the lambda calculus, we will introduce the concept of a context. A context is a lambda term with a parameter to be filled. It is defined as:
+\begin{equation}
+C ::= \langle \cdot \rangle \ | \ \lambda x.C \ | \ Ct \ | \ tC
+\end{equation}
+For further reading on the syntax and axioms of the lambda calculus, refer to -Barendegt book-.
 
 \paragraph{Definition.} Let $\textbf{R}$ be a notion of reduction on $\Lambda$. Then $\textbf{R}$ induces the binary relations:
 \begin{equation}
@@ -40,6 +44,6 @@ For further reading on the syntax and axioms of the lambda calculus, refer to -B
 \end{equation}
 
 \section{Proof Overview}
-As stated before the measure employed to analyze the time invariance of lambda calculus, or, said differently, its universality, is the number of transitions in a turing machine. If the implementation introduced in \textbf{Beta reduction invariance Paper citation --} is correct, then by means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines. The proof will be dividied into two sections, and this paper will focus on the implementation of the first in Haskell.
+As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. It will be shown that by converting the LSC to a NPDA, the lambda calculus is indeed quadraticly bound in time when representing Turing machines.
 
 \end{document}

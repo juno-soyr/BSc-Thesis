@@ -11,15 +11,19 @@ Supervisors : Femke Van Raamsdonk, Jörg Endrullis
 ** [[#Intro][Introduction]]
 ** [[#TheoreticalBasis][Theoretical Basis]]
 ** [[#Proof][Overview of proof]]
+** [[#UsefulDerivations][Useful Derivations]]
+** [[#ComparingLSCTerms][Comparing LSC Terms]]
+** [[#Conclusion][Conclusion]]
 * TODO Abstract
 :PROPERTIES:
 :CUSTOM_ID: Abstract
 :END:
+/Talk about the whole paper/
 * TODO Introduction
 :PROPERTIES:
 :CUSTOM_ID: Intro
 :END:
-In recent years, there has been an academic interest in order to relate Lambda Calculus with complexity classes.
+/Introduce the idea of computation and the reasoning behind the importance of the invariance thesis and computational equivalence and such,+ a small introduction into lambda calculus/
 * STARTED Theoretical Basis
 :PROPERTIES:
 :CUSTOM_ID: TheoreticalBasis
@@ -32,13 +36,67 @@ These models were proven to be equivalent by Turing, Kleene, Church and Rosser.
 The invariance thesis:
  - Every reasonable machine can simulate each other within a polynomial bound on time and constant overhead in space
    - Orthodox
-   - Liberal
+   - Liberal \leftarrow The one we will be using
 We can relate reasonable machines through cost models.
-* Overview of the proof
+** Introduction to lambda calculus
+- A bit of history
+- Talk about terms, the syntax of the lambda calculus
+- Contexts
+*** Reduction
+- Talk about reduction
+- Talk about residuals
+- LO order on reductions
+*** Church Rosser And Standarization
+- Diamond property - Is LO CR?
+- What does it mean to be standard? - Is LO Standard?
+** Term Rewriting Systems
+- How to analyze the properties of the lambda calculus?
+- Other TRS and how we use them
+- Its relation with group theory
+* STARTED Overview of the proof
 :PROPERTIES:
 :CUSTOM_ID: Proof
 :END:
+** Definition
+- introduce here the definition of LSC
+- introduce the basic syntax of the LSC
+
 ** High Level Implementation systems
-The purpose of the high level implementation system definition is to provide a rewriting system invariant to lambda calculus. This step is a bridge of sorts in between lambda calculus and turing machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to lambda calculus.
-*** Definition
-- introduce here the definition -
+The purpose of the high level implementation system definition is to provide a rewriting system invariant to lambda calculus. This step is a bridge of sorts in between lambda calculus and turing machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to lambda calculus. We want spcifically termintation and polynomial overhead.
+$$\rightsquigarrow \text{terminates iff} \rightsquigarrow_{X} \text{terminates}$$
+Furthermore
+$$t \rightsquigarrow_{X}^k u iff t \rightsquigarrow^h u\downarrow \text{with } O(h) \in O(k^n) \text{ for some } n \in \mathbb{R} $$
+*** Properties of high level systems
+- Normal form
+- Projection
+- Trace
+- Syntactic Bound
+*** Proof of high level properties
+- Termination and polynomial overhead for a generic LSC term
+** Low level implementation
+A high level implementation system is implemented on a turing machine with an overhead in time polynomial to k and the size of the initial term.
+*** Properties of low level systems
+- Subterm
+- Selection
+*** Proof of low level propeties
+- Polynomial bound on reductions in LSC strategy.
+* TODO Useful derivations
+:PROPERTIES:
+:CUSTOM_ID: UsefulDerivations
+:END:
+- What does it mean for a derivation to be useful?
+- Why do we need useful derivations?
+- Leftmost Outermost Useful
+** Standarization of Useful derivations
+- Why do LSC srategies contain the subterm property?
+- Why does LOU have the subterm property?
+* TODO Comparing LSC terms
+:PROPERTIES:
+:CUSTOM_ID: ComparingLSCTerms
+:END:
+- Look into the algorithm to compare them and talk about it
+- If we can define an equality relation in the LSC, then we can prove basically the same as we can in Lambda calculus.
+* TODO Conclusion
+:PROPERTIES:
+:CUSTOM_ID: Conclusion
+:END:

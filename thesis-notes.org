@@ -1,1 +1,29 @@
 #+title: Thesis Notes
+* Ideas
+** Use encodings of turing machines to compare the complexities
+- Convert Lambda to NPDA and NPDA to turing
+- Convert LSC to NPDA and NPDA to turing
+*** Stack handling
+- Redexes as unit or variables + abstractions as units?
+* Background
+** History of computing
+- Computational models
+- Turing equivalence
+- Invariance thesis
+** Lambda calculus history
+- pretty self explanatory
+* Explanations
+** Lambda calculus
+- Duh
+- Contexts
+*** Reductions
+- Idea of reductions
+  - Church Rosser
+  - Determinism
+- Leftmost outermost reduction
+- Standardization
+** LSC
+- Duh x2
+- Shallow and substitution contexts
+- LOU
+** Equivalence between the two and Turing machines

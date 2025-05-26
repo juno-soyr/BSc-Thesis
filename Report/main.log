@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  21 MAY 2025 23:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  23 MAY 2025 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -216,7 +216,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./main.tex:39: Package amsmath Error: Erroneous nesting of equation structures;
+./main.tex:43: Package amsmath Error: Erroneous nesting of equation structures;
 
 (amsmath)                trying to recover with `aligned'.
 
@@ -224,7 +224,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39   \end{align}
+l.43   \end{align}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -244,11 +244,11 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  1891 strings out of 475171
  28295 string characters out of 5767095
- 426519 words of memory out of 5000000
+ 425551 words of memory out of 5000000
  24918 multiletter control sequences out of 15000+600000
  567331 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,9n,65p,562b,198s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,9n,65p,452b,198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -256,7 +256,7 @@ ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
 r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (2 pages, 93675 bytes).
+Output written on main.pdf (2 pages, 96042 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
