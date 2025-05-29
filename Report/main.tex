@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{cite}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
@@ -13,17 +14,28 @@
 \section{Abstract}
 The notion of lambda calculus has been a part of computational theory ever since Alan Turing proved that it was an equivalent model to Turing machines, and it has had an significant impact on the field of computability and functional programming.
 \section{Introduction}
-
-\section{Lambda Calculus}
+Introduce the idea of computation and the reasoning behind the importance of the invariance thesis and computational equivalence and such. \\
+The three basic models of computation: \\
+- Turing $\rightarrow$ Turing machines \\
+- Church $\rightarrow$ Lambda calculus \\
+  - Explain the differences a little \\
+These models were proven to be equivalent by Turing, Kleene, Church and Rosser. \\
+The invariance thesis: \\
+ - Every reasonable machine can simulate each other within a polynomial bound on time and constant overhead in space \\
+   - Orthodox \\
+   - Liberal $\leftarrow$ The one we will be using \\
+We can relate reasonable machines through cost models. \\
+\section{Requirements}
+\subsection{Introduction to lambda calculus}
 In order to talk about the invariance of $\lambda$-calculus it is first necesary to define some notation that will be used in this paper.
 \paragraph{Definition.}$M, N, P....$ denote arbitrary $\lambda$-terms, $x,y,z...$ denote variables and
 the set of $\lambda$-terms $\Lambda$ is inductively defined as:
 \begin{equation}
-  \begin{align}
-  &\text{Variables: } x \in \Lambda \\
-  &\text{Abstraction: }M \in \Lambda \then (\lambda x.M) \in \Lambda \\
-  &\text{Application: }M, N \in \Lambda \then (MN) \in \Lambda
-  \end{align}
+  \begin{split}
+  & \text{Variables: } x \in \Lambda \\
+  & \text{Abstraction: } M \in \Lambda \implies ( \lambda x.M ) \in \Lambda \\
+  & \text{Application: } M, a
+  \end{split}
 \end{equation}
 
 \paragraph{Definition.} $FV(M)$ is the set of free variables in $M$ and it includes every variable in $M$ not bound by an abstraction.
@@ -36,14 +48,55 @@ For further reading on the syntax and axioms of the lambda calculus, refer to -B
 
 \paragraph{Definition.} Let $\textbf{R}$ be a notion of reduction on $\Lambda$. Then $\textbf{R}$ induces the binary relations:
 \begin{equation}
-  \begin{align}
-          &1.  \rightarrow_{R} \ \textit{one step R-reduction} \\
-          &2. \rightarrow_{R}^{*} \textit{R-reduction} \\
-          &3. =_{R} \ \textit{R-equality or R-convertibility}
-  \end{align}
+  \begin{split}
+          &{\rightarrow}_{R} \ \textit{one step R-reduction} \\
+          &\rightarrow_{R}^{*} \textit{R-reduction} \\
+          &=_{R} \ \textit{R-equality or R-convertibility}
+  \end{split}
 \end{equation}
+-- TODO --
 
+\subsubsection{Reduction}
+- Talk about reduction
+- Talk about residuals
+- LO order on reductions
+\subsubsection{Church Rosser And Standarization}
+- Diamond property - Is LO CR?
+- What does it mean to be standard? - Is LO Standard?
+\subsection{Term Rewriting Systems}
+- How to analyze the properties of the lambda calculus?
+- Other TRS and how we use them
 \section{Proof Overview}
 As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. It will be shown that by converting the LSC to a NPDA, the lambda calculus is indeed quadraticly bound in time when representing Turing machines.
+\subsection{High level implementation systems}
+The purpose of the high level implementation system definition is to provide a rewriting system invariant to lambda calculus. This step is a bridge of sorts in between lambda calculus and turing machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to lambda calculus. We want spcifically termintation and polynomial overhead.
+$$\rightsquigarrow \text{terminates iff} {\rightsquigarrow}_{X} \text{terminates}$$
+Furthermore
+$$t {\rightsquigarrow}_{X}^k u iff t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^n) \text{ for some } n \in \mathbb{R} $$
+\subsubsection{Properties of high level systems}
+- Normal form
+- Projection
+- Trace
+- Syntactic Bound
+\subsubsection{Proof of high level properties}
+- Termination and polynomial overhead for a generic LSC term
+\subsection{Low level implementation}
+A high level implementation system is implemented on a turing machine with an overhead in time polynomial to k and the size of the initial term.
+\subsubsection{Properties of low level systems}
+- Subterm
+- Selection
+\subsubsection{Proof of low level propeties}
+- Polynomial bound on reductions in LSC strategy.
+\section{Useful derivations}
+- What does it mean for a derivation to be useful?
+- Why do we need useful derivations?
+- Leftmost Outermost Useful
+\subsection{Standarization of Useful derivations}
+- Why do LSC srategies contain the subterm property?
+- Why does LOU have the subterm property?
+\section{Comparing LSC terms}
+- Look into the algorithm to compare them and talk about it
+- If we can define an equality relation in the LSC, then we can prove basically the same as we can in Lambda calculus.
+
 
 \end{document}
