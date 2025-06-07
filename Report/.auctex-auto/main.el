@@ -6,14 +6,27 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("article" "12pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("amsmath" "") ("amssymb" "") ("cite" "") ("geometry" "a4paper" "total={6in, 9in}")))
+                     '(("amsmath" "") ("amssymb" "") ("inputenc" "utf8") ("csquotes" "") ("biblatex" "backend=biber") ("geometry" "a4paper" "total={6in, 9in}")))
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "article"
     "art12"
     "amsmath"
     "amssymb"
-    "cite"
-    "geometry"))
+    "inputenc"
+    "csquotes"
+    "biblatex"
+    "geometry")
+   (LaTeX-add-labels
+    "abstract"
+    "theoretical-background"
+    "intro-trs"
+    "intro-lambda"
+    "reduction")
+   (LaTeX-add-bibliographies))
  :latex)
 
