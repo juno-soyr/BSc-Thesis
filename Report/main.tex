@@ -28,6 +28,8 @@ In 1936, Alan Turing proposed a model now referred as a \textit{Turing Machine} 
 
 \paragraph{Lambda calculus}
 The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church. Although this initial idea was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in section\ref{intro-lambda}. $lambda$-calculus can also be seen as a Term Rewriting System, another concept that will be introduced in detail in section\ref{intro-trs}.
+
+
 \subsection{Equivalence and Invariance}
 -- equivalence part ; turing equivalence, turing completeness ;
 When we talk about invariance we refer to it in the sense of Van Embde Boas~\cite{machine-models}: \\
@@ -35,15 +37,29 @@ When we talk about invariance we refer to it in the sense of Van Embde Boas~\cit
  \textit{\enquote{Reasonable} machines can simulate each other within a polynomially
 bounded overhead in time and a constant-factor overhead in space.}
 \end{center}
-
+This is an extension to the idea of equivalence between computational models. It proposes that not only is there a method in which machine models can simulate each other, but that there exists such a method so that the overhead is polynomial in time and constant in space. In other words, it would only take a polynomial amount of extra time and a constant amount of extra space to evaluate a term in $lambda$-calculus than in a Turing machine and viceversa.
 This paper will use the \textit{weak} invariance thesis, meaning the space requirements, a long-standing problem with lambda calculus, will be dropped.
+In -- encoding of turing machines in the lambda calculus --, it is proven that there is an implementation of Turing machines in the deterministic $lambda$-calculus, with only a linear overhead in time. This paper will introduce the reader to many terms and concepts necessary to understand complexity theory, but it should be viewed as nothing more than a small introduction to the subject with an interesting example, the invariance of a TRS with regards to Turing machines. \\
+In order to acquire a more in depth understanding of the topic, refer to the references, that although incomplete, may provide a more formal introduction into the subject.
 \subsection{Introduction to Term Rewriting}
-Since this paper is based in great part in the $lambda$-calculus, it is necesary to introduce the idea of $lambda$-calculus not only as a specific set of terms and equations in an unfamiliar form to anyone without a background in theoretical computer science, but as a member of a greater group of systems that rely on the idea of reduction as a relation on terms. This group is referred as Term Rewriting Systems, and it originated on predicate logic, and was first formally defined by Axel Thue in a paper in 1910.\\
-It builds on the notion of \enquote{directed} computation, in the sense that the relations defined in such systems ar unidirectional unless otherwise specified. These systems can therefore represent programs by using the notion of reductions as a correspondance to the idea of program evaluation. An interesting result, is the fact that Term Rewriting Systems (TRS for short) are Turing Complete, and therefore, seeing as $lambda$-calculus is a type of TRS, it follows that it is also Turing Complete. It was later proven by Rosser and Kleene that it is also Turing Equivalent, and therefore, the idea of Invariance is not out of the realm of the impossible. Since both models define the same group of functions, would it not follow that there is an algorithm that can \enquote{reasonably} simulate each of them?
+Since this paper is based in great part in the $lambda$-calculus, it is necesary to introduce the idea of it not only as a specific set of terms and equations in an unfamiliar form to anyone without a background in theoretical computer science, but as a member of a greater group of systems that rely on the idea of reduction as a relation on terms. This group is referred as Term Rewriting Systems, and it originated on predicate logic, and was first formally defined by Axel Thue in a paper in 1910.\\
+It builds on the notion of \enquote{directed} computation, in the sense that the relations defined in such systems ar unidirectional unless otherwise specified. These systems can therefore represent programs by using the notion of reductions as a correspondance to the idea of program evaluation. An interesting result, is the fact that Term Rewriting Systems (TRS for short) are Turing Complete, and therefore, seeing as $lambda$ is a type of TRS, it follows that it is also Turing Complete. It was later proven by Rosser and Kleene that it is also Turing Equivalent, and therefore, the idea of invariance is not out of the realm of the impossible. Since both models define the same group of functions, would it not follow that there is an algorithm that can \enquote{reasonably} simulate each of them? \\
+
 \section{Theoretical Background}\label{theoretical-background}
 \subsection{Term Rewriting Systems}\label{intro-trs}
-While term rewriting knowledge is not necessary to understand and use the $lambda$-calculus, in order to talk more in depth about its qualities and properties, it will be helpful to have a small introduction into the topic. \\
-To talk about the idea of Term Rewriting Systems,
+While term rewriting knowledge is not necessary to understand and use the $lambda$-calculus, in order to talk more in depth about its qualities and properties, it will be helpful to have a small introduction into the topic. It is also necessary to understand the reason why some of the properties of $lambda$ extend to other TRS as the one used by Accatoli and Dal Lago in~\cite{beta-invariance}, the one used in this paper.\\
+To talk about the idea of Term Rewriting Systems, we first need to introduce the idea of an Abstract Reduction System, a pair $(A, \rightarrow)$ of a set $A$ and a \textit{reduction}, that is, a directed relation $\rightarrow \subseteq A \times A$. Some notions about this idea of reduction are introduced in~\cite{term-rewriting-and-all-that}. For this paper, these are the essential ones:
+\begin{equation}
+  \begin{split}
+    &\xrightarrow{0} \ := \ {(x,x) | x \in A} \ \textbf{identity} \\
+    &\xrightarrow{i + 1} \ := \ \xrightarrow{i} \circ \rightarrow \ (i+1)\textbf{-fold composition, } i \leq 0 \\
+    &\xrightarrow{+} \ := \ \bigcup_{i \leq 0} \xrightarrow{i} \ \textbf{transitive closure} \\
+    &\xrightarrow{*} \ := \ \xrightarrow{+} \cup \xrightarrow{0} \ \textbf{reflexive transitive closure} \\
+    &\xrightarrow{=} \ := \ \rightarrow \cup \xrightarrow{0} \ \textbf{reflexive closure}
+  \end{split}
+\end{equation}
+A path from an element $x \in A$ to $y \in A$ can be defined as $\sigma : x \xrightarrow{n} y$, for a path of lenght $n$ from $x$ to $y$. The length of said path can be represented as $| \sigma |$. For some finite path from $x$ to $y$, $\sigma : x \xrightarrow{*} y$, and for a non-empty, finite path from $x$ to $y$, $\sigma : x \xrightarrow{+} y$.
+== UNFINISHED ==
 \subsection{Introduction to lambda calculus}\label{intro-lambda}
 The idea of $lambda$-calculus, or its current use, is based on the idea of computability of functions. When talking about functions there are two main ways to view them. The \textit{extensional} view, which observes only the mapping from input to output, and the \textit{intensional} view, which treats functions not as just a mapping, but a rule. This means that if two functions are given by the same formula, they are \textit{intensionally equal}. This allows mathematicians and computer scientists to talk about the behaviour of a function outside of just what it produces~\cite{selinger}.
 
