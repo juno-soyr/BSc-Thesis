@@ -1,0 +1,3 @@
+#+title: Test
+$(\lambda x.(yxx))(y(yxx)(yxx)) \rightarrow y((y(yxx)(yxx)(y(yxx)(yxx))$
+$$
