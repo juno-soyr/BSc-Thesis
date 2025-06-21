@@ -40,6 +40,7 @@
       \strng{authornamehash}{35017d527d3c03c8ad0a84ac05c8d014}
       \strng{authorfullhash}{35017d527d3c03c8ad0a84ac05c8d014}
       \strng{authorfullhashraw}{35017d527d3c03c8ad0a84ac05c8d014}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -59,36 +60,46 @@
       \verb http://arxiv.org/abs/1405.3311
       \endverb
     \endentry
-    \entry{term-rewriting-and-all-that}{book}{}{}
+    \entry{invariance-of-cost-model}{article}{}{}
       \name{author}{2}{}{%
-        {{hash=099ae1911eaaba9fbc167fa92195392a}{%
-           family={Baader},
-           familyi={B\bibinitperiod},
-           given={Franz},
-           giveni={F\bibinitperiod}}}%
-        {{hash=a41b38c2580f5bb8c574d84f66e0856a}{%
-           family={Nipkow},
-           familyi={N\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod}}}%
+        {{hash=7ef2167bfbc3f9acfa68808def5622fe}{%
+           family={Accattoli},
+           familyi={A\bibinitperiod},
+           given={Beniamino},
+           giveni={B\bibinitperiod}}}%
+        {{hash=74f860137d348b74c93debc8ced233ec}{%
+           family={Lago},
+           familyi={L\bibinitperiod},
+           given={Ugo\bibnamedelima Dal},
+           giveni={U\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{fullhash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{fullhashraw}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{bibnamehash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{authorbibnamehash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{authornamehash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{authorfullhash}{7c162a27477975bdbd4d5a893377eb14}
-      \strng{authorfullhashraw}{7c162a27477975bdbd4d5a893377eb14}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \strng{namehash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{fullhash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{fullhashraw}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{bibnamehash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{authorbibnamehash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{authornamehash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{authorfullhash}{35017d527d3c03c8ad0a84ac05c8d014}
+      \strng{authorfullhashraw}{35017d527d3c03c8ad0a84ac05c8d014}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Term Rewriting and All That}
-      \field{year}{1998}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{On the Invariance of the Unitary Cost Model for Head Reduction (Long Version)}
+      \field{volume}{abs/1202.1641}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1202.1641
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1202.1641
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1202.1641
+      \endverb
     \endentry
     \entry{barendregt1984lambda}{book}{}{}
       \name{author}{1}{}{%
@@ -274,7 +285,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{be}
 \endrefsection
 \endinput
 
