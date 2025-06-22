@@ -19,7 +19,7 @@
 -- --
 \section{Introduction}
 During the start of the 20th century, the idea of computability started to be a main mathematical problem. David Hilbert posed the question in his set of problems to solve during the 20th century: What does it mean for a function to be \textit{computable}? \\
-The first step in answering this question would be to define the concept of \textit{computability}. Both Alonzo Church and Alan Turing proved almost simultaneously that there existed a model defining the group of computable functions, the former through general recursive functions and the latter with the conceptual \enquote{Turing} machines.
+The first step in answering this question would be to define the concept of \textit{computability}. Intuitively, computability is a property of problems or functions that can be solved by some mechanical process. Both Alonzo Church and Alan Turing proved almost simultaneously that there existed a model defining the group of computable functions, the former through general recursive functions and the latter with the conceptual \enquote{Turing} machines.
 The analysis of computability and complexity of functions and algorithms is done through a computational model, or \textit{machine model}.
 \subsection{Machine models}
 While there are many models of computation, for the context of this paper it is only necesary to introduce two.
@@ -56,7 +56,7 @@ It builds on the notion of \enquote{directed} computation, in the sense that the
 The problem with this, is the fact that the main computational step in $\lambda$, the $\beta$-reduction step, is not a unitary measure of complexity costs. There exists a family of terms and subterms that in time linear to the size of themselves, produce an exponential output. This is solved in~\cite{invariance-of-cost-model} and~\cite{beta-invariance} by the use of sharing. This paper aims to provide a somewhat simpler version of the results of both papers, and demonstrate it through an example, a member of this size exploding family.
 
 \section{Theoretical Background}\label{theoretical-background}
-  \subsection{Introduction to lambda calculus}\label{intro-lambda}
+  \subsection{Introduction to $\lambda$-calculus}\label{intro-lambda}
   While an introduction to TRS is a proper base to start understanding the concepts of $\lambda$, the idea of it predates that of TRS. \\
 The idea of $\lambda$-calculus, or its current use, is based on the idea of computability of functions. When talking about functions there are two main ways to view them. The \textit{extensional} view, which observes only the mapping from input to output, and the \textit{intensional} view, which treats functions not as just a mapping, but a rule. This means that if two functions are given by the same formula, they are \textit{intensionally equal}. This allows mathematicians and computer scientists to talk about the behaviour of a function outside of just what it produces~\cite{selinger}.
 
@@ -146,28 +146,17 @@ As mentioned in the introduction, there is a family of terms in $\lambda$ that i
   $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$.
 \end{center}
 This term has size linear in $n$, but its normal form has 2 copies of the previous term, $t_{n-1}$. That is, the size of the normal form is exponential in the size of the initial term.
-As we continue, we will use a member of this family as an example, namely $t_{2} \equiv (\lambda x. (yxx)(yxx))(yxx) $.
+\paragraph{\textbf{Size explosion Theorem}} Every term of the set inductively defined by $t_{n+1} = \lambda x . (t_{n})(yxx)$ with $t_{0} = yxx$ reduces to $\beta$-normal form $r_{n+1}$ of size $\Theta (2^{n})$ in $n$ $\beta$-reduction steps. Furthermore,
+
+\paragraph{\textbf{Lemma 3.1}} A term of the form
 
 In order to define the ordering of this term, it must be first converted to a context based syntax:
-$$C_{0} \langle C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle $$
+$$C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle $$
 An ordering on this term in $LO$ would then be:
 \begin{equation}
  C_{0} \prec_{LO} C_{1} \prec_{LO} C_{2} \prec_{LO} C_{3} \prec_{LO} C_{4} \prec_{LO} C_{5}
 \end{equation}
 by means of the contextual closure of $LO$.
-\subsubsection{Residuals}
-An important notion for understanding the LSC strategy is that of residuals. It can intuitively be understood as the remains of previously reduced redexes in a term after an arbitrary amount of reduction steps.
-In order to properly understand this concept, we will introduce the notion of \enquote{marking} redexes. In order to track the remains of a redex after a reduction, each redex will have an index associated with it:
-\begin{equation}
-  \begin{split}
-    &v_{0},v_{1}
-  \end{split}
-\end{equation}
-As an example,
-the previous term and a one step reduction from it:
-\begin{equation}
-  (\lambda x.(yxx)(yxx))(yxx) \xrightarrow{}
-\end{equation}
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
 \subsection{LSC}
 In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in \ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced $t_{3} \equiv \lambda x.((\lambda x. (yxx))(yxx)(yxx))(yxx)$. As explained before, this term, under regular $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
