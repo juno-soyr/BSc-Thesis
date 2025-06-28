@@ -1,24 +1,24 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[63] biber:340> INFO - === Sat Jun 14, 2025, 13:50:13
-[76] Biber.pm:420> INFO - Reading 'main.bcf'
-[133] Biber.pm:994> INFO - Found 8 citekeys in bib section 0
-[148] Biber.pm:4463> INFO - Processing section 0
-[159] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
-[160] bibtex.pm:1713> INFO - LaTeX decoding ...
-[169] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[253] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[254] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[254] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[254] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[264] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[266] bbl.pm:779> INFO - Output to main.bbl
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 15, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 21, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 26, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 32, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 41, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 52, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 62, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_b8sx/3b92c3a43883b50258e417775889aed6_84769.utf8, line 77, warning: 1 characters of junk seen at toplevel
-[267] Biber.pm:133> INFO - WARNINGS: 8
+[77] biber:340> INFO - === Tue Jun 24, 2025, 21:11:23
+[92] Biber.pm:420> INFO - Reading 'main.bcf'
+[154] Biber.pm:994> INFO - Found 8 citekeys in bib section 0
+[170] Biber.pm:4463> INFO - Processing section 0
+[179] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
+[180] bibtex.pm:1713> INFO - LaTeX decoding ...
+[188] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[277] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[277] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[277] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[277] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[289] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[292] bbl.pm:779> INFO - Output to main.bbl
+[292] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 15, warning: 1 characters of junk seen at toplevel
+[292] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 21, warning: 1 characters of junk seen at toplevel
+[292] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 26, warning: 1 characters of junk seen at toplevel
+[292] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 32, warning: 1 characters of junk seen at toplevel
+[292] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 41, warning: 1 characters of junk seen at toplevel
+[293] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 52, warning: 1 characters of junk seen at toplevel
+[293] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 62, warning: 1 characters of junk seen at toplevel
+[293] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_NI9p/3b92c3a43883b50258e417775889aed6_31911.utf8, line 77, warning: 1 characters of junk seen at toplevel
+[293] Biber.pm:133> INFO - WARNINGS: 8

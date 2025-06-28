@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
@@ -9,14 +10,16 @@
 \usepackage[backend=biber]{biblatex}
 \addbibresource{main.bib}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
-\title{An Introduction to the Invariance Thesis in Lambda Calculus}
+\title{An Introduction to the Invariance Thesis in $\lambda$-Calculus through Explicit Substitutions}
 \author{Haileselassie Gaspar\\[1cm]{\small Supervisors: Femke V. Raamsdonk, Jörg Endrullis}}
-
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
 \begin{document}
 \maketitle
-
-\section{Abstract}\label{abstract}
--- --
+\begin{abstract}
+  -- --
+\end{abstract}
 \section{Introduction}
 During the start of the 20th century, the idea of computability started to be a main mathematical problem. David Hilbert posed the question in his set of problems to solve during the 20th century: What does it mean for a function to be \textit{computable}? \\
 The first step in answering this question would be to define the concept of \textit{computability}. Intuitively, computability is a property of problems or functions that can be solved by some mechanical process. Both Alonzo Church and Alan Turing proved almost simultaneously that there existed a model defining the group of computable functions, the former through general recursive functions and the latter with the conceptual \enquote{Turing} machines.
@@ -28,7 +31,7 @@ While there are many models of computation, for the context of this paper it is 
 In 1936, Alan Turing proposed a model now referred as a \textit{Turing Machine} in order to analyze the halting problem~\cite{on-computable-numbers}. This machine has an unlimited memory in the form of a tape, and a set of symbols already present on the tape. It uses a head to read and write symbols from the tape, and a transition function determines where the head moves after a read, either left or right. This is the main computational model most used when talking about complexity of algorithms~\cite{computation-theory}.
 
 \paragraph{Lambda calculus}
-The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church. Although this initial idea was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in section\ref{intro-lambda}. $lambda$-calculus can also be seen as a Term Rewriting System, another concept that will be introduced in detail in section\ref{intro-trs}.
+The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church. Although this initial idea was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in section\ref{intro-lambda}. $lambda$-calculus can also be seen as a Term Rewriting System, another concept that will be introduced in detail later in this section.
 
 \subsection{Equivalence and Invariance}
 The importance of Turing machines and their relation to modern computing has made them a central model in the study of computational complexity, in particular when discussing time and space complexity. This has made them a good model by which to measure these qualities, specially since most computational classes are defined in their context ($P, NP$). Therefore, the equivalence and simulation of other models in TMs is one of the main qualities studied in complexity theory.
@@ -67,12 +70,9 @@ In order to talk about the invariance of $\lambda$-calculus it is first necesary
   \begin{split}
   & \text{Variables: } x \in \Lambda \\
   & \text{Abstraction: } M \in \Lambda \implies ( \lambda x.M ) \in \Lambda \\
-  & \text{Application: } M, N \in \Lambda \implies (M N) \in \Lambda
+  & \text{Application: } M, N \in \Lambda \implies (M N) \in \Lambda \\
   \end{split}
 \end{equation}
-
-\paragraph{Free Variables} $FV(M)$ is the set of free variables in $M$ and it includes every variable in $M$ not bound by an abstraction. \\
-A context is a lambda term with a hole in it that can be replaced by another term or a context. They are defined as:
 \begin{equation}
 C ::= \langle \cdot \rangle \ | \ \lambda x.C \ | \ Ct \ | \ tC
 \end{equation}
@@ -145,12 +145,28 @@ As mentioned in the introduction, there is a family of terms in $\lambda$ that i
   Let $u = yxx$, and consider the sequence of terms $t_{n}$  \\ for $n \in \mathbb{N}$ be defined inductively as \\
   $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$.
 \end{center}
-This term has size linear in $n$, but its normal form has 2 copies of the previous term, $t_{n-1}$. That is, the size of the normal form is exponential in the size of the initial term.
-\paragraph{\textbf{Size explosion Theorem}} Every term of the set inductively defined by $t_{n+1} = \lambda x . (t_{n})(yxx)$ with $t_{0} = yxx$ reduces to $\beta$-normal form $r_{n+1}$ of size $\Theta (2^{n})$ in $n$ $\beta$-reduction steps. Furthermore,
 
-\paragraph{\textbf{Lemma 3.1}} A term of the form
+\begin{lemma}For any term of the size-exploding family $t_{n}$ there exists a derivation that in $n-1$ $\beta$-reduction steps, reaches a form $s_{n} = (\lambda x. u)r_{n-1}$.
+\end{lemma}
+  \begin{proof}
+  By induction, we first verify the base case, that is, that $t_{1}$ reduces to a term of form $(\lambda x . u) r_{0}$ in $0$ steps, that is, that it already has the form. By the definition of the size exploding family, the term $t_{1} \equiv (\lambda x . t_{0})u$, and since $t_{0} \equiv u$, the induction holds for the base case.
 
-In order to define the ordering of this term, it must be first converted to a context based syntax:
+
+We proceed with the inductive step. If we assume that it holds for $t_{n}$, that is:
+\begin{center}
+\begin{equation}
+  t_{n} \equiv (\lambda x . t_{n-1})u \xrightarrow{n-1}_{\beta} (\lambda x . u)r_{n-1} \equiv s_{n}
+\end{equation}
+\end{center}
+then for $t_{n+1}$ we have:
+\begin{center}
+\begin{equation}
+    t_{n+1} \equiv (\lambda x . t_{n}) u \equiv \underbrace{(\lambda x .(\lambda x . t_{n-1})u)u}_{\beta -r_{0}}
+  \end{equation}
+  \end{center}
+ Where $\beta -r_{0}$ is the redex that we will reduce first, as defined by the LO strategy. We will use this strategy due to the fact that it is normalizing. Since every subsequent $x$ inside $t_{n-1}$ is bound by the previous $\lambda x$, it follows that the only replacements possible are the members of the innermost (explicitly written) $u$, the member of $t_{n}$. A one step reduction produces the term $(\lambda . t_{n-1}) r_{1}$. In one more step, the subterm $r_{1}$ will be duplicated, leading to $r_{2}$, and so on and so forth until we reach $(\lambda x . t_{0})r_{n}$.
+\end{proof}
+As an example for the rest of the paper, we will use the term $t_{2}$ from this family. In order to define the ordering of this term, it must be first converted to a context based syntax:
 $$C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle $$
 An ordering on this term in $LO$ would then be:
 \begin{equation}
@@ -168,8 +184,8 @@ where $t[x \leftarrow u]$ is an explicit substitution.
 We need to introduce the idea of a new kind of contexts in order to properly define the reduction strategies for the proof of invariance. Besides the addition of explicit substitution to regular contexts, we introduce \textbf{shallow} and \textbf{substitution} contexts ($S$ and $L$ respectively):
 \begin{equation}
   \begin{split}
-    &S = \langle \cdot \rangle \ | \ \lambda x.S \ | \ St \ | \ tS \ | S[x \leftarrow t]
-    &L
+    &S = \langle \cdot \rangle \ | \ \lambda x.S \ | \ St \ | \ tS \ | S[x \leftarrow t] \\
+    &L = \langle \cdot \langle \ | L[x \leftarrow t]
   \end{split}
 \end{equation}
 
