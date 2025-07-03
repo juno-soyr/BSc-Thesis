@@ -142,11 +142,12 @@ Both of these orderings are partial orders in relation to terms. A total order i
 
 As mentioned in the introduction, there is a family of terms in $\lambda$ that in a linear number of steps, reduces to a term of exponential size. Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}. It is introduced here to make the following sections easier to follow. We will also define the ordering of the subterms, and show that $LO$ is a total order on it.
 \begin{center}
-  Let $u = yxx$, and consider the sequence of terms $t_{n}$  \\ for $n \in \mathbb{N}$ be defined inductively as \\
+  Let $u = yxx$, and consider the sequence of terms $t_{n} \in \Lambda_{Exp}$  \\ for $n \in \mathbb{N}$ be defined inductively as \\
   $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$.
 \end{center}
+The Leftmost Outermost reduction strategy
 \begin{lemma}
-  For any term of the size-exploding family $t_{ }$
+  A term of the form $(\lambda x.t_{n})r_{m}$ with $t_{n} \in \Lambda_{Exp}$ and $r_{m}$ being a normal form of another term $t_{m} \in \Lambda_{Exp}$ reduces to its normal form $r_{n}$ through a reduction $\delta : (\lambda x .t_{n})r_{m} \xrightarrow{1}_{\beta} (\lambda x . t_{n-1})(yr_{m}r_{m}) \xrightarrow{n-1}_{\beta} r_{n}$.
 \end{lemma}
 \begin{lemma}For any term of the size-exploding family $t_{n}$ there exists a derivation that in $n-1$ $\beta$-reduction steps, reaches a form $s_{n} = (\lambda x. u)r_{n-1}$.
 \end{lemma}
