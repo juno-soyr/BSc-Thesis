@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751705818.65183 "Presentation.tex" "Presentation.pdf" "Presentation" 1751705819.56876 0
+["pdflatex"] 1752169906.81367 "Presentation.tex" "Presentation.pdf" "Presentation" 1752169908.17637 0
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1742685315 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1742685315 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1742685315 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -23,10 +23,15 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1742685315 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1742685315 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1742685315 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1742685315 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1742685315 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1742685315 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1742685315 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1742685315 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1742685315 25168 33771b85f45c82138dd7745db7092d1c ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1742685315 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1742685315 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1742685315 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1742685315 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1742685315 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1742685315 40635 c40361e206be584d448876bba8a64a3b ""
@@ -187,10 +192,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1747862257 30070 2c390b00126b1036e8876b6c3ea4d747 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747862212 2008237 62eadf1768e6139fc684bf75187424f1 ""
-  "Presentation.aux" 1751705819.50242 1412 ca9c2626d6461488dd60e50455b1bb34 "pdflatex"
-  "Presentation.nav" 1751705819.50342 845 b03afbe255c385703be6465836d86bc1 "pdflatex"
-  "Presentation.out" 1751705819.50342 184 d24de16e91f4ce7f6e24403a027ca7eb "pdflatex"
-  "Presentation.tex" 1751705817.91441 1465 2f1f9d8ab61360ae3c7905f5195f4aa2 ""
+  "Presentation.aux" 1752169908.09919 3141 ae25c50f814ce1f1e83a24ac63aa8800 "pdflatex"
+  "Presentation.nav" 1752169908.09919 1907 3fb4db8b9a2832c2bc236fe97e2b7427 "pdflatex"
+  "Presentation.out" 1752169908.09919 826 6bf73bd3b138dfe67a37f777ebbd8a57 "pdflatex"
+  "Presentation.tex" 1752169886.17507 4414 cab7fe8f6ce3c5e95edeb8b6e5b04d22 ""
   (generated)
   "Presentation.aux"
   "Presentation.log"

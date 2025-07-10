@@ -1,5 +1,7 @@
 \documentclass{beamer}
+\setbeameroption{show notes on second screen=right} % Both
 %Information to be included in the title page:
+\usepackage{amssymb}
 \usetheme{Berlin}
 \title{Invariance in the Lambda Calculus through Explicit Substitutions}
 \author{Haileselassie Gaspar}
@@ -14,31 +16,98 @@
   \frametitle{Contents}
   \begin{enumerate}
     \item Introduction and Background
-    \item Lambda Calculus
     \item The Size-Explosion Problem
     \item Linear Substitution Calculus
+    \item High-Level Implementation Systems
     \item Examples
-    \item Conclusion
-    \item Bibliography
   \end{enumerate}
 \end{frame}
 \section{Introduction and Background}
 \begin{frame}
-  \frametitle{What is computation?}
-  A property of problems or functions to be solved by some mechanical process. The main method of studying said mechanical processess is done through a \textit{machine model}.
-\end{frame}
-\begin{frame}
-  \frametitle{Turing Machines, $\lambda$-calculus and Invariance}
-Models of computation developed at the start of the 20th century to solve -Hilbert's problems-.
-  \begin{itemize}
-    \item Turing Machines, Alan Turing (1936) -cite-
-          \item $\lambda$-calculus, Alonzo Church (1930-1940) -cite-
-  \end{itemize}
-  These two models, and a third that we will not discuss here, represent the same group of functions. This came to define the idea of computation.
-\end{frame}
-\begin{frame}
   \frametitle{Equivalence and Invariance of Models}
+  \begin{itemize}
+    \item The Church-Turing Thesis - Turing, Kleene, Church, Rosser
+    \item The Invariance Thesis - Van Embde Boas
+  \end{itemize}
+  \note{Turing machines are the foundational measure of computational complexity so when we talk about equivalence and invariance we refer to it WITH RESPECT TO TURING MACHINES.
+  We will study INVARIANCE through a cost model. We will only talk about time invariance in this presentation.}
+\end{frame}
+\section{Size-explosion Problem}
+\begin{frame}
+  \frametitle{Size exploding Family of $\lambda$-terms}
+  \begin{equation}
+    \begin{split}
+      & t_{0} \equiv yxx \\
+      & t_{n+1} \equiv (\lambda x.t_{n})(yxx)
+    \end{split}
+  \end{equation}
+  We will refer to the normal form of this terms by $r_{n}$.
+  By induction we can see that $t_{n} \xrightarrow[1]{\beta} (\lambda x .t_{n - 2})y(yxx)(yxx) \xrightarrow[n-1]{\beta} r_{n}$, and that $|r_{n}| \in O(2^{n})$.
+  \note{When we talk about the size explosion we refer to it in terms of how a Turing machine would represent this term, which obviously takes $2^n$ steps since space complexity is a lower bound for time complexity on Turing machines}
+\end{frame}
 
+\section{Linear Substitution Calculus}
+\begin{frame}
+  \frametitle{Syntax and operational semantics}
+\begin{itemize}
+  \item Syntax
+    \begin{equation}
+    \begin{split}
+      & t, u ::= \ x \ | \ \lambda_{lsc}x.t \ | \ tu \ | \ t[x \leftarrow u ] \\
+      & S :: = \ \langle \cdot \rangle \ | \ \lambda_{lsc}x.S \ | \ St \ | \ tS \ | \ S[x \leftarrow t] \\
+      & L ::= \ \langle \cdot \rangle \ | \ L[x \leftarrow t]
+    \end{split}
+  \end{equation}
+
+  \item Operational Semantics
+        \begin{equation}
+          \begin{split}
+            & L \langle \lambda_{lsc} x.t \rangle u \rightarrow_{dB} L \langle t [x \leftarrow u] \rangle \\
+            & S \langle x \rangle [x \leftarrow u] \rightarrow_{ls} S \langle u \rangle [x \leftarrow u]
+          \end{split}
+        \end{equation}
+\end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Unfolding of Shared terms}
+  We introduce the operation $\downarrow$ in order to convert $\lambda_{LSC}$-terms to regular $\lambda$-terms.
+  \begin{equation}
+  t[x \leftarrow u]\downarrow = t\downarrow \{ x \leftarrow u \downarrow \}
+\end{equation}
+And the contextual unfolding of a term:
+\begin{equation}
+  t \downarrow_{S[x \rightarrow u]} = t \downarrow_{S} \{ x \rightarrow u \downarrow \}
+\end{equation}
+\end{frame}
+\section{High-level Implementation Systems}
+\begin{frame}
+  Let $\rightsquigarrow$ be a deterministic $\lambda$-strategy and $\rightsquigarrow_{X}$ be a strategy on the LSC. The pair $(\rightsquigarrow , \rightsquigarrow_{X})$ is called a high-level implementation system if it has the following properties:
+  \begin{enumerate}
+    \item Normal Form Equality
+    \item Projection
+    \item Trace
+    \item Syntactic Bound
+  \end{enumerate}
+\end{frame}
+\begin{frame}
+  \frametitle{Useful Derivations}
+  An applicative context is defined by $A = S\langle Lt \rangle$. \\
+  A useful step is either a dB-step or a ls-step $S \langle x \rangle \rightarrow S \langle r \rangle$ so that the unfolding $r \downarrow_{S}$:
+  \begin{enumerate}
+          \item Either ontains a $\beta$-redex
+          \item Or is an abstraction and S is an applicative context.
+  \end{enumerate}
+\end{frame}
+\section{Examples}
+\begin{frame}
+  \frametitle{Size exploding Terms revisited}
+  Taking $u = yxx$ for readability:
+  \begin{equation}
+    \begin{split}
+  & t_{2} \equiv (\lambda x.(\lambda x . (yxx))(yxx))(yxx) \xrightarrow[2]{\beta} y(yuu)(yuu) \equiv r_{2} \\
+  & t_{2} \xrightarrow[2]{dB} (yxx)[x \leftarrow yxx][x \leftarrow yxx]
+    \end{split}
+  \end{equation}
 \end{frame}
 \end{document}
 %Gotta add bibliography

@@ -1,1 +1,5 @@
 \beamer@sectionintoc {1}{Introduction and Background}{3}{0}{1}
+\beamer@sectionintoc {2}{Size-explosion Problem}{4}{0}{2}
+\beamer@sectionintoc {3}{Linear Substitution Calculus}{5}{0}{3}
+\beamer@sectionintoc {4}{High-level Implementation Systems}{7}{0}{4}
+\beamer@sectionintoc {5}{Examples}{9}{0}{5}
