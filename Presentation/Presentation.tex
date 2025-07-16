@@ -1,12 +1,12 @@
 \documentclass{beamer}
 \setbeameroption{show notes on second screen=right} % Both
-%Information to be included in the title page:
+%Information to be included in the t itle page:
 \usepackage{amssymb}
 \usetheme{Berlin}
 \title{Invariance in the Lambda Calculus through Explicit Substitutions}
 \author{Haileselassie Gaspar}
 \institute{Vrije Universiteit Amsterdam}
-\date{14-06-2025}
+\date{11-07-2025}
 
 \begin{document}
 
@@ -20,6 +20,7 @@
     \item Linear Substitution Calculus
     \item High-Level Implementation Systems
     \item Examples
+    \item Conclusion
   \end{enumerate}
 \end{frame}
 \section{Introduction and Background}
@@ -41,12 +42,11 @@
       & t_{n+1} \equiv (\lambda x.t_{n})(yxx)
     \end{split}
   \end{equation}
-  We will refer to the normal form of this terms by $r_{n}$.
-  By induction we can see that $t_{n} \xrightarrow[1]{\beta} (\lambda x .t_{n - 2})y(yxx)(yxx) \xrightarrow[n-1]{\beta} r_{n}$, and that $|r_{n}| \in O(2^{n})$.
+  In Leftmost Outermost: $t_{n} \xrightarrow[1]{\beta} (\lambda x .t_{n - 2})y(yxx)(yxx) \xrightarrow[n-1]{\beta} r_{n}$, and $|r_{n}| \in O(2^{n})$.
   \note{When we talk about the size explosion we refer to it in terms of how a Turing machine would represent this term, which obviously takes $2^n$ steps since space complexity is a lower bound for time complexity on Turing machines}
 \end{frame}
 
-\section{Linear Substitution Calculus}
+\section{LSC}
 \begin{frame}
   \frametitle{Syntax and operational semantics}
 \begin{itemize}
@@ -81,20 +81,29 @@ And the contextual unfolding of a term:
 \end{frame}
 \section{High-level Implementation Systems}
 \begin{frame}
-  Let $\rightsquigarrow$ be a deterministic $\lambda$-strategy and $\rightsquigarrow_{X}$ be a strategy on the LSC. The pair $(\rightsquigarrow , \rightsquigarrow_{X})$ is called a high-level implementation system if it has the following properties:
+ Given a pair $(\rightsquigarrow , \rightsquigarrow_X)$ and a derivation $\rho : t \rightsquigarrow_X u$:
   \begin{enumerate}
     \item Normal Form Equality
+          \note{If a term is in LSC normalform it is on lambda normal form \\}
     \item Projection
+          \note{For any derivation in the LSC, the unfolding of the derivation leads to the unfolded final term, and the number of dB steps is the same as the size of the unfolded derivation \\}.
     \item Trace
+          \note{The number of explicit substitutions in the final term is exactly the amount of dB steps in the reduction \\}
     \item Syntactic Bound
+          \note{the length of substitution steps from u is bounded by the number of explicit substitutions \\}
+  \end{enumerate}
+  This leads to:
+  \begin{enumerate}
+    \item Normalization
+    \item Quadratic Bound
   \end{enumerate}
 \end{frame}
 \begin{frame}
   \frametitle{Useful Derivations}
-  An applicative context is defined by $A = S\langle Lt \rangle$. \\
+  Applicative context: $A = S\langle Lt \rangle$. \\
   A useful step is either a dB-step or a ls-step $S \langle x \rangle \rightarrow S \langle r \rangle$ so that the unfolding $r \downarrow_{S}$:
   \begin{enumerate}
-          \item Either ontains a $\beta$-redex
+          \item Either contains a $\beta$-redex
           \item Or is an abstraction and S is an applicative context.
   \end{enumerate}
 \end{frame}
@@ -105,9 +114,17 @@ And the contextual unfolding of a term:
   \begin{equation}
     \begin{split}
   & t_{2} \equiv (\lambda x.(\lambda x . (yxx))(yxx))(yxx) \xrightarrow[2]{\beta} y(yuu)(yuu) \equiv r_{2} \\
-  & t_{2} \xrightarrow[2]{dB} (yxx)[x \leftarrow yxx][x \leftarrow yxx]
+  & t_{2} \xrightarrow[2]{dB} (yxx)[x \leftarrow yxx][x \leftarrow yxx] \equiv r'_2
     \end{split}
   \end{equation}
+\end{frame}
+\section{Conclusion}
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{enumerate}
+    \item The representation of size-exploding terms is done in time polynomial to the size of the initial term.
+    \item The size-explosion problem is solved.
+  \end{enumerate}
 \end{frame}
 \end{document}
 %Gotta add bibliography

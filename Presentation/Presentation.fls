@@ -266,6 +266,10 @@ INPUT /usr/share/texmf-dist/tex/latex/beamer/beamericononline.20.pdf
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamericononline.20.pdf
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty
@@ -322,6 +326,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
@@ -347,7 +353,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -362,6 +367,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 OUTPUT Presentation.nav
 OUTPUT Presentation.toc
 OUTPUT Presentation.snm
@@ -374,6 +384,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

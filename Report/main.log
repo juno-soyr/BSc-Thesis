@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  5 JUL 2025 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  16 JUL 2025 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -826,11 +826,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
 
 [2]
 
@@ -841,9 +836,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 [5]
 
 [6]
+./main.tex:188: Extra alignment tab has been changed to \cr.
+<template> }$\hfill \endtemplate 
+                                 
+l.188   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./main.tex:188: Extra alignment tab has been changed to \cr.
+<template> }$\hfill \endtemplate 
+                                 
+l.188   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
 
 [7]
-Overfull \hbox (21.44975pt too wide) in paragraph at lines 212--212
+Overfull \hbox (21.44975pt too wide) in paragraph at lines 207--207
 \OT1/cmr/m/n/12 logic and the foun-da-tions of math-e-mat-ics. North-Holland, 1
 984. \OT1/cmr/m/sc/12 isbn\OT1/cmr/m/n/12 : 9780444875082.
  []
@@ -862,10 +876,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22478 strings out of 475171
- 442035 string characters out of 5767095
- 1251343 words of memory out of 5000000
- 45151 multiletter control sequences out of 15000+600000
+ 22472 strings out of 475171
+ 441840 string characters out of 5767095
+ 1250280 words of memory out of 5000000
+ 45145 multiletter control sequences out of 15000+600000
  571594 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  102i,17n,107p,826b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -884,7 +898,7 @@ ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (9 pages, 220640 bytes).
+Output written on main.pdf (9 pages, 218194 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
