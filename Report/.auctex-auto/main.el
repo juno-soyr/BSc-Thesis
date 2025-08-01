@@ -26,7 +26,9 @@
    (LaTeX-add-labels
     "theoretical-background"
     "intro-lambda"
-    "reduction")
+    "reduction"
+    "lemma1"
+    "lou")
    (LaTeX-add-bibliographies)
    (LaTeX-add-amsthm-newtheorems
     "theorem"

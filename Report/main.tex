@@ -27,26 +27,27 @@ The analysis of computability and complexity of functions and algorithms is done
 While there are many models of computation, for the context of this paper it is only necessary to introduce two.
 
 \paragraph{Turing Machines}
-In 1936, Alan Turing proposed a model now referred to as a \textit{Turing Machine} in order to analyze the Halting Problem~\cite{on-computable-numbers}. This machine has an unlimited memory in the form of a tape, and a set of symbols already present on the tape.-Add more info- This is the main computational model most used when talking about complexity of algorithms~\cite{computation-theory}.
+In 1936, Alan Turing proposed a model now referred to as a \textit{Turing Machine} in order to analyze the Halting Problem~\cite{on-computable-numbers}. This machine has an unlimited memory in the form of a tape, and a set of symbols already present on the tape. This is the main computational model most used when talking about complexity of algorithms~\cite{computation-theory}.
+
+While the details of its logical implementation are not important in this paper, we will note that the reason they are very useful when analyzing the complexity of algorithms is due to the fact that they posess a very clear and stable \textit{cost model}. That is, for every step in an algorithm implemented in a Turing Machine, there is a clear cost both when talking in terms of space and time.
+
+-Idea of cost models-
 
 \paragraph{Lambda calculus}
-The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church. Although this initial idea was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in Section \ref{intro-lambda}. $lambda$-calculus can also be seen as a Higher-Order Term Rewriting System, another concept that will not be introduced in this paper.
+The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church. Although this initial idea was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in Section~\ref{intro-lambda}. $\lambda$-calculus can also be seen as a Higher-Order Term Rewriting System, another concept that will not be introduced in this paper.
 
 \subsection{Invariance}
 Due to the design of Turing Machines, they serve as a more accurate and measurable way of understanding the space and time that computations need in order to produce an output. While they compute the same functions as $\lambda$-calculus does, the use of a single unitary cost model for a computational step in time, with the number of head movements, and in space, with the amount of cells used, provide a clearer view of the complexity of an algorithm, which is why they are the most used method of measuring complexity nowadays.
-First, it is important to note the difference between equivalence and completeness, two terms very often used in the literature of computation. Completness refers to the ability of any model to simulate a Turing machine. For those acquainted with languages, one could define completeness as:
+First, it is important to note the difference between equivalence and invariance, two terms very often used in the literature of computation. Equivalence refers to the ability of any model to simulate a Turing machine, while invariance, in the words of Van Embde Boas, stipulates the following:
 \begin{center}
  \textit{\enquote{Reasonable} machines can simulate each other within a polynomially
 bounded overhead in time and a constant-factor overhead in space.}
 \end{center}
-This is an extension to the idea of equivalence between computational models. It proposes that not only is there a method in which machine models can simulate each other, but that there exists such a method so that the overhead is polynomial in time and constant in space. In other words, it would only take a polynomial amount of extra time and a constant amount of extra space to evaluate a term in $\lambda$-calculus than in a Turing machine and viceversa.
+This is an extension to the idea of equivalence between computational models. It proposes that not only is there a method in which machine models can simulate each other, but that there exists such a method so that the overhead is polynomial in time and constant in space. In other words, it would only take a polynomial amount of extra time and a constant amount of extra space to evaluate a term in $\lambda$-calculus than in a Turing machine and viceversa. -- talk about cost models a bit  and explain it in terms of that --
 This paper will use the \textit{weak} invariance thesis, meaning the space requirements, a long-standing problem with lambda calculus, will be dropped.
-In~\cite{invariance-of-cost-model}, it is proven that there is an implementation of Turing machines in the deterministic $\lambda$-calculus, with only a linear overhead in time when only head reduction is considered. This paper will introduce the reader to many terms and concepts necessary to understand complexity theory, but it should be viewed as nothing more than a small introduction to the subject with an interesting example, the invariance of the complete untyped $\lambda$-calculus with regards to Turing machines. \\
+In~\cite{invariance-of-cost-model}, it is proven that there is an implementation of Turing Machines in the deterministic $\lambda$-calculus, with only a linear overhead in time when only head reduction is considered. The differences will be explained in Section~\ref{lou} This paper will introduce the reader to many terms and concepts necessary to understand complexity theory, but it should be viewed as nothing more than a small introduction to the subject with an interesting example, the invariance of the complete untyped $\lambda$-calculus with regards to Turing machines. \\
 In order to acquire a more in depth understanding of the topic, refer to the references, that although incomplete, may provide a more formal introduction into the subject.
-\subsection{Introduction to Term Rewriting}
-Since this paper is based in great part in the $\lambda$-calculus, it is useful to introduce the idea of it not only as a specific set of terms and equations in an unfamiliar form to anyone without a background in theoretical computer science, but as a member of a greater group of systems that rely on the idea of reduction as a relation on terms. This group is referred as Term Rewriting Systems, and it originated on predicate logic, and was first formally defined by Axel Thue in a paper in 1910.\\
-It builds on the notion of \enquote{directed} computation, in the sense that the relations defined in such systems ar unidirectional unless otherwise specified. These systems can therefore represent programs by using the notion of reductions as a correspondance to the idea of program evaluation. An interesting result, is the fact that there exists a class of Term Rewriting Systems (TRS for short) that are Turing Complete. It was later proven by Rosser and Kleene that $\lambda$ is also Turing Equivalent, and therefore, the idea of invariance is not out of the realm of the impossible. Since both models define the same group of functions, would it not follow that there is an algorithm that can \enquote{reasonably} simulate each of them? \\
-The problem with this, is the fact that the main computational step in $\lambda$, the $\beta$-reduction step, is not a unitary measure of complexity costs. There exists a family of terms and subterms that in time linear to the size of themselves, produce an exponential output. This is solved in~\cite{invariance-of-cost-model} and~\cite{beta-invariance} by the use of sharing. This paper aims to provide a somewhat simpler version of the results of both papers, and demonstrate it through an example, a member of this size exploding family.
+
 
 \section{Theoretical Background}\label{theoretical-background}
   \subsection{Introduction to $\lambda$-calculus}\label{intro-lambda}
@@ -55,27 +56,33 @@ The idea of $\lambda$-calculus, or its current use, is based on the idea of comp
 
 The $\lambda$-calculus uses the intensional view of functions to treat them as expressions, and analyze their behaviour and, more importantly, their computability. It is important to notice that since Turing machines and the $\lambda$-calculus treat functions \textit{intensionally}, most of the proof is centered around the process of computation.
 In order to talk about the invariance of $\lambda$-calculus it is first necesary to define some notation that will be used in this paper.
-\paragraph{Terms} Let $M, N, P....$ denote arbitrary $\lambda$-terms, and $x,y,z...$ denote variables. The set of $\lambda$-terms $\Lambda$ is inductively defined as:
-\begin{equation}
+\paragraph{Terms} Assuming a countably infinite set $\mathcal{VAR} = \{ x, y, z, \cdots \}$ of variables et $M, N, P....$ denote arbitrary $\lambda$-terms. The set of $\lambda$-terms $\Lambda$ is inductively defined as:
+\begin{equation*}
   \begin{split}
   & \text{Variables: } x \in \Lambda \\
   & \text{Abstraction: } M \in \Lambda \implies ( \lambda x.M ) \in \Lambda \\
   & \text{Application: } M, N \in \Lambda \implies (M N) \in \Lambda \\
   \end{split}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 C ::= \langle \cdot \rangle \ | \ \lambda x.C \ | \ Ct \ | \ tC
-\end{equation}
-\paragraph{Substitution} This topic will be expanded on section \ref{reduction}, but a basic understanding is provided here.
+\end{equation*}
+\paragraph{Substitution} This topic will be expanded on Section~\ref{reduction}, but a basic understanding is provided here.
 The result of substituting $N$ for the free ocurrences of $x$ in $M$ (notation $M \{ x:= N \} $) is inductively defined as:
-\begin{equation}
+\begin{equation*}
   \begin{split}
     & x\{ x := N \} \equiv N \\
     & y \{ x := N \} \equiv y \text{ iff } x \neq y \\
     & (\lambda y.M_{1}) \{ x:=N \} \equiv \lambda y. ( M_{1} \{ x:=N \} ) \\
     & (M_{1}M_{2}) \{ x:=N \} \equiv (M_{1}\{ x:=N \} )(M_{2} \{ x:=N \} )
   \end{split}
-\end{equation}
+\end{equation*}
+A free variable is any variable not bound by an abstraction. For example:
+\begin{equation*}
+  (\lambda x . x y z )
+\end{equation*}
+In this term, $y$ and $z$ are not bound, therefore free, while $x$ is bound by the abstraction $\lambda x$.
+When replacing terms it is important to take care not to accidentally bind a free variable by mistake. That is why when replacing terms, if any free variables would become bound by the replacement, they must be renamed. This is called $\alpha$-conversion.
 Note that we use braces to denote \textit{implicit} substitutions due to the fact that when introducing \textit{explicit} substitutions we will use the classical brackets, but when reading literature of the classical lambda-calculus, square brackets will mean implicit substitution.
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
 
@@ -86,7 +93,7 @@ The need for this comes from the unintentional possible binding of a variable du
 \begin{equation}
   \begin{split}
     & \text{Let } F = \lambda xy.yx \text{, then } \forall M, N: \\
-    & FMN \equiv NM
+    & FMN = NM
   \end{split}
 \end{equation}
 This would follow from the inductive definition of substitution, however, when taking $M = y$ and $N = x$, this leads to the expression $xy \equiv xx$.
@@ -102,16 +109,17 @@ It is simple to see the relation with the concept of reduction in TRS, and most 
           &=_{R} \ \textit{R-equality or R-convertibility}
   \end{split}
 \end{equation}
+Where $\rightarrow_{R}^{*}$ represents 0, 1 or more reduction steps.
 On this simple idea of reduction we can define the classical notion of reduction in the lambda calculus, $\beta$-reduction. When talking about measuring time complexity in the $lambda$-calculus, this is a good place to start, as it is the main computational device used.
 It is based on the substitution rule introduced earlier:
 \begin{equation}
   \beta : ( \lambda x.M ) N \rightarrow M [ x:=N ]
 \end{equation}
-An introduction to some terms associated with reduction; An \textit{R-redex} is a term or subterm that is not in $R$-normal form.
+An introduction to some terms associated with reduction; An \textit{R-redex} is a term or subterm that is of the form $(\lambda x . M)N$.
 Now when talking about introducing a \enquote{computational cost},$\beta$-reduction is the reasonable choice, as it seems to provide a relation to transitions in a Turing machine. However, the problem in this case is with the arbitrary duplication of terms that can occur during a reduction.
 But before diving into that, a brief explanation of reduction strategies.
 \paragraph{Reduction Strategies}
-When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms $M \in \Lambda : M \xrightarrow{*} F(M)$. That is, there exists one and only one term to which $M$ reduces in this map. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $F^{n}$ represents the n-th step in the reduction path of $M$. \\
+When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms $M \in \Lambda : M \xrightarrow{*} F(M)$. That is, there exists one and only one term to which $M$ reduces in this map. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $M \xrightarrow{n} F^n(M)$. \\
 The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. This is a normalizing strategy where if $M$ is not in normal form, the leftmost-outermost redex is reduced until it is. Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. As ppreviously stated, TRS have a notion of ordering that is based on strings, but for a better understanding of it, it could also be seen as a tree. The ordering introduced by Accatoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
 \begin{enumerate}
   \item Outside-in order:
@@ -129,46 +137,67 @@ Both of these orderings are partial orders in relation to terms. A total order i
 \begin{center}
   If $C \prec_{O} D$ and $C \prec_{L} D$ then $C \prec_{LO} D$.
 \end{center}
-
-As mentioned in the introduction, there is a family of terms in $\lambda$ that in a linear number of steps, reduces to a term of exponential size. Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}. It is introduced here to make the following sections easier to follow. We will also define the ordering of the subterms, and show that $LO$ is a total order on it.
+\subsection{Size-exploding family}
+As mentioned in the introduction, there is a family of terms in $\lambda$ that, in a linear number of steps, reduces to a term of exponential size. While the invariance result of Accatoli and Dal Lago does not concern itself with space invariance, it is important to note that due to the design of Turing Machines, they have a conceptually different relation between space and time complexity as $\lambda$ does. While the former has the space complexity be bound by the time complexity, that is, the number of used cells on the tape must be equal or less to the amount of times the head moves, the latter has the opposite. In $\lambda$-calculus, time complexity, or the amount of $\beta$-reduction steps, is bound by the size of the inital and final size. That means that to provide an accurate invariance result, we not only need to fix the inconsistencies with the number of reduction steps in $\lambda$, but we must also take care to show the normal form of a term in a way that is at least polynomially related to the size of the initial term, and the number of steps taken, closing the gap between the two ideas.
+\\ \\
+Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}. It is introduced here to make the following sections easier to follow. We will also define the ordering of the subterms, and show that $LO$ is a total order on it.
 \begin{center}
   Let $u = yxx$, and consider the sequence of terms $t_{n} \in \Lambda_{Exp}$  \\ for $n \in \mathbb{N}$ be defined inductively as \\
   $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$.
 \end{center}
-The Leftmost Outermost reduction strategy
-\begin{lemma}
-  A term of the form $(\lambda x.t_{n})r_{m}$ with $t_{n} \in \Lambda_{Exp}$ and $r_{m}$ being a normal form of another term $t_{m} \in \Lambda_{Exp}$ reduces to its normal form $r_{n}$ through a reduction $\delta : (\lambda x .t_{n})r_{m} \xrightarrow{1}_{\beta} (\lambda x . t_{n-1})(yr_{m}r_{m}) \xrightarrow{n-1}_{\beta} r_{n}$.
-\end{lemma}
-\begin{lemma}For any term of the size-exploding family $t_{n}$ there exists a derivation that in $n-1$ $\beta$-reduction steps, reaches a form $s_{n} = (\lambda x. u)r_{n-1}$.
-\end{lemma}
-  \begin{proof}
-  By induction, we first verify the base case, that is, that $t_{1}$ reduces to a term of form $(\lambda x . u) r_{0}$ in $0$ steps, that is, that it already has the form. By the definition of the size exploding family, the term $t_{1} \equiv (\lambda x . t_{0})u$, and since $t_{0} \equiv u$, the induction holds for the base case.
 
-
-We proceed with the inductive step. If we assume that it holds for $t_{n}$, that is:
-\begin{center}
-\begin{equation}
-  t_{n} \equiv (\lambda x . t_{n-1})u \xrightarrow{n-1}_{\beta} (\lambda x . u)r_{n-1} \equiv s_{n}
-\end{equation}
-\end{center}
-then for $t_{n+1}$ we have:
-\begin{center}
-\begin{equation}
-    t_{n+1} \equiv (\lambda x . t_{n}) u \equiv \underbrace{(\lambda x .(\lambda x . t_{n-1})u)u}_{\beta -r_{0}}
+\begin{lemma}\label{lemma1}
+  Given a tern of the form $(\lambda x .t_n)a$ for some $a \in \Lambda$:
+  \begin{equation}
+    (\lambda x .t_n)a \xrightarrow[LO \beta]{1} (\lambda x.t_{n-1})yaa
   \end{equation}
-  \end{center}
- Where $\beta -r_{0}$ is the redex that we will reduce first, as defined by the LO strategy. We will use this strategy due to the fact that it is normalizing. Since every subsequent $x$ inside $t_{n-1}$ is bound by the previous $\lambda x$, it follows that the only replacements possible are the members of the innermost (explicitly written) $u$, the member of $t_{n}$. A one step reduction produces the term $(\lambda . t_{n-1}) r_{1}$. In one more step, the subterm $r_{1}$ will be duplicated, leading to $r_{2}$, and so on and so forth until we reach $(\lambda x . t_{0})r_{n}$.
+\end{lemma}
+\begin{proof}
+  \begin{equation}
+    (\lambda x . t_n)a = (\lambda x .(\lambda x .t_{n-1})u)a \xrightarrow[LO \beta]{1} (\lambda x . t_{n-1})yxx \{ x \leftarrow a \} = (\lambda x .t_{n-1})yaa
+  \end{equation}
 \end{proof}
+\begin{lemma}
+  Given a term of the form $t_{n+1} = (\lambda x. t_n)u$:
+  \begin{enumerate}
+    \item Its $\beta$-normal form will be $r_n = yr_{n}r_{n}$
+    \item It will reach $\beta$-normal form in exactly $n+1$ steps.
+  \end{enumerate}
+\end{lemma}
+\begin{proof}
+  \begin{enumerate}
+    \item By induction:
+          \begin{equation}
+            \begin{split}
+              & t_1 = (\lambda x .t_0)u \xrightarrow[LO\beta]{1} yuu = yr_0r_0 = r_1 \\
+              & t_{n+1} = (\lambda x .t_n) u = (\lambda x. (\lambda x . t_{n-1})u)u \xrightarrow[LO\beta]{1} (\lambda x .t_{n_1})(yuu) = \\
+              & (\lambda x. t_{n -1})r1 \xrightarrow[LO\beta]{*}r_{n+1} = y(r_{n}r_{n})
+            \end{split}
+          \end{equation}
+          By Lemma 2.1, any term of the form $(\lambda x. t_n)a$ reduces in one step to $(\lambda  x .t_{n-1})yaa$,and so any term $(\lambda x.t_n)u$ will evaluate to $(\lambda x .t_{n-1})r_1$, therefore, it is clear that the normal form of $t_{n+1}$ is $r_{n+1} = y(r_n r_n)$
+    \item By contradiction:
+          Assume that the number of steps from $t_n$ to $r_n$,$k$ for $\rho  : t_n \xrightarrow[LO\beta]{k} r_n$, is $n-1$. Then, after $n-1$ LO $\beta$ steps, we reach $r_n$, but by Lemma 2.2.1, and Lemma 2.1 we can see that the form of $t_n$ after $n-1$ steps will be $(\lambda x . u)r_{n-1} \neq r_n$
+          Now assume that $k = n+1$. Then after $n$ steps there should be another LO $\beta$ step, from $r_n$, but by definition of the normal form, this is impossible.
+
+  \end{enumerate}
+\end{proof}
+\begin{theorem}
+Every $\lambda$-term $t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-reduction steps to a term $r_n$, with $|r_n| \in O(2^n)$.
+\end{theorem}
+\begin{proof}
+It follows from Lemma 2.1 and 2.2.
+\end{proof}
+
 As an example for the rest of the paper, we will use the term $t_{2}$ from this family. In order to define the ordering of this term, it must be first converted to a context based syntax:
-$$C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle $$
-An ordering on this term in $LO$ would then be:
+\[ C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle \]
+An ordering on this term in $LO$ would then be: -- fix this --
 \begin{equation}
  C_{0} \prec_{LO} C_{1} \prec_{LO} C_{2} \prec_{LO} C_{3} \prec_{LO} C_{4} \prec_{LO} C_{5}
 \end{equation}
 by means of the contextual closure of $LO$.
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
 \subsection{LSC}
-In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in \ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced $t_{3} \equiv \lambda x.((\lambda x. (yxx))(yxx)(yxx))(yxx)$. As explained before, this term, under regular $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
+In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in~\ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced $t_{3} \equiv \lambda x.((\lambda x. (yxx))(yxx)(yxx))(yxx)$. As explained before, this term, under regular $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
 The linear substitution calculus is based in \textbf{explicit substitutions}, as oposed to the regular implicit substitutions that $beta$-reduction produces. The grammar is defined as follows:
 \begin{equation}
   t, u, r, p = x \ | \ \lambda x.t \ | \ tu \ | \ t[x \leftarrow u]
@@ -181,27 +210,42 @@ We need to introduce the idea of a new kind of contexts in order to properly def
     &L = \langle \cdot \rangle \ | L[x \leftarrow t]
   \end{split}
 \end{equation}
+We introduce here the operational semantics of the LSC. There are two elementary reductions, coupled with $\alpha$-conversion, required to provide the explicit subsitutions up to an equivalnece with the untyped $\lambda$-calculus.
 \begin{equation}
   \begin{split}
-    &L \langle \lambda x .t \rangle u \rightarrow_{dB} L \langle t [x \leftarrow u] \rangle
+    &L \langle \lambda x .t \rangle u \rightarrow_{dB} L \langle t [x \leftarrow u] \rangle \\
     &S \langle x \rangle [x \leftarrow u] \rightarrow_{ls} S \langle u \rangle [x \leftarrow u]
   \end{split}
 \end{equation}
+Based on this,~\cite{beta-invariance} introduces a new reduction strategy, called \textbf{Leftmost-Outermost Useful} or \textbf{LOU} which we will use to show that the size explosion family does indeed not grow exponentially in the LSC under this strategy. It is important to note that while the Size-exploding family does not grow exponentially under the Linear Head Reduction of the LSC~\cite{invariance-of-cost-model}, it would never reach normal form if we included an application before the initial term, and so, an example of the use of LOU on it will show that even when completely reducting the term, the lenght increase will be polynomially related to the size of the initial term.
+\subsection{Leftmost-Outermost Useful}
+\label{lou}
+The definition of \textit{usefulness} of a substitution step, is defined in base to wether a redex is \textit{useful} in its unfolding of the surrounding (shallow) context.
+\paragraph{Useful Step} A reduction step is useful if it is either a $dB$-step or a...
+-- definition of usefulness --
 
-\section{Proof Overview}
+\section{Generalizing Invariance}
 As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time.
 \subsection{High level implementation systems}
 The purpose of the high level implementation system definition is to provide a rewriting system invariant to lambda calculus. This step is a bridge of sorts in between lambda calculus and turing machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to lambda calculus. We want spcifically termintation and polynomial overhead.
-$$\rightsquigarrow \text{terminates iff} {\rightsquigarrow}_{X} \text{terminates}$$
+\[\rightsquigarrow \text{terminates iff} {\rightsquigarrow}_{X} \text{terminates}\]
 Furthermore,
-$$t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^n) \text{ for some } n \in \mathbb{R} $$
-\subsubsection{Properties of high level systems}
-This section will provide a basis for the properties of high level systems, and define the properties that they contain.
-\subsection{Useful derivations}
-The use of
-\section{Comparing LSC terms}
-- Look into the algorithm to compare them and talk about it
-- If we can define an equality relation in the LSC, then we can prove basically the same as we can in Lambda calculus.
+\[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^n) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
+We will demonstrate that the LOU reduction strategy follows this generalization by means of -- one, 2? -- examples.
+\section{Example 1: Size exploding family}
+Using the term $t_2$ as a first example, if applying the LOU strategy, we get the following derivation:
+\begin{equation}
+\begin{split}
+  &(\lambda x . ( \lambda x . (yxx) )(yxx))(yxx) \rightarrow_{LOU}  \\
+  &(\lambda x . yxx)(yxx)[x \leftarrow (yxx)] \rightarrow_{LOU} \\
+  &(yzz)[z \rightarrow (yxx)][x \rightarrow (yxx)]
+\end{split}
+\end{equation}
+Note the $\alpha$-conversion in the second step to avoid unwanted variable capture. We can see that a derivation that under LO $\beta$-reduction produced a term of size $2^n$ produces a term linear in both the size of the initial term and the number of steps taken.
+-Talk about the LHR strategy and its difference-
+\section{Example 2: Addition and Multiplication}
+-- To discuss still --
+\section{Comparing LSC Terms}
 \section{Conclusion}
 \printbibliography
 \end{document}

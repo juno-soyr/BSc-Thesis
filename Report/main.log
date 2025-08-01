@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  16 JUL 2025 19:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  28 JUL 2025 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,39 +832,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [3]
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
+ []
+
+
 
 [5]
+Overfull \hbox (21.56146pt too wide) in paragraph at lines 176--178
+\OT1/cmr/m/n/12 By Lemma 2.1, any term of the form $(\OML/cmm/m/it/12 ^^Ux:t[]\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 a$ \OT1/cmr/m/n/12 re-duces in one step to $(\
+OML/cmm/m/it/12 ^^Ux:t[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 yaa$\OT1/cmr/m/n/12 ,
+and
+ []
+
+
 
 [6]
-./main.tex:188: Extra alignment tab has been changed to \cr.
-<template> }$\hfill \endtemplate 
-                                 
-l.188   \end{split}
-                   
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-./main.tex:188: Extra alignment tab has been changed to \cr.
-<template> }$\hfill \endtemplate 
-                                 
-l.188   \end{split}
-                   
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
 
 [7]
-Overfull \hbox (21.44975pt too wide) in paragraph at lines 207--207
+
+[8]
+Overfull \hbox (21.44975pt too wide) in paragraph at lines 251--251
 \OT1/cmr/m/n/12 logic and the foun-da-tions of math-e-mat-ics. North-Holland, 1
 984. \OT1/cmr/m/sc/12 isbn\OT1/cmr/m/n/12 : 9780444875082.
  []
 
 
-
-[8]
 
 [9] (./main.aux)
  ***********
@@ -876,32 +870,31 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22472 strings out of 475171
- 441840 string characters out of 5767095
- 1250280 words of memory out of 5000000
- 45145 multiletter control sequences out of 15000+600000
+ 22478 strings out of 475171
+ 441973 string characters out of 5767095
+ 1252337 words of memory out of 5000000
+ 45151 multiletter control sequences out of 15000+600000
  571594 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 102i,17n,107p,826b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,25n,107p,1147b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on main.pdf (9 pages, 218194 bytes).
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on main.pdf (9 pages, 213872 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
