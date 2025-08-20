@@ -18,8 +18,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-  The idea of computational Invariance is one that is essential to complexity theory, ever since Slot and Van Emde Boas proposed it in 1984-- add reference--. While this thesis relates to many areas of computability theory, in this paper we will focus on the invariance of $\lambda$-calculus. Accatoli and Dal Lago proposed, using a calculus with explicit substitutions called the \textbf{Linear Substitution Calculus}, a strategy that relates polynomially to Turing Machines when only time complexity is concerned. In this paper we will show, using this strategy, a more developed proof on why the computational steps of $\lambda$ are not invariant with respect to the calculus itself, and provide a proof of the invariance of addition and in this calculus.
-\end{abstract}
+  The idea of computational Invariance is one that is essential to complexity theory, ever since Slot and Van Emde Boas proposed it in 1984-- add reference--. While this thesis relates to many areas of computability theory, in this paper we will focus on the invariance of $\lambda$-calculus. Accatoli and Dal Lago proposed, using a calculus with explicit substitutions called the \textbf{Linear Substitution Calculus}, a strategy that relates polynomially to Turing Machines when only time complexity is concerned. In this paper we will show, using this strategy, a more developed proof on why the computational steps of $\lambda$ are not invariant with respect to the calculus itself.\end{abstract}
 \section{Introduction}
 During the start of the 20th century, the idea of computability started to be a main mathematical problem. David Hilbert posed the question in his set of problems to solve during the 20th century: What does it mean for a function to be \textit{computable}? \\
 The first step in answering this question would be to define the concept of \textit{computability}. Intuitively, computability is a property of problems or functions that can be solved by some mechanical process. Both Alonzo Church and Alan Turing proved almost simultaneously that there exists a model defining the group of computable functions, the former through general recursive functions and the latter with the conceptual \enquote{Turing} machines.
@@ -218,7 +217,7 @@ We need to introduce the idea of a new kind of contexts in order to properly def
     &L = \langle \cdot \rangle \ | L[x \leftarrow t]
   \end{split}
 \end{equation}
-We introduce here the operational semantics of the LSC. There are two elementary reductions, coupled with $\alpha$-conversion, required to provide the explicit subsitutions up to an equivalnece with the untyped $\lambda$-calculus.
+We introduce here the operational semantics of the LSC.There are two elementary reductions, coupled with $\alpha$-conversion, required to provide the explicit subsitutions up to an equivalnece with the untyped $\lambda$-calculus.
 \begin{equation}
   \begin{split}
     &L \langle \lambda x .t \rangle u \rightarrow_{dB} L \langle t [x \leftarrow u] \rangle \\
@@ -248,27 +247,23 @@ The purpose of the high level implementation system definition is to provide a r
 \[\rightsquigarrow \text{terminates iff} {\rightsquigarrow}_{X} \text{terminates}\]
 Furthermore,
 \[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^n) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
-We will demonstrate that the LOU reduction strategy follows this generalization by means of 2 examples.
-\section{Examples}
-\subsection{Size exploding family}
-Using the term $t_2$ as a first example, if applying the LOU strategy, we get the following derivation:
-\begin{equation}
-\begin{split}
-  &(\lambda x . ( \lambda x . (yxx) )(yxx))(yxx) \rightarrow_{LOU}  \\
-  &(\lambda x . yxx)(yxx)[x \leftarrow (y'x'x')] \rightarrow_{LOU} \\
-  &(yxx)[x \rightarrow (y'x'x')][x' \rightarrow (y''x''x'')]
-\end{split}
-\end{equation}
-Note the $\alpha$-conversion in the second step to avoid unwanted variable capture. We can see that a derivation that under LO $\beta$-reduction produced a term of size $2^n$ produces a term linear in both the size of the initial term and the number of steps taken.
-It is important to note that due to this example only requiring head substitution, the Linear Head Reduction introduced in~\cite{invariance-of-cost-model} suffices, but the LOU strategy is necessary for reaching normal form in every case, as will be shown by the next example.
-\subsection{Addition in the LSC}
-We will not delve into the idea of addition and arithmetic operations in $\lambda$-calculus, for more information, we will refer the reader again to~\cite{barendregt1984lambda}. We will only introduce the addition term, that uses currying in order to add the representations of non-negative integers in the $\lambda$-calculus.
-The addition term is defined as $ + = \lambda m n f x .(m f)((n f) x)$. This term, coupled with the church numerals representing the non-negative integers $\ulcorner n \urcorner = \lambda f x . f^n (x)$, where $f^n$ represents $n$ applications of $f$, can be used to compute addition in the $\lambda$-calculus.
-While addition does have a constant number of reduction steps under regular $\beta$-reduction, we have established that there is a size-exploding problem, that could also present itself in addition. By applying the Leftmost Outermost Useful strategy, we can show that it also takes a constant number of steps, and that
+We will demonstrate that the LOU reduction strategy follows this generalization with the previous example of the size-exploding family.
+\section{Size exploding family}
+In these examples we will forego the definition of the usual LO order on contexts and will focus solely on usefulness for the sake of convenience.
+Using the term $t_2$ as a first example, the first step is to split the term into (shallow) contexts, and order them according to the LO total order. In this term there is only one outermost context and it is a $dB$ redex, which is inherently useful. Therefore, the first step will be:
+\begin{equation*}
+  (\lambda x . (\lambda x . yxx) (yxx))(yxx) \rightarrow_{dB} (\lambda x . yxx)(yxx)[x \leftarrow yx'x']
+\end{equation*}
+Note the $\alpha$-conversion to avoid unwanted variable capture. At this point, the polynomial algorithm introduced in~\cite{beta-invariance} to find useful $ls$ steps is necessary, although in this paper we will compute them by hand. There are two possible reductions here, for there are two free $x$ variables.  \\
+Even though there is a possible $dB$ step, let us consider the usefulness of the possible $ls$ steps. We have two free ocurrences of $x$ that can be replaced by $yx'x'$. Now, it is trivial to show that neither of these replacements create a redex, but we must also show that they do not create an applicative context.
 
-\begin{theorem} Addition takes constant time using the LOU strategy.
-\end{theorem}
-\section{Comparing LSC Terms}
+
+
+
+
+It is important to note that due to this example only requiring head substitution, the Linear Head Reduction introduced in~\cite{invariance-of-cost-model} suffices, but the LOU strategy is necessary for reaching normal form in every case.
+
 \section{Conclusion}
-\printbibliography
+While it only concerns itself with time invariance, the LOU strategy is a significant step in proving that $\lambda$-calculus and Turing Machines are not only equivalent, but invariant with respect to one another, which could lead to computational models that combine the two, providing the benefits of both. There is much research to be done, and this paper only scratches the surface of the dive that computational theory is, but we expanded on~\cite{beta-invariance} to provide a more exact definition of the problem of size explosion, and to provide a gentler introduction into the topic of invariance in the $\lambda$-calculus.
+\printbibliography{}
 \end{document}
