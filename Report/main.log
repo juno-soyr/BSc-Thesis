@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  19 AUG 2025 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.21)  22 AUG 2025 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -872,10 +872,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22483 strings out of 475171
- 442057 string characters out of 5767095
- 1251312 words of memory out of 5000000
- 45156 multiletter control sequences out of 15000+600000
+ 22489 strings out of 475171
+ 442252 string characters out of 5767095
+ 1251376 words of memory out of 5000000
+ 45162 multiletter control sequences out of 15000+600000
  572842 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  102i,25n,107p,1147b,1272s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -894,7 +894,7 @@ ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (10 pages, 232091 bytes).
+Output written on main.pdf (10 pages, 232850 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream

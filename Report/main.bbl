@@ -135,6 +135,41 @@
       \verb https://books.google.es/books?id=KbZFAAAAYAAJ
       \endverb
     \endentry
+    \entry{machine-models}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=c626dbdc354cccf27edce7d2c01c8b56}{%
+           family={Emde\bibnamedelima Boas},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{fullhash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{fullhashraw}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{bibnamehash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{authorbibnamehash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{authornamehash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{authorfullhash}{c626dbdc354cccf27edce7d2c01c8b56}
+      \strng{authorfullhashraw}{c626dbdc354cccf27edce7d2c01c8b56}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of Theoretical Computer Science (Vol. A): Algorithms and Complexity}
+      \field{isbn}{0444880712}
+      \field{title}{Machine models and simulations}
+      \field{year}{1991}
+      \field{pages}{1\bibrangedash 66}
+      \range{pages}{66}
+    \endentry
     \entry{rosser-kleene-inconsistency}{article}{}{}
       \name{author}{2}{}{%
         {{hash=a8ca9bca77a4b96b2595d31020d200bc}{%

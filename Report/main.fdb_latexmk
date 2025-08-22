@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1755445010.71556 "main.bcf" "main.bbl" "main" 1755604042.93088 0
-  "main.bcf" 1755604042.82325 109886 7e527937ba20accf8cc6a54e5f880186 "pdflatex"
+["biber main"] 1755796915.32614 "main.bcf" "main.bbl" "main" 1755874515.48449 0
+  "main.bcf" 1755874515.39712 109956 28b8743f5621b6d2c91f7c2d5548cc49 "pdflatex"
   "main.bib" 1752754465.2733 2952 f227b2c33e8ea526e117e8703d66d519 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1755604041.77776 "main.tex" "main.pdf" "main" 1755604042.93136 0
+["pdflatex"] 1755874514.48017 "main.tex" "main.pdf" "main" 1755874515.48482 0
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1742685315 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1742685315 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1742685315 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -171,10 +171,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1747862257 30070 2c390b00126b1036e8876b6c3ea4d747 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747862212 2008237 62eadf1768e6139fc684bf75187424f1 ""
-  "main.aux" 1755604042.82125 4624 d812e310cf1f679de4651ed8d8813e7e "pdflatex"
-  "main.bbl" 1755445011.53689 10127 3b482142ea6ed9ef881b2eabd737d50a "biber main"
-  "main.run.xml" 1755604042.82543 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
-  "main.tex" 1755604041.06825 27354 1321e8c9bc0e078cabb3427577c28764 ""
+  "main.aux" 1755874515.39512 4773 8dfa58f827041f9bb2127c56afd2333e "pdflatex"
+  "main.bbl" 1755796916.09521 11556 1198339631841fee73f93395e17d7e7a "biber main"
+  "main.run.xml" 1755874515.39854 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
+  "main.tex" 1755874512.69809 27445 d8d2c4f99392b8ba886437ea684c3c5f ""
   (generated)
   "main.aux"
   "main.bcf"
