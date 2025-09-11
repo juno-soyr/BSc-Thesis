@@ -1,4 +1,11 @@
-\documentclass[12pt]{article}
+\message{ !name(VU-CS-BSc-thesis-template.tex)}\documentclass[11pt]{article}
+\usepackage{graphicx}
+
+      \textwidth 15cm
+      \textheight 22cm
+      \parindent 10pt
+      \oddsidemargin 0.85cm
+      \evensidemargin 0.37cm
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -8,15 +15,62 @@
 \usepackage{tikz}
 
 \usepackage[backend=biber]{biblatex}
-\addbibresource{main.bib}
+\addbibresource{VU-CS-BSc-thesis-template.bib}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
-\title{Introduction to the (Weak) Invariance Thesis in $\lambda$-Calculus}
-\author{Haileselassie Gaspar\\[1cm]{\small Supervisors: Femke van Raamsdonk, Jörg Endrullis}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
+
 \begin{document}
-\maketitle
+
+\message{ !name(VU-CS-BSc-thesis-template.tex) !offset(-3) }
+
+
+\thispagestyle{empty}
+
+\begin{center}
+
+Vrije Universiteit Amsterdam
+
+\vspace{1mm}
+
+\includegraphics[height=28mm]{vu-griffioen.pdf}
+
+\vspace{1.5cm}
+
+{\Large Bachelor Thesis}
+
+\vspace*{1.5cm}
+
+\rule{.9\linewidth}{.6pt}\\[0.4cm]
+{\huge \bfseries Introduction to the Weak Invariance Thesis in $\lambda$-Calculus\par}
+\rule{.9\linewidth}{.6pt}\\[1.5cm]
+
+\vspace*{2mm}
+
+{\Large
+\begin{tabular}{l}
+{\bf Author:} ~~Haileselassie Gaspar ~~~~ (2762335)
+\end{tabular}
+}
+
+\vspace*{1.5cm}
+
+\begin{tabular}{ll}
+  {\it 1st supervisor:}   & ~~Femke van Raamsdonk \\
+  {\it 2nd reader:}       & ~~Jörg Endrullis
+\end{tabular}
+
+\vspace*{2cm}
+
+\textit{A thesis submitted in fulfillment of the requirements for\\ the VU Bachelor of Science degree in Computer Science }
+
+\vspace*{1cm}
+
+\today\\[4cm] % Date
+
+\end{center}
+
 \begin{abstract}
   The idea of computational Invariance is one that is essential to complexity theory, ever since Van Emde Boas proposed it~\cite{machine-models}. While this paper relates to many areas of computability theory, we will focus on the invariance of $\lambda$-calculus. Accatoli and Dal Lago proposed, using a calculus with explicit substitutions called the \textbf{Linear Substitution Calculus}, a strategy that relates polynomially to Turing Machines when only time complexity is concerned. In this paper we will introduce said calculus and strategy, and provide an example of how they relate to the classical untyped $\lambda$-calculus .\end{abstract}
 \section{Introduction}
@@ -275,4 +329,8 @@ It is important to note that due to this example only requiring head substitutio
 \section{Conclusion}
 The LSC and the LOU strategy in it provide a basis for future improvements in the study of computational invariance between the $\lambda$-calculus and Turing Machines. This could lead to represent polynomial classes such as P, NP and PSPACE in $\lambda$-calculus, and investigating their properties from a different viewpoint.
 \printbibliography{}
+
+
 \end{document}
+
+\message{ !name(VU-CS-BSc-thesis-template.tex) !offset(-336) }

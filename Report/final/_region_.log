@@ -1,0 +1,4207 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.30)  2 SEP 2025 12:17
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\AtBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graphics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input \detokenize{ _region_.tex }
+(./_region_.tex  !name(VU-CS-BSc-thesis-template.tex) (/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen144
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
+\tag@help=\toks19
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
+\andhelp@=\toks20
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks28
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
+) (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+ (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count282
+)
+\csq@reset=\count283
+\csq@gtype=\count284
+\csq@glevel=\count285
+\csq@qlevel=\count286
+\csq@maxlvl=\count287
+\csq@tshold=\count288
+\csq@ltx@everypar=\toks31
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen153
+\pgfutil@tempdimb=\dimen154
+) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen155
+\pgf@y=\dimen156
+\pgf@xa=\dimen157
+\pgf@ya=\dimen158
+\pgf@xb=\dimen159
+\pgf@yb=\dimen160
+\pgf@xc=\dimen161
+\pgf@yc=\dimen162
+\pgf@xd=\dimen163
+\pgf@yd=\dimen164
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count289
+\c@pgf@countb=\count290
+\c@pgf@countc=\count291
+\c@pgf@countd=\count292
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count293
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count294
+\pgfsyssoftpath@bigbuffer@items=\count295
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen165
+\pgfmath@count=\count296
+\pgfmath@box=\box55
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count297
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count298
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen184
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen188
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count299
+\pgf@shadingcount=\count300
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box59
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box60
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen192
+\pgffor@skip=\dimen193
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count301
+\pgfplotmarksize=\dimen194
+)
+\tikz@lastx=\dimen195
+\tikz@lasty=\dimen196
+\tikz@lastxsaved=\dimen197
+\tikz@lastysaved=\dimen198
+\tikz@lastmovetox=\dimen199
+\tikz@lastmovetoy=\dimen256
+\tikzleveldistance=\dimen257
+\tikzsiblingdistance=\dimen258
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count302
+\tikznumberofchildren=\count303
+\tikznumberofcurrentchild=\count304
+\tikz@fig@count=\count305
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count306
+\pgfmatrixcurrentcolumn=\count307
+\pgf@matrix@numberofcolumns=\count308
+)
+\tikz@expandcount=\count309
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count310
+ (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count311
+\c@listtotal=\count312
+\c@listcount=\count313
+\c@liststart=\count314
+\c@liststop=\count315
+\c@citecount=\count316
+\c@citetotal=\count317
+\c@multicitecount=\count318
+\c@multicitetotal=\count319
+\c@instcount=\count320
+\c@maxnames=\count321
+\c@minnames=\count322
+\c@maxitems=\count323
+\c@minitems=\count324
+\c@citecounter=\count325
+\c@maxcitecounter=\count326
+\c@savedcitecounter=\count327
+\c@uniquelist=\count328
+\c@uniquename=\count329
+\c@refsection=\count330
+\c@refsegment=\count331
+\c@maxextratitle=\count332
+\c@maxextratitleyear=\count333
+\c@maxextraname=\count334
+\c@maxextradate=\count335
+\c@maxextraalpha=\count336
+\c@abbrvpenalty=\count337
+\c@highnamepenalty=\count338
+\c@lownamepenalty=\count339
+\c@maxparens=\count340
+\c@parenlevel=\count341
+\blx@tempcnta=\count342
+\blx@tempcntb=\count343
+\blx@tempcntc=\count344
+\c@blx@maxsection=\count345
+\blx@maxsegment@0=\count346
+\blx@notetype=\count347
+\blx@parenlevel@text=\count348
+\blx@parenlevel@foot=\count349
+\blx@sectionciteorder@0=\count350
+\blx@sectionciteorderinternal@0=\count351
+\blx@entrysetcounter=\count352
+\blx@biblioinstance=\count353
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language3
+\c@mincomprange=\count354
+\c@maxcomprange=\count355
+\c@mincompwidth=\count356
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count357
+\c@savedafterword=\count358
+\c@annotator=\count359
+\c@savedannotator=\count360
+\c@author=\count361
+\c@savedauthor=\count362
+\c@bookauthor=\count363
+\c@savedbookauthor=\count364
+\c@commentator=\count365
+\c@savedcommentator=\count366
+\c@editor=\count367
+\c@savededitor=\count368
+\c@editora=\count369
+\c@savededitora=\count370
+\c@editorb=\count371
+\c@savededitorb=\count372
+\c@editorc=\count373
+\c@savededitorc=\count374
+\c@foreword=\count375
+\c@savedforeword=\count376
+\c@holder=\count377
+\c@savedholder=\count378
+\c@introduction=\count379
+\c@savedintroduction=\count380
+\c@namea=\count381
+\c@savednamea=\count382
+\c@nameb=\count383
+\c@savednameb=\count384
+\c@namec=\count385
+\c@savednamec=\count386
+\c@translator=\count387
+\c@savedtranslator=\count388
+\c@shortauthor=\count389
+\c@savedshortauthor=\count390
+\c@shorteditor=\count391
+\c@savedshorteditor=\count392
+\c@labelname=\count393
+\c@savedlabelname=\count394
+\c@institution=\count395
+\c@savedinstitution=\count396
+\c@lista=\count397
+\c@savedlista=\count398
+\c@listb=\count399
+\c@savedlistb=\count400
+\c@listc=\count401
+\c@savedlistc=\count402
+\c@listd=\count403
+\c@savedlistd=\count404
+\c@liste=\count405
+\c@savedliste=\count406
+\c@listf=\count407
+\c@savedlistf=\count408
+\c@location=\count409
+\c@savedlocation=\count410
+\c@organization=\count411
+\c@savedorganization=\count412
+\c@origlocation=\count413
+\c@savedoriglocation=\count414
+\c@origpublisher=\count415
+\c@savedorigpublisher=\count416
+\c@publisher=\count417
+\c@savedpublisher=\count418
+\c@language=\count419
+\c@savedlanguage=\count420
+\c@origlanguage=\count421
+\c@savedoriglanguage=\count422
+\c@pageref=\count423
+\c@savedpageref=\count424
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count425
+\c@textcitetotal=\count426
+\c@textcitemaxnames=\count427
+\c@biburlbigbreakpenalty=\count428
+\c@biburlbreakpenalty=\count429
+\c@biburlnumpenalty=\count430
+\c@biburlucpenalty=\count431
+\c@biburllcpenalty=\count432
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count433
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count434
+\c@bbx:relatedtotal=\count435
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count436
+\l__pdf_internal_box=\box65
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+)) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count437
+\Gm@cntv=\count438
+\c@Gm@tempcnt=\count439
+\Gm@bindingoffset=\dimen259
+\Gm@wd@mp=\dimen260
+\Gm@odd@mp=\dimen261
+\Gm@even@mp=\dimen262
+\Gm@layoutwidth=\dimen263
+\Gm@layoutheight=\dimen264
+\Gm@layouthoffset=\dimen265
+\Gm@layoutvoffset=\dimen266
+\Gm@dimlist=\toks44
+)
+\c@theorem=\count440
+\c@corollary=\count441
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count442
+\scratchdimen=\dimen267
+\scratchbox=\box66
+\nofMPsegments=\count443
+\nofMParguments=\count444
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count445
+\MPscratchDim=\dimen268
+\MPnumerator=\count446
+\makeMPintoPDFobject=\count447
+\everyMPtoPDFconversion=\toks46
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '_region_.bbl' not found.
+
+No file _region_.bbl.
+Package biblatex Info: Reference section=0 on input line 24.
+Package biblatex Info: Reference segment=0 on input line 24.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(81.94394pt, 433.62pt, 81.94394pt)
+* v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=650.43pt
+* \oddsidemargin=9.67395pt
+* \evensidemargin=9.67395pt
+* \topmargin=-31.42325pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/home/haile/.config/emacs/.local/straight/build-30.2/auctex/latex/preview.sty
+Package: preview 2024/06/30 14.0.6 (AUCTeX/preview-latex)
+ (/home/haile/.config/emacs/.local/straight/build-30.2/auctex/latex/prtightpage.def
+\PreviewBorder=\dimen269
+) (/home/haile/.config/emacs/.local/straight/build-30.2/auctex/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count448
+\hfuzz=\dimen270
+(/home/haile/.config/emacs/.local/straight/build-30.2/auctex/latex/prauctex.cfg)) (/home/haile/.config/emacs/.local/straight/build-30.2/auctex/latex/prfootnotes.def)
+\pr@snippet=\count449
+\pr@box=\box67
+\pr@output=\toks47
+
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+)  !name(VU-CS-BSc-thesis-template.tex) !offset(-3) 
+./_region_.tex:37: Preview: Snippet 1 started.
+<-><->
+      
+l.37 \includegraphics
+                     [height=28mm]{vu-griffioen.pdf}
+Not a real error.
+
+<vu-griffioen.pdf, id=4, 597.23125pt x 845.1575pt>
+File: vu-griffioen.pdf Graphic file (type pdf)
+<use vu-griffioen.pdf>
+Package pdftex.def Info: vu-griffioen.pdf  used on input line 37.
+(pdftex.def)             Requested size: 56.29102pt x 79.66771pt.
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:37: Preview: Snippet 1 ended.(5221103+0x3689088).
+<-><->
+      
+l.37 ...udegraphics[height=28mm]{vu-griffioen.pdf}
+                                                  
+Not a real error.
+
+[1 <./vu-griffioen.pdf>]
+./_region_.tex:46: Preview: Snippet 2 started.
+<-><->
+      
+l.46 ...duction to the Weak Invariance Thesis in $
+                                                  \lambda$-Calculus\par}
+Not a real error.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+./_region_.tex:46: Preview: Snippet 2 ended.(943899+0x776350).
+<-><->
+      
+l.46 ...to the Weak Invariance Thesis in $\lambda$
+                                                  -Calculus\par}
+Not a real error.
+
+[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation 'machine-models' on page 1 undefined on input line 75.
+
+./_region_.tex:75: Preview: Snippet 3 started.
+<-><->
+      
+l.75 ...eory, we will focus on the invariance of $
+                                                  \lambda$-calculus. Accatol...
+Not a real error.
+
+./_region_.tex:75: Preview: Snippet 3 ended.(455111+0x382295).
+<-><->
+      
+l.75 ... will focus on the invariance of $\lambda$
+                                                  -calculus. Accatoli and Da...
+Not a real error.
+
+[3]
+./_region_.tex:75: Preview: Snippet 4 started.
+<-><->
+      
+l.75 ...how they relate to the classical untyped $
+                                                  \lambda$-calculus .\end{ab...
+Not a real error.
+
+./_region_.tex:75: Preview: Snippet 4 ended.(455111+0x382295).
+<-><->
+      
+l.75 ... relate to the classical untyped $\lambda$
+                                                  -calculus .\end{abstract}
+Not a real error.
+
+[4]
+
+./_region_.tex:76: Preview: Snippet 5 started.
+<-><->
+      
+l.76 \section
+             {Introduction}
+Not a real error.
+
+./_region_.tex:76: Preview: Snippet 5 ended.(655359+0x28417720).
+<-><->
+      
+l.76 \section{Introduction}
+                           
+Not a real error.
+
+[5
+
+]
+./_region_.tex:78: Preview: Snippet 6 started.
+<-><->
+      
+l.78 ...nctions can be defined as every function $
+                                                  f : \mathbb{N}^k \rightarr...
+Not a real error.
+
+./_region_.tex:78: Preview: Snippet 6 ended.(624507+139537x3516228).
+<-><->
+      
+l.78 ... $f : \mathbb{N}^k \rightarrow \mathbb{N}$
+                                                   for which there exists an...
+Not a real error.
+
+[6]
+./_region_.tex:78: Preview: Snippet 7 started.
+<-><->
+      
+l.78 ...exists an effective procedure to compute $
+                                                  f(x)$, where $\mathbb{N}^k...
+Not a real error.
+
+./_region_.tex:78: Preview: Snippet 7 ended.(538214+179404x1396869).
+<-><->
+      
+l.78 ...s an effective procedure to compute $f(x)$
+                                                  , where $\mathbb{N}^k$ rep...
+Not a real error.
+
+[7]
+./_region_.tex:78: Preview: Snippet 8 started.
+<-><->
+      
+l.78 ...ctive procedure to compute $f(x)$, where $
+                                                  \mathbb{N}^k$ represents a...
+Not a real error.
+
+./_region_.tex:78: Preview: Snippet 8 ended.(624507+0x855067).
+<-><->
+      
+l.78 ...re to compute $f(x)$, where $\mathbb{N}^k$
+                                                   represents a tupl. By eff...
+Not a real error.
+
+[8]
+./_region_.tex:81: Preview: Snippet 9 started.
+<-><->
+      
+l.81  \subsection
+                 {Mathematical Preliminaries}
+Not a real error.
+
+./_region_.tex:81: Preview: Snippet 9 ended.(546132+0x28417720).
+<-><->
+      
+l.81  \subsection{Mathematical Preliminaries}
+                                             
+Not a real error.
+
+[9
+
+]
+./_region_.tex:82: Preview: Snippet 10 started.
+<-><->
+      
+l.82  An alphabet $
+                   \Sigma$ is a non-empty set of symbols of which a language...
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 10 ended.(490372+0x518281).
+<-><->
+      
+l.82  An alphabet $\Sigma$
+                           is a non-empty set of symbols of which a language...
+Not a real error.
+
+[10]
+./_region_.tex:82: Preview: Snippet 11 started.
+<-><->
+      
+l.82 ...empty set of symbols of which a language $
+                                                  L$ is conformed. Conversly...
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 11 ended.(490372+0x488380).
+<-><->
+      
+l.82 ...pty set of symbols of which a language $L$
+                                                   is conformed. Conversly, ...
+Not a real error.
+
+[11]
+./_region_.tex:82: Preview: Snippet 12 started.
+<-><->
+      
+l.82 ... $L$ is conformed. Conversly, a language $
+                                                  L$ is the set of strings f...
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 12 ended.(490372+0x488380).
+<-><->
+      
+l.82 ...L$ is conformed. Conversly, a language $L$
+                                                   is the set of strings for...
+Not a real error.
+
+[12]
+./_region_.tex:82: Preview: Snippet 13 started.
+<-><->
+      
+l.82 ...trings formed by elements of an alphabet $
+                                                  \Sigma$.
+Not a real error.
+
+./_region_.tex:82: Preview: Snippet 13 ended.(490372+0x518281).
+<-><->
+      
+l.82 ...formed by elements of an alphabet $\Sigma$
+                                                  .
+Not a real error.
+
+[13]
+./_region_.tex:83: Preview: Snippet 14 started.
+<-><->
+      
+l.83 ...ved 11 January 2012--.Taking an alphabet $
+                                                  A$ and defining $A^0 = \em...
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 14 ended.(490372+0x538215).
+<-><->
+      
+l.83 ...d 11 January 2012--.Taking an alphabet $A$
+                                                   and defining $A^0 = \empt...
+Not a real error.
+
+[14]
+./_region_.tex:83: Preview: Snippet 15 started.
+<-><->
+      
+l.83 ...12--.Taking an alphabet $A$ and defining $
+                                                  A^0 = \emptyset , A^1 = A ...
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 15 ended.(607018+179404x13349515).
+<-><->
+      
+l.83 ...A , A^{i + 1} = {mn | m \in V^i, n \in V}$
+                                                   for every $i > 0$.
+Not a real error.
+
+[15]
+./_region_.tex:83: Preview: Snippet 16 started.
+<-><->
+      
+l.83 ...} = {mn | m \in V^i, n \in V}$ for every $
+                                                  i > 0$.
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 16 ended.(473287+28057x1562859).
+<-><->
+      
+l.83 ...n | m \in V^i, n \in V}$ for every $i > 0$
+                                                  .
+Not a real error.
+
+[16]
+./_region_.tex:84: Preview: Snippet 17 started.
+<-><->
+      
+l.84 ...ne the \textit{Kleene Star} set operator $
+                                                  A*$ as:
+Not a real error.
+
+./_region_.tex:84: Preview: Snippet 17 ended.(490372+0x897025).
+<-><->
+      
+l.84 ...the \textit{Kleene Star} set operator $A*$
+                                                   as:
+Not a real error.
+
+[17]
+./_region_.tex:85: Preview: Snippet 18 started.
+<-><->
+      
+l.85  \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:87: Preview: Snippet 18 ended.(1778510+0x28417720).
+<-><->
+      
+l.87  \end{equation}
+                    
+Not a real error.
+
+[18]
+./_region_.tex:88: Preview: Snippet 19 started.
+<-><->
+      
+l.88  A reduction $
+                   R$ in a set $A$ is a subset of the set $A \times A$. That...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 19 ended.(490372+0x550424).
+<-><->
+      
+l.88  A reduction $R$
+                      in a set $A$ is a subset of the set $A \times A$. That...
+Not a real error.
+
+[19]
+./_region_.tex:88: Preview: Snippet 20 started.
+<-><->
+      
+l.88  A reduction $R$ in a set $
+                                A$ is a subset of the set $A \times A$. That...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 20 ended.(490372+0x538215).
+<-><->
+      
+l.88  A reduction $R$ in a set $A$
+                                   is a subset of the set $A \times A$. That...
+Not a real error.
+
+[20]
+./_region_.tex:88: Preview: Snippet 21 started.
+<-><->
+      
+l.88 ... $R$ in a set $A$ is a subset of the set $
+                                                  A \times A$. That is, a se...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 21 ended.(490372+59802x1953516).
+<-><->
+      
+l.88 ...et $A$ is a subset of the set $A \times A$
+                                                  . That is, a set consistin...
+Not a real error.
+
+[21]
+./_region_.tex:88: Preview: Snippet 22 started.
+<-><->
+      
+l.88 ...at is, a set consisting of ordered pairs $
+                                                  (a_n,a_m)$ so that $a_n,a_...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 22 ended.(538214+179404x2532018).
+<-><->
+      
+l.88 ...et consisting of ordered pairs $(a_n,a_m)$
+                                                   so that $a_n,a_m \in A$. ...
+Not a real error.
+
+[22]
+./_region_.tex:88: Preview: Snippet 23 started.
+<-><->
+      
+l.88 ...ing of ordered pairs $(a_n,a_m)$ so that $
+                                                  a_n,a_m \in A$. Note that ...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 23 ended.(490372+139537x3389167).
+<-><->
+      
+l.88 ... pairs $(a_n,a_m)$ so that $a_n,a_m \in A$
+                                                  . Note that $a_n$ and $a_m...
+Not a real error.
+
+[23]
+./_region_.tex:88: Preview: Snippet 24 started.
+<-><->
+      
+l.88 ...a_m)$ so that $a_n,a_m \in A$. Note that $
+                                                  a_n$ and $a_m$ can be equa...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 24 ended.(308974+107642x750094).
+<-><->
+      
+l.88 ...$ so that $a_n,a_m \in A$. Note that $a_n$
+                                                   and $a_m$ can be equal. I...
+Not a real error.
+
+[24]
+./_region_.tex:88: Preview: Snippet 25 started.
+<-><->
+      
+l.88 ...hat $a_n,a_m \in A$. Note that $a_n$ and $
+                                                  a_m$ can be equal. It is u...
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 25 ended.(308974+107642x904834).
+<-><->
+      
+l.88 ...$a_n,a_m \in A$. Note that $a_n$ and $a_m$
+                                                   can be equal. It is usual...
+Not a real error.
+
+[25]
+./_region_.tex:88: Preview: Snippet 26 started.
+<-><->
+      
+l.88 ...$ can be equal. It is usually denoted by $
+                                                  R : \rightarrow$.
+Not a real error.
+
+./_region_.tex:88: Preview: Snippet 26 ended.(490372+0x1666719).
+<-><->
+      
+l.88 ...It is usually denoted by $R : \rightarrow$
+                                                  .
+Not a real error.
+
+[26]
+./_region_.tex:89: Preview: Snippet 27 started.
+<-><->
+      
+l.89 ...ve closures of reductions are denoted as $
+                                                  \xrightarrow{0}$ and $\xri...
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 27 ended.(816436+0x717633).
+<-><->
+      
+l.89 ...eductions are denoted as $\xrightarrow{0}$
+                                                   and $\xrightarrow{i}$ for...
+Not a real error.
+
+[27]
+./_region_.tex:89: Preview: Snippet 28 started.
+<-><->
+      
+l.89 ...ons are denoted as $\xrightarrow{0}$ and $
+                                                  \xrightarrow{i}$ for some ...
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 28 ended.(825161+0x717633).
+<-><->
+      
+l.89 ...as $\xrightarrow{0}$ and $\xrightarrow{i}$
+                                                   for some $i > 0$ respecti...
+Not a real error.
+
+[28]
+./_region_.tex:89: Preview: Snippet 29 started.
+<-><->
+      
+l.89 ...arrow{0}$ and $\xrightarrow{i}$ for some $
+                                                  i > 0$ respectively. It is...
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 29 ended.(473287+28057x1562859).
+<-><->
+      
+l.89 ...0}$ and $\xrightarrow{i}$ for some $i > 0$
+                                                   respectively. It is impor...
+Not a real error.
+
+[29]
+./_region_.tex:89: Preview: Snippet 30 started.
+<-><->
+      
+l.89 ...not have symmetric properties. For every $
+                                                  (a,b) \in R$, given that $...
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 30 ended.(538214+179404x2991902).
+<-><->
+      
+l.89 ...metric properties. For every $(a,b) \in R$
+                                                  , given that $a \neq b$, t...
+Not a real error.
+
+[30]
+./_region_.tex:89: Preview: Snippet 31 started.
+<-><->
+      
+l.89 ...ies. For every $(a,b) \in R$, given that $
+                                                  a \neq b$, there is no ord...
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 31 ended.(498346+139535x1644124).
+<-><->
+      
+l.89 ...every $(a,b) \in R$, given that $a \neq b$
+                                                  , there is no ordered pair...
+Not a real error.
+
+[31]
+./_region_.tex:89: Preview: Snippet 32 started.
+<-><->
+      
+l.89 ...hat $a \neq b$, there is no ordered pair $
+                                                  (b,a) \in R$. \\
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 32 ended.(538214+179404x2991902).
+<-><->
+      
+l.89 ...b$, there is no ordered pair $(b,a) \in R$
+                                                  . \\
+Not a real error.
+
+[32]
+./_region_.tex:90: Preview: Snippet 33 started.
+<-><->
+      
+l.90  Given a set $
+                   A$ and a reduction $R$ defined in said set, an $R$-redex ...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 33 ended.(490372+0x538215).
+<-><->
+      
+l.90  Given a set $A$
+                      and a reduction $R$ defined in said set, an $R$-redex ...
+Not a real error.
+
+[33]
+./_region_.tex:90: Preview: Snippet 34 started.
+<-><->
+      
+l.90  Given a set $A$ and a reduction $
+                                       R$ defined in said set, an $R$-redex ...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 34 ended.(490372+0x550424).
+<-><->
+      
+l.90  Given a set $A$ and a reduction $R$
+                                          defined in said set, an $R$-redex ...
+Not a real error.
+
+[34]
+./_region_.tex:90: Preview: Snippet 35 started.
+<-><->
+      
+l.90 ... a reduction $R$ defined in said set, an $
+                                                  R$-redex is an element $a ...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 35 ended.(490372+0x550424).
+<-><->
+      
+l.90 ... reduction $R$ defined in said set, an $R$
+                                                  -redex is an element $a \i...
+Not a real error.
+
+[35]
+./_region_.tex:90: Preview: Snippet 36 started.
+<-><->
+      
+l.90 ... in said set, an $R$-redex is an element $
+                                                  a \in A$ so that there exi...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 36 ended.(490372+28057x1794625).
+<-><->
+      
+l.90 ... set, an $R$-redex is an element $a \in A$
+                                                   so that there exists an o...
+Not a real error.
+
+[36]
+./_region_.tex:90: Preview: Snippet 37 started.
+<-><->
+      
+l.90 ... A$ so that there exists an ordered pair $
+                                                  (a,a') \in R$. In $\lambda...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 37 ended.(551690+179404x3247115).
+<-><->
+      
+l.90 ...here exists an ordered pair $(a,a') \in R$
+                                                  . In $\lambda$-calculus an...
+Not a real error.
+
+[37]
+./_region_.tex:90: Preview: Snippet 38 started.
+<-><->
+      
+l.90 ...xists an ordered pair $(a,a') \in R$. In $
+                                                  \lambda$-calculus and the ...
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 38 ended.(498346+0x418612).
+<-><->
+      
+l.90 ... ordered pair $(a,a') \in R$. In $\lambda$
+                                                  -calculus and the LSC, red...
+Not a real error.
+
+[38]
+./_region_.tex:90: Preview: Snippet 39 started.
+<-><->
+      
+l.90 ... A term with no redexes is said to be in $
+                                                  R$-normal form.
+Not a real error.
+
+./_region_.tex:90: Preview: Snippet 39 ended.(490372+0x550424).
+<-><->
+      
+l.90 ... term with no redexes is said to be in $R$
+                                                  -normal form.
+Not a real error.
+
+[39]
+./_region_.tex:91: Preview: Snippet 40 started.
+<-><->
+      
+l.91 \subsection
+                {Machine models}
+Not a real error.
+
+./_region_.tex:91: Preview: Snippet 40 ended.(546132+0x28417720).
+<-><->
+      
+l.91 \subsection{Machine models}
+                                
+Not a real error.
+
+[40
+
+]
+./_region_.tex:92: Preview: Snippet 41 started.
+<-><->
+      
+l.92 ... introduce two: Turing Machines, and the $
+                                                  \lambda$-calculus.
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 41 ended.(498346+0x418612).
+<-><->
+      
+l.92 ...ce two: Turing Machines, and the $\lambda$
+                                                  -calculus.
+Not a real error.
+
+[41]
+./_region_.tex:94: Preview: Snippet 42 started.
+<-><->
+      
+l.94 \paragraph
+               {Turing Machines}
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 42 ended.(498346+139537x6057464).
+<-><->
+      
+l.94 \paragraph{Turing Machines}
+                                
+Not a real error.
+
+[42
+
+]
+
+LaTeX Warning: Citation 'on-computable-numbers' on page 2 undefined on input line 95.
+
+
+LaTeX Warning: Citation 'computation-theory' on page 2 undefined on input line 95.
+
+./_region_.tex:99: Preview: Snippet 43 started.
+<-><->
+      
+l.99 \paragraph
+               {Lambda calculus}
+Not a real error.
+
+./_region_.tex:99: Preview: Snippet 43 ended.(498346+0x6014106).
+<-><->
+      
+l.99 \paragraph{Lambda calculus}
+                                
+Not a real error.
+
+[43
+
+]
+
+LaTeX Warning: Citation 'rosser-kleene-inconsistency' on page 2 undefined on input line 100.
+
+
+LaTeX Warning: Reference `intro-lambda' on page 2 undefined on input line 100.
+
+./_region_.tex:102: Preview: Snippet 44 started.
+<-><->
+      
+l.102 ...coding from the natural numbers to both $
+                                                  \lambda$-terms and Turing ...
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 44 ended.(498346+0x418612).
+<-><->
+      
+l.102 ...rom the natural numbers to both $\lambda$
+                                                  -terms and Turing Machines...
+Not a real error.
+
+[44]
+./_region_.tex:102: Preview: Snippet 45 started.
+<-><->
+      
+l.102 ...ing Machines. Therefore, every function $
+                                                  f : \mathbb{N}^k \rightarr...
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 45 ended.(624507+139537x3516228).
+<-><->
+      
+l.102 ...$f : \mathbb{N}^k \rightarrow \mathbb{N}$
+                                                   can be represented in bot...
+Not a real error.
+
+[45]
+./_region_.tex:103: Preview: Snippet 46 started.
+<-><->
+      
+l.103 \subsection
+                 {Invariance}
+Not a real error.
+
+./_region_.tex:103: Preview: Snippet 46 ended.(546132+0x28417720).
+<-><->
+      
+l.103 \subsection{Invariance}
+                             
+Not a real error.
+
+[46
+
+]
+./_region_.tex:104: Preview: Snippet 47 started.
+<-><->
+      
+l.104 ...le they represent the same functions as $
+                                                  \lambda$-calculus does (co...
+Not a real error.
+
+./_region_.tex:104: Preview: Snippet 47 ended.(498346+0x418612).
+<-><->
+      
+l.104 ...represent the same functions as $\lambda$
+                                                  -calculus does (computable...
+Not a real error.
+
+[47]
+
+./_region_.tex:111: Preview: Snippet 48 started.
+<-><->
+      
+l.111 ...nt of extra space to compute a function $
+                                                  f : \mathbb{N}^k \rightarr...
+Not a real error.
+
+./_region_.tex:111: Preview: Snippet 48 ended.(624507+139537x3516228).
+<-><->
+      
+l.111 ...$f : \mathbb{N}^k \rightarrow \mathbb{N}$
+                                                   in $\lambda$-calculus tha...
+Not a real error.
+
+[48]
+./_region_.tex:111: Preview: Snippet 49 started.
+<-><->
+      
+l.111 ...\mathbb{N}^k \rightarrow \mathbb{N}$ in $
+                                                  \lambda$-calculus than in ...
+Not a real error.
+
+./_region_.tex:111: Preview: Snippet 49 ended.(498346+0x418612).
+<-><->
+      
+l.111 ...N}^k \rightarrow \mathbb{N}$ in $\lambda$
+                                                  -calculus than in a Turing...
+Not a real error.
+
+[49]
+./_region_.tex:113: Preview: Snippet 50 started.
+<-><->
+      
+l.113 ... the invariance of the complete untyped $
+                                                  \lambda$-calculus with reg...
+Not a real error.
+
+./_region_.tex:113: Preview: Snippet 50 ended.(498346+0x418612).
+<-><->
+      
+l.113 ...ariance of the complete untyped $\lambda$
+                                                  -calculus with regards to ...
+Not a real error.
+
+[50]
+./_region_.tex:116: Preview: Snippet 51 started.
+<-><->
+      
+l.116 \section
+              {Theoretical Background}\label{theoretical-background}
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 51 ended.(655359+183500x28417720).
+<-><->
+      
+l.116 \section{Theoretical Background}
+                                      \label{theoretical-background}
+Not a real error.
+
+[51
+
+]
+./_region_.tex:117: Preview: Snippet 52 started.
+<-><->
+      
+l.117   \subsection
+                   {Introduction to $\lambda$-calculus}\label{intro-lambda}
+Not a real error.
+
+./_region_.tex:117: Preview: Snippet 52 ended.(546132+0x28417720).
+<-><->
+      
+l.117 ...ction{Introduction to $\lambda$-calculus}
+                                                  \label{intro-lambda}
+Not a real error.
+
+[52
+
+]
+./_region_.tex:118: Preview: Snippet 53 started.
+<-><->
+      
+l.118 The idea of $
+                   \lambda$-calculus, or its current use, is based on the id...
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 53 ended.(498346+0x418612).
+<-><->
+      
+l.118 The idea of $\lambda$
+                           -calculus, or its current use, is based on the id...
+Not a real error.
+
+[53]
+
+LaTeX Warning: Citation 'selinger' on page 3 undefined on input line 118.
+
+./_region_.tex:120: Preview: Snippet 54 started.
+<-><->
+      
+l.120 The $
+           \lambda$-calculus uses the intensional view of functions to treat...
+Not a real error.
+
+./_region_.tex:120: Preview: Snippet 54 ended.(498346+0x418612).
+<-><->
+      
+l.120 The $\lambda$
+                   -calculus uses the intensional view of functions to treat...
+Not a real error.
+
+[54]
+./_region_.tex:121: Preview: Snippet 55 started.
+<-><->
+      
+l.121 In order to talk about the invariance of $
+                                                \lambda$-calculus it is firs...
+Not a real error.
+
+./_region_.tex:121: Preview: Snippet 55 ended.(498346+0x418612).
+<-><->
+      
+l.121 ...to talk about the invariance of $\lambda$
+                                                  -calculus it is first nece...
+Not a real error.
+
+[55]
+./_region_.tex:122: Preview: Snippet 56 started.
+<-><->
+      
+l.122 \paragraph
+                {Terms} Assuming a countably infinite set $\mathcal{VAR} = \...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 56 ended.(492366+0x2236665).
+<-><->
+      
+l.122 \paragraph{Terms}
+                        Assuming a countably infinite set $\mathcal{VAR} = \...
+Not a real error.
+
+[56
+
+]
+./_region_.tex:122: Preview: Snippet 57 started.
+<-><->
+      
+l.122 ...erms} Assuming a countably infinite set $
+                                                  \mathcal{VAR} = \{ x, y, z...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 57 ended.(538214+179404x6421020).
+<-><->
+      
+l.122 ...t $\mathcal{VAR} = \{ x, y, z, \cdots \}$
+                                                   of variables, let $M, N, ...
+Not a real error.
+
+[57]
+./_region_.tex:122: Preview: Snippet 58 started.
+<-><->
+      
+l.122 ...{ x, y, z, \cdots \}$ of variables, let $
+                                                  M, N, P....$ denote arbitr...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 58 ended.(490372+139537x3265411).
+<-><->
+      
+l.122 ...cdots \}$ of variables, let $M, N, P....$
+                                                   denote arbitrary $\lambda...
+Not a real error.
+
+[58]
+./_region_.tex:122: Preview: Snippet 59 started.
+<-><->
+      
+l.122 ...les, let $M, N, P....$ denote arbitrary $
+                                                  \lambda$-terms. The set of...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 59 ended.(498346+0x418612).
+<-><->
+      
+l.122 ... $M, N, P....$ denote arbitrary $\lambda$
+                                                  -terms. The set of $\lambd...
+Not a real error.
+
+[59]
+./_region_.tex:122: Preview: Snippet 60 started.
+<-><->
+      
+l.122 ...e arbitrary $\lambda$-terms. The set of $
+                                                  \lambda$-terms $\Lambda$ i...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 60 ended.(498346+0x418612).
+<-><->
+      
+l.122 ...ary $\lambda$-terms. The set of $\lambda$
+                                                  -terms $\Lambda$ is induct...
+Not a real error.
+
+[60]
+./_region_.tex:122: Preview: Snippet 61 started.
+<-><->
+      
+l.122 ...mbda$-terms. The set of $\lambda$-terms $
+                                                  \Lambda$ is inductively de...
+Not a real error.
+
+./_region_.tex:122: Preview: Snippet 61 ended.(490372+0x498347).
+<-><->
+      
+l.122 ...rms. The set of $\lambda$-terms $\Lambda$
+                                                   is inductively defined as:
+Not a real error.
+
+[61]
+./_region_.tex:123: Preview: Snippet 62 started.
+<-><->
+      
+l.123 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:129: Preview: Snippet 62 ended.(3067085+0x28417720).
+<-><->
+      
+l.129 \end{equation*}
+                     
+Not a real error.
+
+[62]
+./_region_.tex:130: Preview: Snippet 63 started.
+<-><->
+      
+l.130 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:132: Preview: Snippet 63 ended.(717618+0x18183618).
+<-><->
+      
+l.132 \end{equation*}
+                     
+Not a real error.
+
+[63]
+./_region_.tex:133: Preview: Snippet 64 started.
+<-><->
+      
+l.133 \paragraph
+                {Substitution} This topic will be expanded on Section~\ref{r...
+Not a real error.
+
+./_region_.tex:133: Preview: Snippet 64 ended.(498346+0x4451801).
+<-><->
+      
+l.133 \paragraph{Substitution}
+                               This topic will be expanded on Section~\ref{r...
+Not a real error.
+
+[64
+
+]
+
+LaTeX Warning: Reference `reduction' on page 3 undefined on input line 133.
+
+./_region_.tex:134: Preview: Snippet 65 started.
+<-><->
+      
+l.134 The result of substituting $
+                                  N$ for the free ocurrences of $x$ in $M$ (...
+Not a real error.
+
+./_region_.tex:134: Preview: Snippet 65 ended.(490372+0x654826).
+<-><->
+      
+l.134 The result of substituting $N$
+                                     for the free ocurrences of $x$ in $M$ (...
+Not a real error.
+
+[65]
+./_region_.tex:134: Preview: Snippet 66 started.
+<-><->
+      
+l.134 ...tituting $N$ for the free ocurrences of $
+                                                  x$ in $M$ (notation $M \{ ...
+Not a real error.
+
+./_region_.tex:134: Preview: Snippet 66 ended.(308974+0x410139).
+<-><->
+      
+l.134 ...tuting $N$ for the free ocurrences of $x$
+                                                   in $M$ (notation $M \{ x:...
+Not a real error.
+
+[66]
+./_region_.tex:134: Preview: Snippet 67 started.
+<-><->
+      
+l.134 ...g $N$ for the free ocurrences of $x$ in $
+                                                  M$ (notation $M \{ x:= N \...
+Not a real error.
+
+./_region_.tex:134: Preview: Snippet 67 ended.(490372+0x774430).
+<-><->
+      
+l.134 ...$N$ for the free ocurrences of $x$ in $M$
+                                                   (notation $M \{ x:= N \} ...
+Not a real error.
+
+[67]
+./_region_.tex:134: Preview: Snippet 68 started.
+<-><->
+      
+l.134 ...free ocurrences of $x$ in $M$ (notation $
+                                                  M \{ x:= N \} $) is induct...
+Not a real error.
+
+./_region_.tex:134: Preview: Snippet 68 ended.(538214+179404x3713174).
+<-><->
+      
+l.134 ... of $x$ in $M$ (notation $M \{ x:= N \} $
+                                                  ) is inductively defined as:
+Not a real error.
+
+[68]
+./_region_.tex:135: Preview: Snippet 69 started.
+<-><->
+      
+l.135 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:142: Preview: Snippet 69 ended.(4154983+0x28417720).
+<-><->
+      
+l.142 \end{equation*}
+                     
+Not a real error.
+
+[69]
+./_region_.tex:144: Preview: Snippet 70 started.
+<-><->
+      
+l.144 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:146: Preview: Snippet 70 ended.(717618+0x15578485).
+<-><->
+      
+l.146 \end{equation*}
+                     
+Not a real error.
+
+[70]
+./_region_.tex:147: Preview: Snippet 71 started.
+<-><->
+      
+l.147 In this term, $
+                     y$ and $z$ are not bound, therefore free, while $x$ is ...
+Not a real error.
+
+./_region_.tex:147: Preview: Snippet 71 ended.(308974+139537x377582).
+<-><->
+      
+l.147 In this term, $y$
+                        and $z$ are not bound, therefore free, while $x$ is ...
+Not a real error.
+
+[71]
+./_region_.tex:147: Preview: Snippet 72 started.
+<-><->
+      
+l.147 In this term, $y$ and $
+                             z$ are not bound, therefore free, while $x$ is ...
+Not a real error.
+
+./_region_.tex:147: Preview: Snippet 72 ended.(308974+0x365289).
+<-><->
+      
+l.147 In this term, $y$ and $z$
+                                are not bound, therefore free, while $x$ is ...
+Not a real error.
+
+[72]
+./_region_.tex:147: Preview: Snippet 73 started.
+<-><->
+      
+l.147 ...z$ are not bound, therefore free, while $
+                                                  x$ is bound by the abstrac...
+Not a real error.
+
+./_region_.tex:147: Preview: Snippet 73 ended.(308974+0x410139).
+<-><->
+      
+l.147 ... are not bound, therefore free, while $x$
+                                                   is bound by the abstracti...
+Not a real error.
+
+[73]
+./_region_.tex:147: Preview: Snippet 74 started.
+<-><->
+      
+l.147 ..., while $x$ is bound by the abstraction $
+                                                  \lambda x$.
+Not a real error.
+
+./_region_.tex:147: Preview: Snippet 74 ended.(498346+0x828751).
+<-><->
+      
+l.147 ...$ is bound by the abstraction $\lambda x$
+                                                  .
+Not a real error.
+
+[74]
+./_region_.tex:148: Preview: Snippet 75 started.
+<-><->
+      
+l.148 ...t, they must be renamed. This is called $
+                                                  \alpha$-conversion.
+Not a real error.
+
+./_region_.tex:148: Preview: Snippet 75 ended.(308974+0x461718).
+<-><->
+      
+l.148 ... must be renamed. This is called $\alpha$
+                                                  -conversion.
+Not a real error.
+
+[75]
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 3 undefined on input line 150.
+
+./_region_.tex:152: Preview: Snippet 76 started.
+<-><->
+      
+l.152 \subsubsection
+                    {Conversion}
+Not a real error.
+
+./_region_.tex:152: Preview: Snippet 76 ended.(498346+0x28417720).
+<-><->
+      
+l.152 \subsubsection{Conversion}
+                                
+Not a real error.
+
+[76
+
+]
+./_region_.tex:153: Preview: Snippet 77 started.
+<-><->
+      
+l.153 ...ly, since an intuitive understanding of $
+                                                  \alpha$-conversion suffice...
+Not a real error.
+
+./_region_.tex:153: Preview: Snippet 77 ended.(308974+0x461718).
+<-><->
+      
+l.153 ...ce an intuitive understanding of $\alpha$
+                                                  -conversion suffices to un...
+Not a real error.
+
+[77]
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 3 undefined on input line 153.
+
+./_region_.tex:154: Preview: Snippet 78 started.
+<-><->
+      
+l.154 When referring to conversion in the $
+                                           \lambda$-calculus, it is usually ...
+Not a real error.
+
+./_region_.tex:154: Preview: Snippet 78 ended.(498346+0x418612).
+<-><->
+      
+l.154 ... referring to conversion in the $\lambda$
+                                                  -calculus, it is usually i...
+Not a real error.
+
+[78]
+./_region_.tex:156: Preview: Snippet 79 started.
+<-><->
+      
+l.156 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:161: Preview: Snippet 79 ended.(1979187+0x28417720).
+<-><->
+      
+l.161 \end{equation}
+                    
+Not a real error.
+
+[79]
+./_region_.tex:162: Preview: Snippet 80 started.
+<-><->
+      
+l.162 ...n of substitution, however, when taking $
+                                                  M = y$ and $N = x$, substi...
+Not a real error.
+
+./_region_.tex:162: Preview: Snippet 80 ended.(490372+139537x2108832).
+<-><->
+      
+l.162 ...ubstitution, however, when taking $M = y$
+                                                   and $N = x$, substituting...
+Not a real error.
+
+[80]
+./_region_.tex:162: Preview: Snippet 81 started.
+<-><->
+      
+l.162 ...ution, however, when taking $M = y$ and $
+                                                  N = x$, substituting these...
+Not a real error.
+
+./_region_.tex:162: Preview: Snippet 81 ended.(490372+0x2021785).
+<-><->
+      
+l.162 ... however, when taking $M = y$ and $N = x$
+                                                  , substituting these terms...
+Not a real error.
+
+[81]
+./_region_.tex:162: Preview: Snippet 82 started.
+<-><->
+      
+l.162 ...to the expression leads to the equality $
+                                                  xy = xx$, an obvious contr...
+Not a real error.
+
+./_region_.tex:162: Preview: Snippet 82 ended.(308974+139537x2564819).
+<-><->
+      
+l.162 ...xpression leads to the equality $xy = xx$
+                                                  , an obvious contradiction.
+Not a real error.
+
+[82]
+./_region_.tex:163: Preview: Snippet 83 started.
+<-><->
+      
+l.163 ...ue to the fact that the substitution of $
+                                                  N$ in $M$ should not captu...
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 83 ended.(490372+0x654826).
+<-><->
+      
+l.163 ... to the fact that the substitution of $N$
+                                                   in $M$ should not capture...
+Not a real error.
+
+[83]
+./_region_.tex:163: Preview: Snippet 84 started.
+<-><->
+      
+l.163 ...he fact that the substitution of $N$ in $
+                                                  M$ should not capture any ...
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 84 ended.(490372+0x774430).
+<-><->
+      
+l.163 ... fact that the substitution of $N$ in $M$
+                                                   should not capture any fr...
+Not a real error.
+
+[84]
+./_region_.tex:163: Preview: Snippet 85 started.
+<-><->
+      
+l.163 ...hould not capture any free variables in $
+                                                  N$.
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 85 ended.(490372+0x654826).
+<-><->
+      
+l.163 ...uld not capture any free variables in $N$
+                                                  .
+Not a real error.
+
+[85]
+./_region_.tex:164: Preview: Snippet 86 started.
+<-><->
+      
+l.164 \subsubsection
+                    {$\beta$-Reduction}\label{reduction}
+Not a real error.
+
+./_region_.tex:164: Preview: Snippet 86 ended.(498346+139537x28417720).
+<-><->
+      
+l.164 \subsubsection{$\beta$-Reduction}
+                                       \label{reduction}
+Not a real error.
+
+[86
+
+]
+./_region_.tex:165: Preview: Snippet 87 started.
+<-><->
+      
+l.165 $
+       \beta$-reduction is a relation $\Lambda \times \Lambda$ based on the ...
+Not a real error.
+
+./_region_.tex:165: Preview: Snippet 87 ended.(498346+139537x443778).
+<-><->
+      
+l.165 $\beta$
+             -reduction is a relation $\Lambda \times \Lambda$ based on the ...
+Not a real error.
+
+[87]
+./_region_.tex:165: Preview: Snippet 88 started.
+<-><->
+      
+l.165 $\beta$-reduction is a relation $
+                                       \Lambda \times \Lambda$ based on the ...
+Not a real error.
+
+./_region_.tex:165: Preview: Snippet 88 ended.(490372+59802x1873780).
+<-><->
+      
+l.165 ...on is a relation $\Lambda \times \Lambda$
+                                                   based on the substitution...
+Not a real error.
+
+[88]
+./_region_.tex:166: Preview: Snippet 89 started.
+<-><->
+      
+l.166 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:168: Preview: Snippet 89 ended.(717618+0x28417720).
+<-><->
+      
+l.168 \end{equation}
+                    
+Not a real error.
+
+[89]
+./_region_.tex:169: Preview: Snippet 90 started.
+<-><->
+      
+l.169 A \textit{$
+                 \beta$-redex} is a term or subterm that is of the form $(\l...
+Not a real error.
+
+./_region_.tex:169: Preview: Snippet 90 ended.(498346+139537x443778).
+<-><->
+      
+l.169 A \textit{$\beta$
+                       -redex} is a term or subterm that is of the form $(\l...
+Not a real error.
+
+[90]
+./_region_.tex:169: Preview: Snippet 91 started.
+<-><->
+      
+l.169 ...s a term or subterm that is of the form $
+                                                  (\lambda x . M)N$.
+Not a real error.
+
+./_region_.tex:169: Preview: Snippet 91 ended.(538214+179404x3015496).
+<-><->
+      
+l.169 ...rm that is of the form $(\lambda x . M)N$
+                                                  .
+Not a real error.
+
+[91]
+./_region_.tex:170: Preview: Snippet 92 started.
+<-><->
+      
+l.170 ...oducing a \enquote{computational cost}, $
+                                                  \beta$-reduction is the re...
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 92 ended.(498346+139537x443778).
+<-><->
+      
+l.170 ...g a \enquote{computational cost}, $\beta$
+                                                  -reduction is the reasonab...
+Not a real error.
+
+[92]
+./_region_.tex:172: Preview: Snippet 93 started.
+<-><->
+      
+l.172 \paragraph
+                {Reduction Strategies}
+Not a real error.
+
+./_region_.tex:172: Preview: Snippet 93 ended.(498346+139537x7542528).
+<-><->
+      
+l.172 \paragraph{Reduction Strategies}
+                                      
+Not a real error.
+
+[93
+
+]
+./_region_.tex:173: Preview: Snippet 94 started.
+<-><->
+      
+l.173 ...reduction strategies, we refer to a map $
+                                                  F : \Lambda \rightarrow \L...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 94 ended.(490372+0x3272133).
+<-><->
+      
+l.173 ...o a map $F : \Lambda \rightarrow \Lambda$
+                                                   such that for all terms $...
+Not a real error.
+
+[94]
+./_region_.tex:173: Preview: Snippet 95 started.
+<-><->
+      
+l.173 ...tarrow \Lambda$ such that for all terms $
+                                                  M \in \Lambda : M \xrighta...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 95 ended.(722501+179404x6532322).
+<-><->
+      
+l.173 ... $M \in \Lambda : M \xrightarrow{*} F(M)$
+                                                  . That is, there exists on...
+Not a real error.
+
+[95]
+./_region_.tex:173: Preview: Snippet 96 started.
+<-><->
+      
+l.173 ...e exists one and only one term to which $
+                                                  M$ reduces in this map. St...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 96 ended.(490372+0x774430).
+<-><->
+      
+l.173 ...exists one and only one term to which $M$
+                                                   reduces in this map. Stra...
+Not a real error.
+
+[96]
+./_region_.tex:173: Preview: Snippet 97 started.
+<-><->
+      
+l.173 ...are defined as terminating if for every $
+                                                  M$ with a normal form, for...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 97 ended.(490372+0x774430).
+<-><->
+      
+l.173 ...e defined as terminating if for every $M$
+                                                   with a normal form, for s...
+Not a real error.
+
+[97]
+./_region_.tex:173: Preview: Snippet 98 started.
+<-><->
+      
+l.173 ... every $M$ with a normal form, for some $
+                                                  n \in \mathbb{N}$,$ F^{n} ...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 98 ended.(494359+28057x1826105).
+<-><->
+      
+l.173 ... normal form, for some $n \in \mathbb{N}$
+                                                  ,$ F^{n} (M)$ is in normal...
+Not a real error.
+
+[98]
+./_region_.tex:173: Preview: Snippet 99 started.
+<-><->
+      
+l.173 ...ormal form, for some $n \in \mathbb{N}$,$
+                                                   F^{n} (M)$ is in normal f...
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 99 ended.(538214+179404x2264487).
+<-><->
+      
+l.173 ... for some $n \in \mathbb{N}$,$ F^{n} (M)$
+                                                   is in normal form, where ...
+Not a real error.
+
+[99]
+./_region_.tex:173: Preview: Snippet 100 started.
+<-><->
+      
+l.173 ...$,$ F^{n} (M)$ is in normal form, where $
+                                                  M \xrightarrow{n} F^n(M)$. \\
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 100 ended.(704296+179404x4208859).
+<-><->
+      
+l.173 ...al form, where $M \xrightarrow{n} F^n(M)$
+                                                  . \\
+Not a real error.
+
+[100]
+
+LaTeX Warning: Citation 'beta-invariance' on page 3 undefined on input line 174.
+
+./_region_.tex:174: Preview: Snippet 101 started.
+<-><->
+      
+l.174 ...This is a normalizing strategy where if $
+                                                  M$ is not in normal form, ...
+Not a real error.
+
+./_region_.tex:174: Preview: Snippet 101 ended.(490372+0x774430).
+<-><->
+      
+l.174 ...is is a normalizing strategy where if $M$
+                                                   is not in normal form, th...
+Not a real error.
+
+[101]
+
+LaTeX Warning: Citation 'beta-invariance' on page 3 undefined on input line 174.
+
+
+
+./_region_.tex:178: Preview: Snippet 102 started.
+<-><->
+      
+l.178           \item Root: $
+                             \langle \cdot \rangle \prec_{O} C$ for every co...
+Not a real error.
+
+./_region_.tex:178: Preview: Snippet 102 ended.(538214+179404x2749453).
+<-><->
+      
+l.178 ...Root: $\langle \cdot \rangle \prec_{O} C$
+                                                   for every context $C \neq...
+Not a real error.
+
+[102]
+./_region_.tex:178: Preview: Snippet 103 started.
+<-><->
+      
+l.178 ... \rangle \prec_{O} C$ for every context $
+                                                  C \neq \langle \cdot \rang...
+Not a real error.
+
+./_region_.tex:178: Preview: Snippet 103 ended.(538214+179404x2278535).
+<-><->
+      
+l.178 ...ry context $C \neq \langle \cdot \rangle$
+                                                  .
+Not a real error.
+
+[103]
+./_region_.tex:179: Preview: Snippet 104 started.
+<-><->
+      
+l.179           \item Contextual closure: If $
+                                              C \prec_{O} D$ then $E\langle ...
+Not a real error.
+
+./_region_.tex:179: Preview: Snippet 104 ended.(490372+111084x2606027).
+<-><->
+      
+l.179 ...em Contextual closure: If $C \prec_{O} D$
+                                                   then $E\langle C \rangle ...
+Not a real error.
+
+[104]
+./_region_.tex:179: Preview: Snippet 105 started.
+<-><->
+      
+l.179 ...extual closure: If $C \prec_{O} D$ then $
+                                                  E\langle C \rangle \prec_{...
+Not a real error.
+
+./_region_.tex:179: Preview: Snippet 105 ended.(538214+179404x4864537).
+<-><->
+      
+l.179 ... C \rangle \prec_{O} E\langle D \rangle $
+                                                   for any context $E$.
+Not a real error.
+
+[105]
+./_region_.tex:179: Preview: Snippet 106 started.
+<-><->
+      
+l.179 ...O} E\langle D \rangle $ for any context $
+                                                  E$.
+Not a real error.
+
+./_region_.tex:179: Preview: Snippet 106 ended.(490372+0x571105).
+<-><->
+      
+l.179 ... E\langle D \rangle $ for any context $E$
+                                                  .
+Not a real error.
+
+[106]
+./_region_.tex:183: Preview: Snippet 107 started.
+<-><->
+      
+l.183           \item Application: If $
+                                       C \prec_{p} t$ and $D \prec_{p} u$ th...
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 107 ended.(490372+209587x2093368).
+<-><->
+      
+l.183 ...    \item Application: If $C \prec_{p} t$
+                                                   and $D \prec_{p} u$ then ...
+Not a real error.
+
+[107]
+./_region_.tex:183: Preview: Snippet 108 started.
+<-><->
+      
+l.183 ...tem Application: If $C \prec_{p} t$ and $
+                                                  D \prec_{p} u$ then $Cu \p...
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 108 ended.(490372+209587x2294870).
+<-><->
+      
+l.183 ...n: If $C \prec_{p} t$ and $D \prec_{p} u$
+                                                   then $Cu \prec_{L} tD$.
+Not a real error.
+
+[108]
+./_region_.tex:183: Preview: Snippet 109 started.
+<-><->
+      
+l.183 ...C \prec_{p} t$ and $D \prec_{p} u$ then $
+                                                  Cu \prec_{L} tD$.
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 109 ended.(490372+111084x3216664).
+<-><->
+      
+l.183 ...nd $D \prec_{p} u$ then $Cu \prec_{L} tD$
+                                                  .
+Not a real error.
+
+[109]
+./_region_.tex:184: Preview: Snippet 110 started.
+<-><->
+      
+l.184           \item Contextual Closure: If $
+                                              C \prec_{L} D$ then  $E\langle...
+Not a real error.
+
+./_region_.tex:184: Preview: Snippet 110 ended.(490372+111084x2546717).
+<-><->
+      
+l.184 ...em Contextual Closure: If $C \prec_{L} D$
+                                                   then  $E\langle C \rangle...
+Not a real error.
+
+[110]
+./_region_.tex:184: Preview: Snippet 111 started.
+<-><->
+      
+l.184 ...xtual Closure: If $C \prec_{L} D$ then  $
+                                                  E\langle C \rangle \prec_{...
+Not a real error.
+
+./_region_.tex:184: Preview: Snippet 111 ended.(538214+179404x4805227).
+<-><->
+      
+l.184 ...le C \rangle \prec_{L} E\langle D\rangle$
+                                                   for any context $E$.
+Not a real error.
+
+[111]
+./_region_.tex:184: Preview: Snippet 112 started.
+<-><->
+      
+l.184 ..._{L} E\langle D\rangle$ for any context $
+                                                  E$.
+Not a real error.
+
+./_region_.tex:184: Preview: Snippet 112 ended.(490372+0x571105).
+<-><->
+      
+l.184 ...L} E\langle D\rangle$ for any context $E$
+                                                  .
+Not a real error.
+
+[112]
+./_region_.tex:189: Preview: Snippet 113 started.
+<-><->
+      
+l.189   If $
+            C \prec_{O} D$ and $C \prec_{L} D$ then $C \prec_{LO} D$.
+Not a real error.
+
+./_region_.tex:189: Preview: Snippet 113 ended.(490372+111084x2606027).
+<-><->
+      
+l.189   If $C \prec_{O} D$
+                           and $C \prec_{L} D$ then $C \prec_{LO} D$.
+Not a real error.
+
+[113]
+./_region_.tex:189: Preview: Snippet 114 started.
+<-><->
+      
+l.189   If $C \prec_{O} D$ and $
+                                C \prec_{L} D$ then $C \prec_{LO} D$.
+Not a real error.
+
+./_region_.tex:189: Preview: Snippet 114 ended.(490372+111084x2546717).
+<-><->
+      
+l.189   If $C \prec_{O} D$ and $C \prec_{L} D$
+                                               then $C \prec_{LO} D$.
+Not a real error.
+
+[114]
+./_region_.tex:189: Preview: Snippet 115 started.
+<-><->
+      
+l.189 ...C \prec_{O} D$ and $C \prec_{L} D$ then $
+                                                  C \prec_{LO} D$.
+Not a real error.
+
+./_region_.tex:189: Preview: Snippet 115 ended.(490372+111084x2984867).
+<-><->
+      
+l.189 ...and $C \prec_{L} D$ then $C \prec_{LO} D$
+                                                  .
+Not a real error.
+
+[115]
+./_region_.tex:191: Preview: Snippet 116 started.
+<-><->
+      
+l.191 \subsection
+                 {Size-exploding family}
+Not a real error.
+
+./_region_.tex:191: Preview: Snippet 116 ended.(546132+152916x28417720).
+<-><->
+      
+l.191 \subsection{Size-exploding family}
+                                        
+Not a real error.
+
+[116
+
+]
+./_region_.tex:192: Preview: Snippet 117 started.
+<-><->
+      
+l.192 ...oduction, there is a family of terms in $
+                                                  \lambda$ that, in a linear...
+Not a real error.
+
+./_region_.tex:192: Preview: Snippet 117 ended.(498346+0x418612).
+<-><->
+      
+l.192 ..., there is a family of terms in $\lambda$
+                                                   that, in a linear number ...
+Not a real error.
+
+[117]
+./_region_.tex:192: Preview: Snippet 118 started.
+<-><->
+      
+l.192 ...on between space and time complexity as $
+                                                  \lambda$ does. While the f...
+Not a real error.
+
+./_region_.tex:192: Preview: Snippet 118 ended.(498346+0x418612).
+<-><->
+      
+l.192 ...en space and time complexity as $\lambda$
+                                                   does. While the former ha...
+Not a real error.
+
+[118]
+./_region_.tex:192: Preview: Snippet 119 started.
+<-><->
+      
+l.192 ... moves, the latter has the opposite. In $
+                                                  \lambda$-calculus, time co...
+Not a real error.
+
+./_region_.tex:192: Preview: Snippet 119 ended.(498346+0x418612).
+<-><->
+      
+l.192 ...the latter has the opposite. In $\lambda$
+                                                  -calculus, time complexity...
+Not a real error.
+
+[119]
+./_region_.tex:192: Preview: Snippet 120 started.
+<-><->
+      
+l.192 ...ulus, time complexity, or the amount of $
+                                                  \beta$-reduction steps, is...
+Not a real error.
+
+./_region_.tex:192: Preview: Snippet 120 ended.(498346+139537x443778).
+<-><->
+      
+l.192 ...time complexity, or the amount of $\beta$
+                                                  -reduction steps, is bound...
+Not a real error.
+
+[120]
+./_region_.tex:192: Preview: Snippet 121 started.
+<-><->
+      
+l.192 ...s with the number of reduction steps in $
+                                                  \lambda$, but we must also...
+Not a real error.
+
+./_region_.tex:192: Preview: Snippet 121 ended.(498346+0x418612).
+<-><->
+      
+l.192 ...he number of reduction steps in $\lambda$
+                                                  , but we must also take ca...
+Not a real error.
+
+[121]
+
+LaTeX Warning: Citation 'beta-invariance' on page 4 undefined on input line 194.
+
+./_region_.tex:194: Preview: Snippet 122 started.
+<-><->
+      
+l.194 ...ordering of the subterms, and show that $
+                                                  LO$ is a total order on it.
+Not a real error.
+
+./_region_.tex:194: Preview: Snippet 122 ended.(490372+0x1055696).
+<-><->
+      
+l.194 ...ering of the subterms, and show that $LO$
+                                                   is a total order on it.
+Not a real error.
+
+[122]
+
+./_region_.tex:196: Preview: Snippet 123 started.
+<-><->
+      
+l.196   Let $
+             u = yxx$, and consider the sequence of terms $t_{n} \in \Lambda...
+Not a real error.
+
+./_region_.tex:196: Preview: Snippet 123 ended.(308974+139537x2565486).
+<-><->
+      
+l.196   Let $u = yxx$
+                     , and consider the sequence of terms $t_{n} \in \Lambda...
+Not a real error.
+
+[123]
+./_region_.tex:196: Preview: Snippet 124 started.
+<-><->
+      
+l.196 ...xx$, and consider the sequence of terms $
+                                                  t_{n} \in \Lambda_{Exp}$  ...
+Not a real error.
+
+./_region_.tex:196: Preview: Snippet 124 ended.(490372+213029x3069736).
+<-><->
+      
+l.196 ...quence of terms $t_{n} \in \Lambda_{Exp}$
+                                                    \\ for $n \in \mathbb{N}...
+Not a real error.
+
+[124]
+./_region_.tex:196: Preview: Snippet 125 started.
+<-><->
+      
+l.196 ...terms $t_{n} \in \Lambda_{Exp}$  \\ for $
+                                                  n \in \mathbb{N}$ be defin...
+Not a real error.
+
+./_region_.tex:196: Preview: Snippet 125 ended.(494359+28057x1826105).
+<-><->
+      
+l.196 ...\Lambda_{Exp}$  \\ for $n \in \mathbb{N}$
+                                                   be defined inductively as \\
+Not a real error.
+
+[125]
+./_region_.tex:197: Preview: Snippet 126 started.
+<-><->
+      
+l.197   $
+         t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \m...
+Not a real error.
+
+./_region_.tex:197: Preview: Snippet 126 ended.(538214+179404x7660907).
+<-><->
+      
+l.197 ...= u \ , \ t_{n + 1} = (\lambda x.t_{n})u$
+                                                   for every $n \in \mathbb{...
+Not a real error.
+
+[126]
+./_region_.tex:197: Preview: Snippet 127 started.
+<-><->
+      
+l.197 ...{n + 1} = (\lambda x.t_{n})u$ for every $
+                                                  n \in \mathbb{N}$.
+Not a real error.
+
+./_region_.tex:197: Preview: Snippet 127 ended.(494359+28057x1826105).
+<-><->
+      
+l.197 ...a x.t_{n})u$ for every $n \in \mathbb{N}$
+                                                  .
+Not a real error.
+
+[127]
+./_region_.tex:201: Preview: Snippet 128 started.
+<-><->
+      
+l.201   Given a tern of the form $
+                                  (\lambda x .t_n)a$ for some $a \in \Lambda$:
+Not a real error.
+
+./_region_.tex:201: Preview: Snippet 128 ended.(538214+179404x2595475).
+<-><->
+      
+l.201 ...en a tern of the form $(\lambda x .t_n)a$
+                                                   for some $a \in \Lambda$:
+Not a real error.
+
+[128]
+./_region_.tex:201: Preview: Snippet 129 started.
+<-><->
+      
+l.201 ...f the form $(\lambda x .t_n)a$ for some $
+                                                  a \in \Lambda$:
+Not a real error.
+
+./_region_.tex:201: Preview: Snippet 129 ended.(490372+28057x1754757).
+<-><->
+      
+l.201 ...lambda x .t_n)a$ for some $a \in \Lambda$
+                                                  :
+Not a real error.
+
+[129]
+./_region_.tex:202: Preview: Snippet 130 started.
+<-><->
+      
+l.202   \begin{equation}
+                        
+Not a real error.
+
+./_region_.tex:204: Preview: Snippet 130 ended.(1473835+0x28417720).
+<-><->
+      
+l.204   \end{equation}
+                      
+Not a real error.
+
+[130]
+./_region_.tex:207: Preview: Snippet 131 started.
+<-><->
+      
+l.207   \begin{equation}
+                        
+Not a real error.
+
+./_region_.tex:209: Preview: Snippet 131 ended.(1473835+0x28417720).
+<-><->
+      
+l.209   \end{equation}
+                      
+Not a real error.
+
+[131]
+./_region_.tex:212: Preview: Snippet 132 started.
+<-><->
+      
+l.212   Given a term of the form $
+                                  t_{n+1} = (\lambda x. t_n)u$:
+Not a real error.
+
+./_region_.tex:212: Preview: Snippet 132 ended.(538214+179404x4925488).
+<-><->
+      
+l.212 ...of the form $t_{n+1} = (\lambda x. t_n)u$
+                                                  :
+Not a real error.
+
+[132]
+./_region_.tex:214: Preview: Snippet 133 started.
+<-><->
+      
+l.214     \item Its $
+                     \beta$-normal form will be $r_n = yr_{n}r_{n}$
+Not a real error.
+
+./_region_.tex:214: Preview: Snippet 133 ended.(498346+139537x443778).
+<-><->
+      
+l.214     \item Its $\beta$
+                           -normal form will be $r_n = yr_{n}r_{n}$
+Not a real error.
+
+[133]
+./_region_.tex:214: Preview: Snippet 134 started.
+<-><->
+      
+l.214     \item Its $\beta$-normal form will be $
+                                                 r_n = yr_{n}r_{n}$
+Not a real error.
+
+./_region_.tex:214: Preview: Snippet 134 ended.(308974+139537x3417986).
+<-><->
+      
+l.214 ...$-normal form will be $r_n = yr_{n}r_{n}$
+                                                  
+Not a real error.
+
+[134]
+./_region_.tex:215: Preview: Snippet 135 started.
+<-><->
+      
+l.215     \item It will reach $
+                               \beta$-normal form in exactly $n+1$ steps.
+Not a real error.
+
+./_region_.tex:215: Preview: Snippet 135 ended.(498346+139537x443778).
+<-><->
+      
+l.215     \item It will reach $\beta$
+                                     -normal form in exactly $n+1$ steps.
+Not a real error.
+
+[135]
+./_region_.tex:215: Preview: Snippet 136 started.
+<-><->
+      
+l.215 ...ll reach $\beta$-normal form in exactly $
+                                                  n+1$ steps.
+Not a real error.
+
+./_region_.tex:215: Preview: Snippet 136 ended.(462465+59802x1666636).
+<-><->
+      
+l.215 ...each $\beta$-normal form in exactly $n+1$
+                                                   steps.
+Not a real error.
+
+[136]
+./_region_.tex:221: Preview: Snippet 137 started.
+<-><->
+      
+l.221           \begin{equation}
+                                
+Not a real error.
+
+./_region_.tex:227: Preview: Snippet 137 ended.(4851858+0x28417720).
+<-><->
+      
+l.227           \end{equation}
+                              
+Not a real error.
+
+[137]
+./_region_.tex:228: Preview: Snippet 138 started.
+<-><->
+      
+l.228 ...     By Lemma 2.1, any term of the form $
+                                                  (\lambda x. t_n)a$ reduces...
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 138 ended.(538214+179404x2595475).
+<-><->
+      
+l.228 ... any term of the form $(\lambda x. t_n)a$
+                                                   reduces in one step to $(...
+Not a real error.
+
+[138]
+./_region_.tex:228: Preview: Snippet 139 started.
+<-><->
+      
+l.228 ...lambda x. t_n)a$ reduces in one step to $
+                                                  (\lambda  x .t_{n-1})yaa$,...
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 139 ended.(538214+179404x4064187).
+<-><->
+      
+l.228 ...in one step to $(\lambda  x .t_{n-1})yaa$
+                                                  ,and so any term $(\lambda...
+Not a real error.
+
+[139]
+./_region_.tex:228: Preview: Snippet 140 started.
+<-><->
+      
+l.228 ...lambda  x .t_{n-1})yaa$,and so any term $
+                                                  (\lambda x.t_n)u$ will eva...
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 140 ended.(538214+179404x2626955).
+<-><->
+      
+l.228 ...})yaa$,and so any term $(\lambda x.t_n)u$
+                                                   will evaluate to $(\lambd...
+Not a real error.
+
+[140]
+./_region_.tex:228: Preview: Snippet 141 started.
+<-><->
+      
+l.228 ...erm $(\lambda x.t_n)u$ will evaluate to $
+                                                  (\lambda x .t_{n-1})r_1$, ...
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 141 ended.(538214+179404x3563013).
+<-><->
+      
+l.228 ...ill evaluate to $(\lambda x .t_{n-1})r_1$
+                                                  , therefore, it is clear t...
+Not a real error.
+
+[141]
+./_region_.tex:228: Preview: Snippet 142 started.
+<-><->
+      
+l.228 ...re, it is clear that the normal form of $
+                                                  t_{n+1}$ is $r_{n+1} = y(r...
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 142 ended.(441393+162258x1341713).
+<-><->
+      
+l.228 ...s clear that the normal form of $t_{n+1}$
+                                                   is $r_{n+1} = y(r_n r_n)$
+Not a real error.
+
+[142]
+./_region_.tex:228: Preview: Snippet 143 started.
+<-><->
+      
+l.228 ...ar that the normal form of $t_{n+1}$ is $
+                                                  r_{n+1} = y(r_n r_n)$
+Not a real error.
+
+./_region_.tex:228: Preview: Snippet 143 ended.(538214+179404x4687940).
+<-><->
+      
+l.228 ...rm of $t_{n+1}$ is $r_{n+1} = y(r_n r_n)$
+                                                  
+Not a real error.
+
+[143]
+./_region_.tex:230: Preview: Snippet 144 started.
+<-><->
+      
+l.230 ...   Assume that the number of steps from $
+                                                  t_n$ to $r_n$,$k$ for $\rh...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 144 ended.(441393+107642x629909).
+<-><->
+      
+l.230 ...ssume that the number of steps from $t_n$
+                                                   to $r_n$,$k$ for $\rho  :...
+Not a real error.
+
+[144]
+./_region_.tex:230: Preview: Snippet 145 started.
+<-><->
+      
+l.230 ... that the number of steps from $t_n$ to $
+                                                  r_n$,$k$ for $\rho  : t_n ...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 145 ended.(308974+107642x694528).
+<-><->
+      
+l.230 ...t the number of steps from $t_n$ to $r_n$
+                                                  ,$k$ for $\rho  : t_n \xri...
+Not a real error.
+
+[145]
+./_region_.tex:230: Preview: Snippet 146 started.
+<-><->
+      
+l.230 ...the number of steps from $t_n$ to $r_n$,$
+                                                  k$ for $\rho  : t_n \xrigh...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 146 ended.(498346+0x396186).
+<-><->
+      
+l.230 ...e number of steps from $t_n$ to $r_n$,$k$
+                                                   for $\rho  : t_n \xrighta...
+Not a real error.
+
+[146]
+./_region_.tex:230: Preview: Snippet 147 started.
+<-><->
+      
+l.230 ...er of steps from $t_n$ to $r_n$,$k$ for $
+                                                  \rho  : t_n \xrightarrow[L...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 147 ended.(842650+657399x4281914).
+<-><->
+      
+l.230 ...\rho  : t_n \xrightarrow[LO\beta]{k} r_n$
+                                                  , is $n-1$. Then, after $n...
+Not a real error.
+
+[147]
+./_region_.tex:230: Preview: Snippet 148 started.
+<-><->
+      
+l.230 ...: t_n \xrightarrow[LO\beta]{k} r_n$, is $
+                                                  n-1$. Then, after $n-1$ LO...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 148 ended.(462465+59802x1666636).
+<-><->
+      
+l.230 ...n \xrightarrow[LO\beta]{k} r_n$, is $n-1$
+                                                  . Then, after $n-1$ LO $\b...
+Not a real error.
+
+[148]
+./_region_.tex:230: Preview: Snippet 149 started.
+<-><->
+      
+l.230 ...LO\beta]{k} r_n$, is $n-1$. Then, after $
+                                                  n-1$ LO $\beta$ steps, we ...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 149 ended.(462465+59802x1666636).
+<-><->
+      
+l.230 ...eta]{k} r_n$, is $n-1$. Then, after $n-1$
+                                                   LO $\beta$ steps, we reac...
+Not a real error.
+
+[149]
+./_region_.tex:230: Preview: Snippet 150 started.
+<-><->
+      
+l.230 ...k} r_n$, is $n-1$. Then, after $n-1$ LO $
+                                                  \beta$ steps, we reach $r_...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 150 ended.(498346+139537x443778).
+<-><->
+      
+l.230 ...$, is $n-1$. Then, after $n-1$ LO $\beta$
+                                                   steps, we reach $r_n$, bu...
+Not a real error.
+
+[150]
+./_region_.tex:230: Preview: Snippet 151 started.
+<-><->
+      
+l.230 ... after $n-1$ LO $\beta$ steps, we reach $
+                                                  r_n$, but by Lemma 2.2.1, ...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 151 ended.(308974+107642x694528).
+<-><->
+      
+l.230 ...er $n-1$ LO $\beta$ steps, we reach $r_n$
+                                                  , but by Lemma 2.2.1, and ...
+Not a real error.
+
+[151]
+./_region_.tex:230: Preview: Snippet 152 started.
+<-><->
+      
+l.230 ...d Lemma 2.1 we can see that the form of $
+                                                  t_n$ after $n-1$ steps wil...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 152 ended.(441393+107642x629909).
+<-><->
+      
+l.230 ...mma 2.1 we can see that the form of $t_n$
+                                                   after $n-1$ steps will be...
+Not a real error.
+
+[152]
+./_region_.tex:230: Preview: Snippet 153 started.
+<-><->
+      
+l.230 ...we can see that the form of $t_n$ after $
+                                                  n-1$ steps will be $(\lamb...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 153 ended.(462465+59802x1666636).
+<-><->
+      
+l.230 ...an see that the form of $t_n$ after $n-1$
+                                                   steps will be $(\lambda x...
+Not a real error.
+
+[153]
+./_region_.tex:230: Preview: Snippet 154 started.
+<-><->
+      
+l.230 ...form of $t_n$ after $n-1$ steps will be $
+                                                  (\lambda x . u)r_{n-1} \ne...
+Not a real error.
+
+./_region_.tex:230: Preview: Snippet 154 ended.(538214+179404x5054726).
+<-><->
+      
+l.230 ...will be $(\lambda x . u)r_{n-1} \neq r_n$
+                                                  
+Not a real error.
+
+[154]
+./_region_.tex:231: Preview: Snippet 155 started.
+<-><->
+      
+l.231           Now assume that $
+                                 k = n+1$. Then after $n$ steps there should...
+Not a real error.
+
+./_region_.tex:231: Preview: Snippet 155 ended.(498346+59802x3019642).
+<-><->
+      
+l.231           Now assume that $k = n+1$
+                                         . Then after $n$ steps there should...
+Not a real error.
+
+[155]
+./_region_.tex:231: Preview: Snippet 156 started.
+<-><->
+      
+l.231 ...  Now assume that $k = n+1$. Then after $
+                                                  n$ steps there should be a...
+Not a real error.
+
+./_region_.tex:231: Preview: Snippet 156 ended.(308974+0x430740).
+<-><->
+      
+l.231 ...Now assume that $k = n+1$. Then after $n$
+                                                   steps there should be ano...
+Not a real error.
+
+[156]
+./_region_.tex:231: Preview: Snippet 157 started.
+<-><->
+      
+l.231 ...er $n$ steps there should be another LO $
+                                                  \beta$ step, from $r_n$, b...
+Not a real error.
+
+./_region_.tex:231: Preview: Snippet 157 ended.(498346+139537x443778).
+<-><->
+      
+l.231 ... steps there should be another LO $\beta$
+                                                   step, from $r_n$, but by ...
+Not a real error.
+
+[157]
+./_region_.tex:231: Preview: Snippet 158 started.
+<-><->
+      
+l.231 ...should be another LO $\beta$ step, from $
+                                                  r_n$, but by definition of...
+Not a real error.
+
+./_region_.tex:231: Preview: Snippet 158 ended.(308974+107642x694528).
+<-><->
+      
+l.231 ...ld be another LO $\beta$ step, from $r_n$
+                                                  , but by definition of the...
+Not a real error.
+
+[158]
+./_region_.tex:236: Preview: Snippet 159 started.
+<-><->
+      
+l.236 Every $
+             \lambda$-term $t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-r...
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 159 ended.(498346+0x418612).
+<-><->
+      
+l.236 Every $\lambda$
+                     -term $t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-r...
+Not a real error.
+
+[159]
+./_region_.tex:236: Preview: Snippet 160 started.
+<-><->
+      
+l.236 Every $\lambda$-term $
+                            t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-r...
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 160 ended.(490372+213029x2698968).
+<-><->
+      
+l.236 Every $\lambda$-term $t \in \Lambda_{Exp}$
+                                                 reduces in $n$ LO $\beta$-r...
+Not a real error.
+
+[160]
+./_region_.tex:236: Preview: Snippet 161 started.
+<-><->
+      
+l.236 ...$-term $t \in \Lambda_{Exp}$ reduces in $
+                                                  n$ LO $\beta$-reduction st...
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 161 ended.(308974+0x430740).
+<-><->
+      
+l.236 ...term $t \in \Lambda_{Exp}$ reduces in $n$
+                                                   LO $\beta$-reduction step...
+Not a real error.
+
+[161]
+./_region_.tex:236: Preview: Snippet 162 started.
+<-><->
+      
+l.236 ...$t \in \Lambda_{Exp}$ reduces in $n$ LO $
+                                                  \beta$-reduction steps to ...
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 162 ended.(498346+139537x443778).
+<-><->
+      
+l.236 ... \Lambda_{Exp}$ reduces in $n$ LO $\beta$
+                                                  -reduction steps to a term...
+Not a real error.
+
+[162]
+./_region_.tex:236: Preview: Snippet 163 started.
+<-><->
+      
+l.236 ...n$ LO $\beta$-reduction steps to a term $
+                                                  r_n$, with $|r_n| \in O(2^...
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 163 ended.(308974+107642x694528).
+<-><->
+      
+l.236 ...O $\beta$-reduction steps to a term $r_n$
+                                                  , with $|r_n| \in O(2^n)$.
+Not a real error.
+
+[163]
+./_region_.tex:236: Preview: Snippet 164 started.
+<-><->
+      
+l.236 ...$-reduction steps to a term $r_n$, with $
+                                                  |r_n| \in O(2^n)$.
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 164 ended.(538214+179404x3825334).
+<-><->
+      
+l.236 ... to a term $r_n$, with $|r_n| \in O(2^n)$
+                                                  .
+Not a real error.
+
+[164]
+./_region_.tex:242: Preview: Snippet 165 started.
+<-><->
+      
+l.242 ...rest of the paper, we will use the term $
+                                                  t_{2}$ from this family. I...
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 165 ended.(441393+107642x570441).
+<-><->
+      
+l.242 ...f the paper, we will use the term $t_{2}$
+                                                   from this family. In orde...
+Not a real error.
+
+[165]
+./_region_.tex:243: Preview: Snippet 166 started.
+<-><->
+      
+l.243 \[
+         C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{...
+Not a real error.
+
+./_region_.tex:243: Preview: Snippet 166 ended.(717618+0x21041244).
+<-><->
+      
+l.243 ...ngle C_{2} \langle yxx \rangle \rangle \]
+                                                  
+Not a real error.
+
+[166]
+./_region_.tex:244: Preview: Snippet 167 started.
+<-><->
+      
+l.244 An ordering on this term in $
+                                   LO$ would then be: -- fix this --
+Not a real error.
+
+./_region_.tex:244: Preview: Snippet 167 ended.(490372+0x1055696).
+<-><->
+      
+l.244 An ordering on this term in $LO$
+                                       would then be: -- fix this --
+Not a real error.
+
+[167]
+./_region_.tex:245: Preview: Snippet 168 started.
+<-><->
+      
+l.245 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:247: Preview: Snippet 168 ended.(717618+0x28417720).
+<-><->
+      
+l.247 \end{equation}
+                    
+Not a real error.
+
+[168]
+./_region_.tex:248: Preview: Snippet 169 started.
+<-><->
+      
+l.248 by means of the contextual closure of $
+                                             LO$.
+Not a real error.
+
+./_region_.tex:248: Preview: Snippet 169 ended.(490372+0x1055696).
+<-><->
+      
+l.248 by means of the contextual closure of $LO$
+                                                .
+Not a real error.
+
+[169]
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 5 undefined on input line 249.
+
+./_region_.tex:250: Preview: Snippet 170 started.
+<-><->
+      
+l.250 \subsection
+                 {LSC}
+Not a real error.
+
+./_region_.tex:250: Preview: Snippet 170 ended.(539580+0x28417720).
+<-><->
+      
+l.250 \subsection{LSC}
+                      
+Not a real error.
+
+[170
+
+]
+
+LaTeX Warning: Reference `intro-lambda' on page 5 undefined on input line 251.
+
+./_region_.tex:251: Preview: Snippet 171 started.
+<-><->
+      
+l.251 ...aper will use the previously introduced $
+                                                  t_{3} \equiv \lambda x.((\...
+Not a real error.
+
+./_region_.tex:251: Preview: Snippet 171 ended.(538214+179404x11723781).
+<-><->
+      
+l.251 ...da x.((\lambda x. (yxx))(yxx)(yxx))(yxx)$
+                                                  . As explained before, thi...
+Not a real error.
+
+[171]
+./_region_.tex:251: Preview: Snippet 172 started.
+<-><->
+      
+l.251 ...lained before, this term, under regular $
+                                                  \beta$-reduction, will eva...
+Not a real error.
+
+./_region_.tex:251: Preview: Snippet 172 ended.(498346+139537x443778).
+<-><->
+      
+l.251 ... before, this term, under regular $\beta$
+                                                  -reduction, will evaluate ...
+Not a real error.
+
+[172]
+./_region_.tex:251: Preview: Snippet 173 started.
+<-><->
+      
+l.251 ... the main obstacle in the invariance of $
+                                                  \lambda$.
+Not a real error.
+
+./_region_.tex:251: Preview: Snippet 173 ended.(498346+0x418612).
+<-><->
+      
+l.251 ...n obstacle in the invariance of $\lambda$
+                                                  .
+Not a real error.
+
+[173]
+./_region_.tex:252: Preview: Snippet 174 started.
+<-><->
+      
+l.252 ...the regular implicit substitutions that $
+                                                  beta$-reduction produces. ...
+Not a real error.
+
+./_region_.tex:252: Preview: Snippet 174 ended.(498346+0x1280587).
+<-><->
+      
+l.252 ...egular implicit substitutions that $beta$
+                                                  -reduction produces. The g...
+Not a real error.
+
+[174]
+./_region_.tex:253: Preview: Snippet 175 started.
+<-><->
+      
+l.253 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:255: Preview: Snippet 175 ended.(717618+0x28417720).
+<-><->
+      
+l.255 \end{equation}
+                    
+Not a real error.
+
+[175]
+./_region_.tex:256: Preview: Snippet 176 started.
+<-><->
+      
+l.256 where $
+             t[x \leftarrow u]$ is an explicit substitution.
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 176 ended.(538214+179404x2595055).
+<-><->
+      
+l.256 where $t[x \leftarrow u]$
+                                is an explicit substitution.
+Not a real error.
+
+[176]
+./_region_.tex:257: Preview: Snippet 177 started.
+<-><->
+      
+l.257 ...ow} and \textbf{substitution} contexts ($
+                                                  S$ and $L$ respectively):
+Not a real error.
+
+./_region_.tex:257: Preview: Snippet 177 ended.(490372+0x481402).
+<-><->
+      
+l.257 ...} and \textbf{substitution} contexts ($S$
+                                                   and $L$ respectively):
+Not a real error.
+
+[177]
+./_region_.tex:257: Preview: Snippet 178 started.
+<-><->
+      
+l.257 ...\textbf{substitution} contexts ($S$ and $
+                                                  L$ respectively):
+Not a real error.
+
+./_region_.tex:257: Preview: Snippet 178 ended.(490372+0x488380).
+<-><->
+      
+l.257 ...extbf{substitution} contexts ($S$ and $L$
+                                                   respectively):
+Not a real error.
+
+[178]
+./_region_.tex:258: Preview: Snippet 179 started.
+<-><->
+      
+l.258 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:263: Preview: Snippet 179 ended.(1979187+0x28417720).
+<-><->
+      
+l.263 \end{equation}
+                    
+Not a real error.
+
+[179]
+./_region_.tex:264: Preview: Snippet 180 started.
+<-><->
+      
+l.264 The unfolding operation $
+                               t\downarrow$ is defined as:
+Not a real error.
+
+./_region_.tex:264: Preview: Snippet 180 ended.(498346+139535x817286).
+<-><->
+      
+l.264 The unfolding operation $t\downarrow$
+                                            is defined as:
+Not a real error.
+
+[180]
+./_region_.tex:265: Preview: Snippet 181 started.
+<-><->
+      
+l.265 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:272: Preview: Snippet 181 ended.(4154983+0x28417720).
+<-><->
+      
+l.272 \end{equation}
+                    
+Not a real error.
+
+[181]
+./_region_.tex:273: Preview: Snippet 182 started.
+<-><->
+      
+l.273 and the contextual unfolding $
+                                    t\downarrow_S$ as:
+Not a real error.
+
+./_region_.tex:273: Preview: Snippet 182 ended.(498346+139535x1218152).
+<-><->
+      
+l.273 and the contextual unfolding $t\downarrow_S$
+                                                   as:
+Not a real error.
+
+[182]
+./_region_.tex:274: Preview: Snippet 183 started.
+<-><->
+      
+l.274 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:281: Preview: Snippet 183 ended.(4239958+0x28417720).
+<-><->
+      
+l.281 \end{equation}
+                    
+Not a real error.
+
+[183]
+
+./_region_.tex:283: Preview: Snippet 184 started.
+<-><->
+      
+l.283 ...two elementary reductions, coupled with $
+                                                  \alpha$-conversion, requir...
+Not a real error.
+
+./_region_.tex:283: Preview: Snippet 184 ended.(308974+0x461718).
+<-><->
+      
+l.283 ...mentary reductions, coupled with $\alpha$
+                                                  -conversion, required to p...
+Not a real error.
+
+[184]
+./_region_.tex:283: Preview: Snippet 185 started.
+<-><->
+      
+l.283 ...s up to an equivalnece with the untyped $
+                                                  \lambda$-calculus.
+Not a real error.
+
+./_region_.tex:283: Preview: Snippet 185 ended.(498346+0x418612).
+<-><->
+      
+l.283 ...an equivalnece with the untyped $\lambda$
+                                                  -calculus.
+Not a real error.
+
+[185]
+./_region_.tex:284: Preview: Snippet 186 started.
+<-><->
+      
+l.284 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:289: Preview: Snippet 186 ended.(1979187+0x28417720).
+<-><->
+      
+l.289 \end{equation}
+                    
+Not a real error.
+
+[186]
+
+LaTeX Warning: Citation 'beta-invariance' on page 6 undefined on input line 290.
+
+
+LaTeX Warning: Citation 'invariance-of-cost-model' on page 6 undefined on input line 290.
+
+./_region_.tex:291: Preview: Snippet 187 started.
+<-><->
+      
+l.291 \subsection
+                 {Leftmost-Outermost Useful}\label{lou}
+Not a real error.
+
+./_region_.tex:291: Preview: Snippet 187 ended.(546132+0x28417720).
+<-><->
+      
+l.291 \subsection{Leftmost-Outermost Useful}
+                                            \label{lou}
+Not a real error.
+
+[187
+
+]
+
+LaTeX Warning: Citation 'beta-invariance' on page 6 undefined on input line 292.
+
+./_region_.tex:293: Preview: Snippet 188 started.
+<-><->
+      
+l.293 \paragraph
+                {Useful Step} A reduction step is useful if it is either a $...
+Not a real error.
+
+./_region_.tex:293: Preview: Snippet 188 ended.(498346+139537x4169740).
+<-><->
+      
+l.293 \paragraph{Useful Step}
+                              A reduction step is useful if it is either a $...
+Not a real error.
+
+[188
+
+]
+./_region_.tex:293: Preview: Snippet 189 started.
+<-><->
+      
+l.293 ...uction step is useful if it is either a $
+                                                  dB$-step or a $ls$-step \\...
+Not a real error.
+
+./_region_.tex:293: Preview: Snippet 189 ended.(498346+0x953835).
+<-><->
+      
+l.293 ...ion step is useful if it is either a $dB$
+                                                  -step or a $ls$-step \\ $S...
+Not a real error.
+
+[189]
+./_region_.tex:293: Preview: Snippet 190 started.
+<-><->
+      
+l.293 ...useful if it is either a $dB$-step or a $
+                                                  ls$-step \\ $S\langle x \r...
+Not a real error.
+
+./_region_.tex:293: Preview: Snippet 190 ended.(498346+0x564627).
+<-><->
+      
+l.293 ...ful if it is either a $dB$-step or a $ls$
+                                                  -step \\ $S\langle x \rang...
+Not a real error.
+
+[190]
+./_region_.tex:293: Preview: Snippet 191 started.
+<-><->
+      
+l.293 ...is either a $dB$-step or a $ls$-step \\ $
+                                                  S\langle x \rangle \righta...
+Not a real error.
+
+./_region_.tex:293: Preview: Snippet 191 ended.(538214+179404x4412080).
+<-><->
+      
+l.293 ...ngle \rightarrow_{ls} S\langle r \rangle$
+                                                   so that the unfolding $r ...
+Not a real error.
+
+[191]
+./_region_.tex:293: Preview: Snippet 192 started.
+<-><->
+      
+l.293 ...langle r \rangle$ so that the unfolding $
+                                                  r \downarrow_S$:
+Not a real error.
+
+./_region_.tex:293: Preview: Snippet 192 ended.(498346+139535x1302705).
+<-><->
+      
+l.293 ...e$ so that the unfolding $r \downarrow_S$
+                                                  :
+Not a real error.
+
+[192]
+./_region_.tex:295: Preview: Snippet 193 started.
+<-><->
+      
+l.295   \item Contains a $
+                          \beta$-redex,
+Not a real error.
+
+./_region_.tex:295: Preview: Snippet 193 ended.(498346+139537x443778).
+<-><->
+      
+l.295   \item Contains a $\beta$
+                                -redex,
+Not a real error.
+
+[193]
+./_region_.tex:296: Preview: Snippet 194 started.
+<-><->
+      
+l.296 ...context, that is, a context of the form $
+                                                  A ::= S\langle Lt \rangle$.
+Not a real error.
+
+./_region_.tex:296: Preview: Snippet 194 ended.(538214+179404x3680786).
+<-><->
+      
+l.296 ...t of the form $A ::= S\langle Lt \rangle$
+                                                  .
+Not a real error.
+
+[194]
+./_region_.tex:300: Preview: Snippet 195 started.
+<-><->
+      
+l.300   Substitution: If $
+                          C \prec_p t$ and $D \prec_p$ then $C[x \leftarrow ...
+Not a real error.
+
+./_region_.tex:300: Preview: Snippet 195 ended.(490372+209587x2093368).
+<-><->
+      
+l.300   Substitution: If $C \prec_p t$
+                                       and $D \prec_p$ then $C[x \leftarrow ...
+Not a real error.
+
+[195]
+./_region_.tex:300: Preview: Snippet 196 started.
+<-><->
+      
+l.300   Substitution: If $C \prec_p t$ and $
+                                            D \prec_p$ then $C[x \leftarrow ...
+Not a real error.
+
+./_region_.tex:300: Preview: Snippet 196 ended.(490372+209587x1684729).
+<-><->
+      
+l.300 ...itution: If $C \prec_p t$ and $D \prec_p$
+                                                   then $C[x \leftarrow u] \...
+Not a real error.
+
+[196]
+./_region_.tex:300: Preview: Snippet 197 started.
+<-><->
+      
+l.300 ...: If $C \prec_p t$ and $D \prec_p$ then $
+                                                  C[x \leftarrow u] \prec_L ...
+Not a real error.
+
+./_region_.tex:300: Preview: Snippet 197 ended.(538214+179404x7066880).
+<-><->
+      
+l.300 ... \leftarrow u] \prec_L t[x \leftarrow D]$
+                                                  .
+Not a real error.
+
+[197]
+./_region_.tex:304: Preview: Snippet 198 started.
+<-><->
+      
+l.304   A redex $
+                 R$ of a term $t$ is considered the leftmost outermost usefu...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 198 ended.(490372+0x550424).
+<-><->
+      
+l.304   A redex $R$
+                    of a term $t$ is considered the leftmost outermost usefu...
+Not a real error.
+
+[198]
+./_region_.tex:304: Preview: Snippet 199 started.
+<-><->
+      
+l.304   A redex $R$ of a term $
+                               t$ is considered the leftmost outermost usefu...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 199 ended.(441393+0x259141).
+<-><->
+      
+l.304   A redex $R$ of a term $t$
+                                  is considered the leftmost outermost usefu...
+Not a real error.
+
+[199]
+./_region_.tex:304: Preview: Snippet 200 started.
+<-><->
+      
+l.304 ... the leftmost outermost useful redex of $
+                                                  t$ if $R \prec_{LO} Q$ for...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 200 ended.(441393+0x259141).
+<-><->
+      
+l.304 ...he leftmost outermost useful redex of $t$
+                                                   if $R \prec_{LO} Q$ for e...
+Not a real error.
+
+[200]
+./_region_.tex:304: Preview: Snippet 201 started.
+<-><->
+      
+l.304 ...ftmost outermost useful redex of $t$ if $
+                                                  R \prec_{LO} Q$ for every ...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 201 ended.(490372+139537x2924319).
+<-><->
+      
+l.304 ...t useful redex of $t$ if $R \prec_{LO} Q$
+                                                   for every other useful re...
+Not a real error.
+
+[201]
+./_region_.tex:304: Preview: Snippet 202 started.
+<-><->
+      
+l.304 ...ec_{LO} Q$ for every other useful redex $
+                                                  Q$ of $t$. We write $t \ri...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 202 ended.(490372+139537x567317).
+<-><->
+      
+l.304 ..._{LO} Q$ for every other useful redex $Q$
+                                                   of $t$. We write $t \righ...
+Not a real error.
+
+[202]
+./_region_.tex:304: Preview: Snippet 203 started.
+<-><->
+      
+l.304 ... Q$ for every other useful redex $Q$ of $
+                                                  t$. We write $t \rightarro...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 203 ended.(441393+0x259141).
+<-><->
+      
+l.304 ...$ for every other useful redex $Q$ of $t$
+                                                  . We write $t \rightarrow_...
+Not a real error.
+
+[203]
+./_region_.tex:304: Preview: Snippet 204 started.
+<-><->
+      
+l.304 ...other useful redex $Q$ of $t$. We write $
+                                                  t \rightarrow_{LOU} u$ for...
+Not a real error.
+
+./_region_.tex:304: Preview: Snippet 204 ended.(441393+111084x3068702).
+<-><->
+      
+l.304 ... of $t$. We write $t \rightarrow_{LOU} u$
+                                                   for the step reducing the...
+Not a real error.
+
+[204]
+./_region_.tex:306: Preview: Snippet 205 started.
+<-><->
+      
+l.306 \section
+              {Generalizing Invariance}
+Not a real error.
+
+./_region_.tex:306: Preview: Snippet 205 ended.(655359+183500x28417720).
+<-><->
+      
+l.306 \section{Generalizing Invariance}
+                                       
+Not a real error.
+
+[205
+
+]
+
+LaTeX Warning: Citation 'beta-invariance' on page 6 undefined on input line 307.
+
+./_region_.tex:308: Preview: Snippet 206 started.
+<-><->
+      
+l.308 \subsection
+                 {High level implementation systems}
+Not a real error.
+
+./_region_.tex:308: Preview: Snippet 206 ended.(546132+152916x28417720).
+<-><->
+      
+l.308 ...ection{High level implementation systems}
+                                                  
+Not a real error.
+
+[206
+
+]
+./_region_.tex:310: Preview: Snippet 207 started.
+<-><->
+      
+l.310 \[
+        \rightsquigarrow \text{terminates iff} {\rightsquigarrow}_{X} \text{...
+Not a real error.
+
+./_region_.tex:310: Preview: Snippet 207 ended.(609430+0x19035659).
+<-><->
+      
+l.310 ...\rightsquigarrow}_{X} \text{terminates}\]
+                                                  
+Not a real error.
+
+[207]
+./_region_.tex:312: Preview: Snippet 208 started.
+<-><->
+      
+l.312 \[
+        t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\d...
+Not a real error.
+
+./_region_.tex:312: Preview: Snippet 208 ended.(839792+0x24108994).
+<-><->
+      
+l.312 ...n \in \mathbb{N} \text{ and } n \leq 0 \]
+                                                  
+Not a real error.
+
+[208]
+./_region_.tex:314: Preview: Snippet 209 started.
+<-><->
+      
+l.314 \section
+              {Size exploding family}
+Not a real error.
+
+./_region_.tex:314: Preview: Snippet 209 ended.(655359+183500x28417720).
+<-><->
+      
+l.314 \section{Size exploding family}
+                                     
+Not a real error.
+
+[209
+
+]
+./_region_.tex:316: Preview: Snippet 210 started.
+<-><->
+      
+l.316 Using the term $
+                      t_2$ as a first example, the first step is to split th...
+Not a real error.
+
+./_region_.tex:316: Preview: Snippet 210 ended.(441393+107642x570441).
+<-><->
+      
+l.316 Using the term $t_2$
+                           as a first example, the first step is to split th...
+Not a real error.
+
+[210]
+./_region_.tex:316: Preview: Snippet 211 started.
+<-><->
+      
+l.316 ... only one outermost context and it is a $
+                                                  dB$ redex, which is inhere...
+Not a real error.
+
+./_region_.tex:316: Preview: Snippet 211 ended.(498346+0x953835).
+<-><->
+      
+l.316 ...ly one outermost context and it is a $dB$
+                                                   redex, which is inherentl...
+Not a real error.
+
+[211]
+./_region_.tex:317: Preview: Snippet 212 started.
+<-><->
+      
+l.317 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:319: Preview: Snippet 212 ended.(766975+0x23106297).
+<-><->
+      
+l.319 \end{equation*}
+                     
+Not a real error.
+
+[212]
+./_region_.tex:320: Preview: Snippet 213 started.
+<-><->
+      
+l.320 Note the $
+                \alpha$-conversion to avoid unwanted variable capture.
+Not a real error.
+
+./_region_.tex:320: Preview: Snippet 213 ended.(308974+0x461718).
+<-><->
+      
+l.320 Note the $\alpha$
+                       -conversion to avoid unwanted variable capture.
+Not a real error.
+
+[213]
+./_region_.tex:321: Preview: Snippet 214 started.
+<-><->
+      
+l.321 We can then perform another $
+                                   dB$ step, arriving to the term
+Not a real error.
+
+./_region_.tex:321: Preview: Snippet 214 ended.(498346+0x953835).
+<-><->
+      
+l.321 We can then perform another $dB$
+                                       step, arriving to the term
+Not a real error.
+
+[214]
+./_region_.tex:322: Preview: Snippet 215 started.
+<-><->
+      
+l.322 \begin{equation*}
+                       
+Not a real error.
+
+./_region_.tex:324: Preview: Snippet 215 ended.(766975+0x18820593).
+<-><->
+      
+l.324 \end{equation*}
+                     
+Not a real error.
+
+[215]
+
+LaTeX Warning: Citation 'beta-invariance' on page 6 undefined on input line 325.
+
+./_region_.tex:325: Preview: Snippet 216 started.
+<-><->
+      
+l.325 ...n~\cite{beta-invariance} to find useful $
+                                                  ls$ steps is necessary, al...
+Not a real error.
+
+./_region_.tex:325: Preview: Snippet 216 ended.(498346+0x564627).
+<-><->
+      
+l.325 ...cite{beta-invariance} to find useful $ls$
+                                                   steps is necessary, altho...
+Not a real error.
+
+[216]
+./_region_.tex:325: Preview: Snippet 217 started.
+<-><->
+      
+l.325 ...by hand. There is obviously no possible $
+                                                  \beta$-redex of the unfold...
+Not a real error.
+
+./_region_.tex:325: Preview: Snippet 217 ended.(498346+139537x443778).
+<-><->
+      
+l.325 ...d. There is obviously no possible $\beta$
+                                                  -redex of the unfolding of...
+Not a real error.
+
+[217]
+./_region_.tex:325: Preview: Snippet 218 started.
+<-><->
+      
+l.325 ... we can safely say that this term is it $
+                                                  dB$-normal form and $ls$-n...
+Not a real error.
+
+./_region_.tex:325: Preview: Snippet 218 ended.(498346+0x953835).
+<-><->
+      
+l.325 ... can safely say that this term is it $dB$
+                                                  -normal form and $ls$-norm...
+Not a real error.
+
+[218]
+./_region_.tex:325: Preview: Snippet 219 started.
+<-><->
+      
+l.325 ...at this term is it $dB$-normal form and $
+                                                  ls$-normal form.
+Not a real error.
+
+./_region_.tex:325: Preview: Snippet 219 ended.(498346+0x564627).
+<-><->
+      
+l.325 ...this term is it $dB$-normal form and $ls$
+                                                  -normal form.
+Not a real error.
+
+[219]
+
+
+LaTeX Warning: Citation 'invariance-of-cost-model' on page 7 undefined on input line 327.
+
+./_region_.tex:329: Preview: Snippet 220 started.
+<-><->
+      
+l.329 \section
+              {Conclusion}
+Not a real error.
+
+./_region_.tex:329: Preview: Snippet 220 ended.(655359+0x28417720).
+<-><->
+      
+l.329 \section{Conclusion}
+                          
+Not a real error.
+
+[220
+
+]
+./_region_.tex:330: Preview: Snippet 221 started.
+<-><->
+      
+l.330 ...of computational invariance between the $
+                                                  \lambda$-calculus and Turi...
+Not a real error.
+
+./_region_.tex:330: Preview: Snippet 221 ended.(498346+0x418612).
+<-><->
+      
+l.330 ...tational invariance between the $\lambda$
+                                                  -calculus and Turing Machi...
+Not a real error.
+
+[221]
+./_region_.tex:330: Preview: Snippet 222 started.
+<-><->
+      
+l.330 ...ial classes such as P, NP and PSPACE in $
+                                                  \lambda$-calculus, and inv...
+Not a real error.
+
+./_region_.tex:330: Preview: Snippet 222 ended.(498346+0x418612).
+<-><->
+      
+l.330 ...ses such as P, NP and PSPACE in $\lambda$
+                                                  -calculus, and investigati...
+Not a real error.
+
+[222]
+
+LaTeX Warning: Empty bibliography on input line 331.
+
+
+
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                _region_
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '_region_.run.xml'.
+\openout1 = `_region_.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22612 strings out of 475171
+ 443555 string characters out of 5767095
+ 1037112 words of memory out of 5000000
+ 45281 multiletter control sequences out of 15000+600000
+ 571703 words of font info for 86 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 85i,27n,91p,1405b,1262s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on _region_.pdf (222 pages, 212075 bytes).
+PDF statistics:
+ 804 PDF objects out of 1000 (max. 8388607)
+ 545 compressed objects within 6 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+

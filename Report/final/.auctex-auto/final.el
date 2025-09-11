@@ -1,20 +1,21 @@
 ;; -*- lexical-binding: t; -*-
 
 (TeX-add-style-hook
- "main"
+ "final"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("article" "12pt")))
+                     '(("article" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("amsmath" "") ("amsthm" "") ("amssymb" "") ("inputenc" "utf8") ("csquotes" "") ("tikz" "") ("biblatex" "backend=biber") ("geometry" "a4paper" "total={6in, 9in}")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+                     '(("graphicx" "") ("amsmath" "") ("amsthm" "") ("amssymb" "") ("inputenc" "utf8") ("csquotes" "") ("tikz" "") ("biblatex" "backend=biber") ("geometry" "a4paper" "total={6in, 9in}")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "article"
-    "art12"
+    "art11"
+    "graphicx"
     "amsmath"
     "amsthm"
     "amssymb"
@@ -24,7 +25,6 @@
     "biblatex"
     "geometry")
    (LaTeX-add-labels
-    "theoretical-background"
     "intro-lambda"
     "reduction"
     "lemma1"
