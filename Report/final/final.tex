@@ -116,7 +116,8 @@ The idea of $\lambda$-calculus, or its current use, is based on the idea of comp
 
 The $\lambda$-calculus uses the intensional view of functions to treat them as expressions, and analyze their behaviour and, more importantly, their computability. \\
 In order to talk about the invariance of $\lambda$-calculus it is first necesary to define some notation that will be used in this paper.
-\subsection{Basic Syntax and Operations}
+\subsection{$\lambda$-Terms}
+--add view of terms as trees --
 \paragraph{Terms} Assuming a countably infinite set $\mathcal{VAR} = \{ x, y, z, \cdots \}$ of variables, let $M, N, P....$ denote arbitrary $\lambda$-terms. The set of $\lambda$-terms $\Lambda$ is inductively defined as:
 \begin{equation*}
   \begin{split}
@@ -125,9 +126,29 @@ In order to talk about the invariance of $\lambda$-calculus it is first necesary
   & \text{Application: } M, N \in \Lambda \implies (M N) \in \Lambda \\
   \end{split}
 \end{equation*}
+A context is a $\lambda$-term with one (or more) holes in it. In this paper we will only utilize the single-hole contexts.
 \begin{equation*}
 C ::= \langle \cdot \rangle \ | \ \lambda x.C \ | \ Ct \ | \ tC
 \end{equation*}
+The plugging of a term in a context is represented as $C\langle t \rangle$.
+We also introduce a relation $\prec_p$, called the \textbf{prefix} relation, between contexts and terms. It is defined as follows
+\begin{equation*}
+  u,t \in \Lambda ; C \langle u \rangle = t \implies C \prec_t u
+\end{equation*}
+\subsubsection{Conversion}
+This section will be introduced non-mathematically, since an intuitive understanding of $\alpha$-conversion suffices to understand the main points of the proof. However, to understand the more finer points, the reader should again refer to~\cite{barendregt1984lambda}.
+When referring to conversion in the $\lambda$-calculus, it is usually in the context of renaming bound variables. As these variables are already \enquote{locked} in regards to an abstraction, any renaming of these with the abstraction to another variable name is an idempotent operation, and can be done at any time.
+The need for this comes from the unintentional possible binding of a variable during a substitution step. Revisiting the previous example:
+\begin{equation}
+  \begin{split}
+    & \text{Let } F = \lambda xy.yxz \text{, then } \forall M, N: \\
+    & FMN = NMz
+  \end{split}
+\end{equation}
+This would follow from the inductive definition of substitution, however, when taking $M = y$ and $N = x$, substituting these terms into the expression leads to the equality $xyz = xxz$, an obvious contradiction.
+This comes due to the fact that the substitution of $N$ in $M$ should not capture any free variables in $N$.
+
+
 \paragraph{Substitution} This topic will be expanded on Section~\ref{reduction}, but a basic understanding is provided here.
 The result of substituting $N$ for the free ocurrences of $x$ in $M$ (notation $M \{ x:= N \} $) is inductively defined as:
 \begin{equation*}
@@ -158,23 +179,9 @@ An example, using the previous term:
 \begin{equation*}
   ( \lambda xy. yxz ) M N \xrightarrow{1}_{\beta}  (\lambda y . y M z ) N \xrightarrow{1}_{\beta} N M z
 \end{equation*}
-\subsubsection{Conversion}
-This section will be introduced non-mathematically, since an intuitive understanding of $\alpha$-conversion suffices to understand the main points of the proof. However, to understand the more finer points, the reader should again refer to~\cite{barendregt1984lambda}.
-When referring to conversion in the $\lambda$-calculus, it is usually in the context of renaming bound variables. As these variables are already \enquote{locked} in regards to an abstraction, any renaming of these with the abstraction to another variable name is an idempotent operation, and can be done at any time.
-The need for this comes from the unintentional possible binding of a variable during a substitution step. Revisiting the previous example:
-\begin{equation}
-  \begin{split}
-    & \text{Let } F = \lambda xy.yxz \text{, then } \forall M, N: \\
-    & FMN = NMz
-  \end{split}
-\end{equation}
-This would follow from the inductive definition of substitution, however, when taking $M = y$ and $N = x$, substituting these terms into the expression leads to the equality $xyz = xxz$, an obvious contradiction.
-This comes due to the fact that the substitution of $N$ in $M$ should not capture any free variables in $N$.
-
-\subsection{Reduction Strategies}
+\section{Leftmost Outermost}
 When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms $M \in \Lambda : M \xrightarrow{*} F(M)$. That is, there exists one and only one term to which $M$ reduces in this map. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $M \xrightarrow{n} F^n(M)$. \\
-\subsubsection{Leftmost Outermost}
-The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. This is a normalizing strategy where if $M$ is not in normal form, the leftmost-outermost redex is reduced until it is. Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. As ppreviously stated, TRS have a notion of ordering that is based on strings, but for a better understanding of it, it could also be seen as a tree. The ordering introduced by Accatoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
+The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. This is a normalizing strategy where if $M$ is not in normal form, and there exitsts such a normal form , the leftmost-outermost redex is reduced until it is. Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. As previously stated, TRS have a notion of ordering that is based on strings, but for a better understanding of it, it could also be seen as a tree. The ordering introduced by Accattoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
 \begin{enumerate}
   \item Outside-in order:
         \begin{enumerate}
@@ -191,11 +198,14 @@ Both of these orderings are partial orders in relation to terms. A total order i
 \begin{center}
   If $C \prec_{O} D$ and $C \prec_{L} D$ then $C \prec_{LO} D$.
 \end{center}
-This means that every term $t \in \Lambda$ has at most one leftmost-outermost redex, and therefore every reduction sequence using this ordering is unique and deterministic. The Leftmost Outermost strategy therefore reduces the leftmost outermost redex always, and it is a strongly normalizing strategy. An example:
+This means that every term $t \in \Lambda$ has at most one leftmost-outermost redex, and therefore every reduction sequence using this strategy is deterministic. The Leftmost Outermost strategy therefore reduces the leftmost outermost redex always, and it is a strongly normalizing strategy. An example:
 \begin{equation*}
   (\lambda x . (\lambda y . y x) z) (y y (\lambda x . x) y) \xrightarrow[LO]{1} (\lambda y . y (y y (\lambda x . x) y )) z
 \end{equation*}
--- expand on contexts --
+Let us introduce a more conceptual view of what these orderings represent: Imagine an infinite term $t_\infty$. Imagine that this term contains every possible $\lambda$-term as a subterm. Viewing the term as a tree, at the root of the term, there will always be a single-hole context, $\langle \cdot \rangle$, in which the term could be plugged: $\langle t_\infty \rangle = t_\infty$. If we go a level deeper, we will encounter an application of 2 contexts, lets call them $C_1$ and $C_2$ (2 because the application of contexts is a binary relationship that can be extended to multiple terms by association). These two contexts will in turn have two contexts inside and so on and so forth. Since the term $t_\infty$ has every subterm in it, we will have infinite contexts containing contexts before reaching an abstraction, in order to consider every infinite sized term, but we know that at the end of this nesting of contexts, we will most certainly encounter every possible variable, since there can be no applications or abstractions without variables. Thus, every variable $x \in \Lambda$ and every context surrounding a variable $C_x$, are at the end of the outside-in order with respect to \textbf{every other context}. In other words: $D \prec_O C_x , \forall D \in \mathcal{C}$ where $\mathcal{C}$ represents the set of all contexts. \\
+Now, it is clear that for every context that is not surrounding a variable, except for the empty context $\langle \cdot \rangle$, there exists a context both above and below, so: $\forall C \in \mathcal{C}, \exists D_1, D_2 \ s.t \ D_1 \prec_O C \prec_O D_2$. \\ This context however, has no relation to contexts that either do not contain it, or are not contained in it. In order to relate contexts with no ordering based on $\prec_O$, we can use the (relative) position of contexts inside a common ancestor. Lets say at one point of $t_\infty$ there is a context $C_0$ with 2 contexts inside of it, $C_1,C_2$. Lets also say that the application of these 2 contexts is in the form $C_0 = C_1C_2$. We can then say that $C_1 \prec_L C_2$, or that $C_1$ is \enquote*{to the left} of $C_2$. Since every context except contexts surrounding variables is composed of exactly 2 contexts, this creates a relation between contexts which are not contained in one another.
+\\
+Intuitively, it is easy to see how we have just defined the only two possible orderings on a binary tree, and so with both these orderings, there is no 2 terms that are on the same ouside-in position and left-to-right position.
 \subsection{Size-exploding family}
 As mentioned in the introduction, there is a family of terms in $\lambda$ that, in a linear number of steps, reduces to a term of exponential size. While the invariance result of Accatoli and Dal Lago does not concern itself with space invariance, it is important to note that due to the design of Turing Machines, they have a conceptually different relation between space and time complexity as $\lambda$ does. While the former has the space complexity be bound by the time complexity, that is, the number of used cells on the tape must be equal or less to the amount of times the head moves, the latter has the opposite. In $\lambda$-calculus, time complexity, or the amount of $\beta$-reduction steps, is bound by the size of the inital and final size. That means that to provide an accurate invariance result, we not only need to fix the inconsistencies with the number of reduction steps in $\lambda$, but we must also take care to show the normal form of a term in a way that is at least polynomially related to the size of the initial term, and the number of steps taken, closing the gap between the two ideas.
 \\ \\
@@ -206,7 +216,7 @@ Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}
 \end{center}
 
 \begin{lemma}\label{lemma1}
-  Given a tern of the form $(\lambda x .t_n)a$ for some $a \in \Lambda$:
+  Given a term of the form $(\lambda x .t_n)a$ for some $a \in \Lambda$:
   \begin{equation}
     (\lambda x .t_n)a \xrightarrow[LO \beta]{1} (\lambda x.t_{n-1})yaa
   \end{equation}
@@ -219,7 +229,7 @@ Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}
 \begin{lemma}
   Given a term of the form $t_{n+1} = (\lambda x. t_n)u$:
   \begin{enumerate}
-    \item Its $\beta$-normal form will be $r_n = yr_{n}r_{n}$
+    \item Its $\beta$-normal form will be $r_{n+1} = yr_{n}r_{n}$
     \item It will reach $\beta$-normal form in exactly $n+1$ steps.
   \end{enumerate}
 \end{lemma}
@@ -234,7 +244,7 @@ Consider the example provided by Accatoli and Dal Lago in~\cite{beta-invariance}
             \end{split}
           \end{equation}
           By Lemma 2.1, any term of the form $(\lambda x. t_n)a$ reduces in one step to $(\lambda  x .t_{n-1})yaa$,and so any term $(\lambda x.t_n)u$ will evaluate to $(\lambda x .t_{n-1})r_1$, therefore, it is clear that the normal form of $t_{n+1}$ is $r_{n+1} = y(r_n r_n)$
-    \item By contradiction:
+    \item By induction:
           Assume that the number of steps from $t_n$ to $r_n$,$k$ for $\rho  : t_n \xrightarrow[LO\beta]{k} r_n$, is $n-1$. Then, after $n-1$ LO $\beta$ steps, we reach $r_n$, but by Lemma 2.2.1, and Lemma 2.1 we can see that the form of $t_n$ after $n-1$ steps will be $(\lambda x . u)r_{n-1} \neq r_n$
           Now assume that $k = n+1$. Then after $n$ steps there should be another LO $\beta$ step, from $r_n$, but by definition of the normal form, this is impossible.
 
@@ -249,13 +259,13 @@ It follows from Lemma 2.1 and 2.2.
 
 As an example for the rest of the paper, we will use the term $t_{2}$ from this family. In order to define the ordering of this term, it must be first converted to a context based syntax:
 \[ C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle \]
-An ordering on this term in $LO$ would then be: -- fix this --
+An ordering on this term in $LO$ would then be:
 \begin{equation}
  C_{0} \prec_{LO} C_{1} \prec_{LO} C_{2} \prec_{LO} C_{3} \prec_{LO} C_{4} \prec_{LO} C_{5}
 \end{equation}
 by means of the contextual closure of $LO$.
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
-\subsection{LSC}
+\subsection{Linear Substitution Calculus}
 In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in~\ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced $t_{3} \equiv \lambda x.((\lambda x. (yxx))(yxx)(yxx))(yxx)$. As explained before, this term, under regular $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
 The linear substitution calculus is based in \textbf{explicit substitutions}, as oposed to the regular implicit substitutions that $beta$-reduction produces. The grammar is defined as follows:
 \begin{equation}
@@ -288,20 +298,26 @@ and the contextual unfolding $t\downarrow_S$ as:
   \end{split}
 \end{equation}
 
-We introduce here the operational semantics of the LSC.There are two elementary reductions, coupled with $\alpha$-conversion, required to provide the explicit subsitutions up to an equivalnece with the untyped $\lambda$-calculus.
+We introduce here the operational semantics of the LSC. There are two elementary reductions, required to provide the explicit subsitutions up to an equivalence with the untyped $\lambda$-calculus.
 \begin{equation}
   \begin{split}
     &L \langle \lambda x .t \rangle u \rightarrow_{dB} L \langle t [x \leftarrow u] \rangle \\
     &S \langle x \rangle [x \leftarrow u] \rightarrow_{ls} S \langle u \rangle [x \leftarrow u]
   \end{split}
 \end{equation}
-Based on this,~\cite{beta-invariance} introduces a new reduction strategy, called \textbf{Leftmost-Outermost Useful} or \textbf{LOU} which we will use to show that the size explosion family does indeed not grow exponentially in the LSC under this strategy. It is important to note that while the Size-exploding family does not grow exponentially under the Linear Head Reduction of the LSC~\cite{invariance-of-cost-model}, it would never reach normal form if we included an application before the initial term, and so, an example of the use of LOU on it will show that even when completely reducting the term, the lenght increase will be polynomially related to the size of the initial term.
+It is important to note that we work modulo $\alpha$-conversion on the $dB$ steps, and that the linear substitution step is assumed not to capture variables.
+Based on this,~\cite{beta-invariance} introduces a new reduction strategy, called \textbf{Leftmost-Outermost Useful} or \textbf{LOU} which we will use to show that the size explosion family does indeed not grow exponentially in the LSC under this strategy. It is important to note that while the Size-exploding family does not grow exponentially under the Linear Head Reduction of the LSC~\cite{invariance-of-cost-model}, it would never reach normal form if we included an application before the initial term, and so, an example of the use of LOU on it will show that even when completely reducting the term, the length increase will be polynomially related to the size of the initial term.
+
+
+
+
 \subsection{Leftmost-Outermost Useful}\label{lou}
 The definition of \textit{usefulness} in ~\cite{beta-invariance} of a substitution step is defined in base to wether a redex is \textit{useful} in its unfolding of the surrounding (shallow) context.
-\paragraph{Useful Step} A reduction step is useful if it is either a $dB$-step or a $ls$-step \\ $S\langle x \rangle \rightarrow_{ls} S\langle r \rangle$ so that the unfolding $r \downarrow_S$:
+\paragraph{Useful Step} A reduction step is useful if it is either a $dB$-step, or a $ls$-step \\ $S\langle x \rangle \rightarrow_{ls} S\langle r \rangle$ such that the contextual unfolding $r \downarrow_S$:
 \begin{enumerate}
   \item Contains a $\beta$-redex,
   \item Or is an abstraction and S is an applicative context, that is, a context of the form $A ::= S\langle Lt \rangle$.
+        EXAMPLES
 \end{enumerate}
 We now extend our definition of the complete LO order on redexes to the LSC by introducing a new rule:
 \begin{center}
@@ -311,14 +327,6 @@ Therefore, we can define the \textbf{Leftmost Outermost Useful redex}:
 \begin{center}
   A redex $R$ of a term $t$ is considered the leftmost outermost useful redex of $t$ if $R \prec_{LO} Q$ for every other useful redex $Q$ of $t$. We write $t \rightarrow_{LOU} u$ for the step reducing the leftmost outermost useful redex of t.
 \end{center}
-\section{Generalizing Invariance}
-As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance, but that does not mean that it is the only one. Accatoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
-\subsection{High level implementation systems}
-The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want spcifically termintation and polynomial overhead.
-\[\rightsquigarrow \text{normalizes iff } {\rightsquigarrow}_{X} \text{normalizes}\]
-Furthermore,
-\[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^2) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
-We will demonstrate that the LOU reduction strategy follows this generalization with the previous example of the size-exploding family.
 \section{Size exploding family}
 In these examples we will forego the definition of the usual LO order on contexts and will focus solely on usefulness for the sake of convenience.
 Using the term $t_2$ as a first example, the first step is to split the term into (shallow) contexts, and order them according to the LO total order. In this term there is only one outermost context and it is a $dB$ redex, which is inherently useful. Therefore, the first step will be:
@@ -334,6 +342,14 @@ At this point, the polynomial algorithm introduced in~\cite{beta-invariance} to 
 
 It is important to note that due to this example only requiring head substitution, the Linear Head Reduction introduced in~\cite{invariance-of-cost-model} suffices, but the LOU strategy is necessary for reaching normal form in every case.
 
+\section{Generalizing Invariance}
+As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance, but that does not mean that it is the only one. Accatoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
+\subsection{High level implementation systems}
+The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want specifically termintation and polynomial overhead.
+\[\rightsquigarrow \text{normalizes iff } {\rightsquigarrow}_{X} \text{normalizes}\]
+Furthermore,
+\[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^2) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
+While there exists a proof for both of these statements in~\cite{beta-invariance}
 \section{Conclusion}
 The LSC and the LOU strategy in it provide a basis for future improvements in the study of computational invariance between the $\lambda$-calculus and Turing Machines. This could lead to represent polynomial classes such as P, NP and PSPACE in $\lambda$-calculus, and investigating their properties from a different viewpoint.
 \printbibliography{}

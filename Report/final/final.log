@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.30)  11 SEP 2025 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.30)  7 OCT 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,26 +832,74 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./vu-griffioen.pdf>]
 
+LaTeX Warning: Citation 'machine-models' on page 2 undefined on input line 72.
+
+
+LaTeX Warning: Citation 'on-computable-numbers' on page 2 undefined on input li
+ne 80.
+
+
+LaTeX Warning: Citation 'computation-theory' on page 2 undefined on input line 
+80.
+
+
+LaTeX Warning: Citation 'rosser-kleene-inconsistency' on page 2 undefined on in
+put line 85.
+
+
+
 [2]
+
+LaTeX Warning: Citation 'machine-models' on page 3 undefined on input line 91.
+
+
 
 [3]
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+LaTeX Warning: Citation 'selinger' on page 4 undefined on input line 115.
 
- []
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 4 undefined on input lin
+e 139.
+
+
+
+[4]
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 5 undefined on input lin
+e 169.
+
+
+LaTeX Warning: Citation 'beta-invariance' on page 5 undefined on input line 184
+.
+
+
+LaTeX Warning: Citation 'beta-invariance' on page 5 undefined on input line 184
+.
 
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+
+[6]
+
+LaTeX Warning: Citation 'beta-invariance' on page 7 undefined on input line 212
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
 
 
 
-[6]
-Overfull \hbox (64.85907pt too wide) in paragraph at lines 259--261
+[7]
+
+LaTeX Warning: Citation 'barendregt1984lambda' on page 8 undefined on input lin
+e 267.
+
+
+Overfull \hbox (64.85907pt too wide) in paragraph at lines 269--271
 \OT1/cmr/m/n/10.95 am-ple, but for brevity, this pa-per will use the pre-vi-ous
 ly in-tro-duced $\OML/cmm/m/it/10.95 t[] \OMS/cmsy/m/n/10.95 ^^Q \OML/cmm/m/it/
 10.95 ^^Ux:\OT1/cmr/m/n/10.95 ((\OML/cmm/m/it/10.95 ^^Ux:\OT1/cmr/m/n/10.95 (\O
@@ -862,17 +910,49 @@ ML/cmm/m/it/10.95 yxx\OT1/cmr/m/n/10.95 ))(\OML/cmm/m/it/10.95 yxx\OT1/cmr/m/n/
 
 
 
-[7]
-
 [8]
+
+LaTeX Warning: Citation 'beta-invariance' on page 9 undefined on input line 309
+.
+
+
+LaTeX Warning: Citation 'invariance-of-cost-model' on page 9 undefined on input
+ line 309.
+
+
+Overfull \hbox (29.6193pt too wide) in paragraph at lines 307--310
+\OT1/cmr/m/n/10.95 not grow ex-po-nen-tially un-der the Lin-ear Head Re-duc-tio
+n of the LSC [[]],
+ []
+
+
+LaTeX Warning: Citation 'beta-invariance' on page 9 undefined on input line 315
+.
+
+
 
 [9]
 
+LaTeX Warning: Citation 'beta-invariance' on page 10 undefined on input line 34
+1.
+
+
+LaTeX Warning: Citation 'invariance-of-cost-model' on page 10 undefined on inpu
+t line 343.
+
+
+LaTeX Warning: Citation 'beta-invariance' on page 10 undefined on input line 34
+6.
+
+
+
 [10]
-Overfull \hbox (2.99228pt too wide) in paragraph at lines 339--339
-[]\OT1/cmr/m/n/10.95 Alan Tur-ing. \  On Com-putable Num-bers, with an Ap-pli-c
-a-tion to the Entschei-dungsprob-
- []
+
+LaTeX Warning: Citation 'beta-invariance' on page 11 undefined on input line 35
+2.
+
+
+LaTeX Warning: Empty bibliography on input line 355.
 
 
 
@@ -881,36 +961,43 @@ a-tion to the Entschei-dungsprob-
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                final
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'final.run.xml'.
 \openout1 = `final.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22493 strings out of 475171
- 442418 string characters out of 5767095
- 1254260 words of memory out of 5000000
- 45168 multiletter control sequences out of 15000+600000
- 572172 words of font info for 88 fonts, out of 8000000 for 9000
+ 22432 strings out of 475171
+ 440397 string characters out of 5767095
+ 1251988 words of memory out of 5000000
+ 45109 multiletter control sequences out of 15000+600000
+ 571703 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,25n,91p,1148b,1272s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,25n,91p,1385b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb>
-Output written on final.pdf (11 pages, 251739 bytes).
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on final.pdf (11 pages, 228985 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
