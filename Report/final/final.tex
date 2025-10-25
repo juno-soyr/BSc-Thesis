@@ -7,7 +7,7 @@
       \oddsidemargin 0.85cm
       \evensidemargin 0.37cm
 
-\usepackage{amsmath}
+		\usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
@@ -82,7 +82,7 @@ In 1936, Alan Turing proposed a model now referred to as a \textit{Turing Machin
 While the details of its logical implementation are not important in this paper, we will note that the reason they are very useful when analyzing the complexity of algorithms is due to the fact that they posess a very clear and stable cost model. For every step in an algorithm implemented in a Turing Machine, there is a constant cost in both terms of space, the use of a single cell of the tape, and time, a single movement of the head that reads and writes symbols on the tape.
 
 \paragraph{Lambda calculus}
-The lambda calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church, although this initial calculus was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in Section~\ref{intro-lambda}.
+The $\lambda$-calculus was conceived as a foundational system for mathematics and logic in the 1930s by Alonzo Church, although this initial calculus was proved inconsistent by Kleene and Rosser in~\cite{rosser-kleene-inconsistency}. This led to Church publishing in 1936 a simplified version of this system with a focus on computability, now called the \textit{untyped lambda calculus}. A more formal introduction to this system will be provided in Section~\ref{intro-lambda}.
 
 There is an encoding from the natural numbers to both $\lambda$-terms and Turing Machines. Therefore, as every function $f : \mathbb{N}^k \rightarrow \mathbb{N}$ can be represented in both models, they are computationally equivalent. This came to be known as the Church-Turing thesis.
 \subsection{Invariance}
