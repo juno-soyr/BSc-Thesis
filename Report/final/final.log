@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  25 OCT 2025 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  14 NOV 2025 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -149,205 +149,7 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/frontendlayer/tikz.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/basiclayer/pgf.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgfrcs.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen153
-\pgfutil@tempdimb=\dimen154
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box54
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfrcs.code.tex (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/basiclayer/pgfcore.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/systemlayer/pgfsys.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
-))
-\pgf@x=\dimen155
-\pgf@y=\dimen156
-\pgf@xa=\dimen157
-\pgf@ya=\dimen158
-\pgf@xb=\dimen159
-\pgf@yb=\dimen160
-\pgf@xc=\dimen161
-\pgf@yc=\dimen162
-\pgf@xd=\dimen163
-\pgf@yd=\dimen164
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count289
-\c@pgf@countb=\count290
-\c@pgf@countc=\count291
-\c@pgf@countd=\count292
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count293
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
-)
-Driver file for pgf: pgfsys-pdftex.def
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count294
-\pgfsyssoftpath@bigbuffer@items=\count295
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathutil.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen165
-\pgfmath@count=\count296
-\pgfmath@box=\box55
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count297
-)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfint.code.tex) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen166
-\pgf@picmaxx=\dimen167
-\pgf@picminy=\dimen168
-\pgf@picmaxy=\dimen169
-\pgf@pathminx=\dimen170
-\pgf@pathmaxx=\dimen171
-\pgf@pathminy=\dimen172
-\pgf@pathmaxy=\dimen173
-\pgf@xx=\dimen174
-\pgf@xy=\dimen175
-\pgf@yx=\dimen176
-\pgf@yy=\dimen177
-\pgf@zx=\dimen178
-\pgf@zy=\dimen179
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen180
-\pgf@path@lasty=\dimen181
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen182
-\pgf@shorten@start@additional=\dimen183
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count298
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen184
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen185
-\pgf@pt@y=\dimen186
-\pgf@pt@temp=\dimen187
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen188
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count299
-\pgf@shadingcount=\count300
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box59
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box60
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen190
-\pgf@nodesepend=\dimen191
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgffor.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgfkeys.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/math/pgfmath.sty
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen192
-\pgffor@skip=\dimen193
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
-)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count301
-\pgfplotmarksize=\dimen194
-)
-\tikz@lastx=\dimen195
-\tikz@lasty=\dimen196
-\tikz@lastxsaved=\dimen197
-\tikz@lastysaved=\dimen198
-\tikz@lastmovetox=\dimen199
-\tikz@lastmovetoy=\dimen256
-\tikzleveldistance=\dimen257
-\tikzsiblingdistance=\dimen258
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count302
-\tikznumberofchildren=\count303
-\tikznumberofcurrentchild=\count304
-\tikz@fig@count=\count305
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count306
-\pgfmatrixcurrentcolumn=\count307
-\pgf@matrix@numberofcolumns=\count308
-)
-\tikz@expandcount=\count309
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/biblatex.sty
+)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
@@ -355,7 +157,8 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/ltxcmds/ltxcmds.sty
+)
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -367,59 +170,58 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count310
+\lrq@indent=\count289
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/ifthen.sty
+)) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count311
-\c@listtotal=\count312
-\c@listcount=\count313
-\c@liststart=\count314
-\c@liststop=\count315
-\c@citecount=\count316
-\c@citetotal=\count317
-\c@multicitecount=\count318
-\c@multicitetotal=\count319
-\c@instcount=\count320
-\c@maxnames=\count321
-\c@minnames=\count322
-\c@maxitems=\count323
-\c@minitems=\count324
-\c@citecounter=\count325
-\c@maxcitecounter=\count326
-\c@savedcitecounter=\count327
-\c@uniquelist=\count328
-\c@uniquename=\count329
-\c@refsection=\count330
-\c@refsegment=\count331
-\c@maxextratitle=\count332
-\c@maxextratitleyear=\count333
-\c@maxextraname=\count334
-\c@maxextradate=\count335
-\c@maxextraalpha=\count336
-\c@abbrvpenalty=\count337
-\c@highnamepenalty=\count338
-\c@lownamepenalty=\count339
-\c@maxparens=\count340
-\c@parenlevel=\count341
-\blx@tempcnta=\count342
-\blx@tempcntb=\count343
-\blx@tempcntc=\count344
-\c@blx@maxsection=\count345
-\blx@maxsegment@0=\count346
-\blx@notetype=\count347
-\blx@parenlevel@text=\count348
-\blx@parenlevel@foot=\count349
-\blx@sectionciteorder@0=\count350
-\blx@sectionciteorderinternal@0=\count351
-\blx@entrysetcounter=\count352
-\blx@biblioinstance=\count353
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\c@blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\blx@sectionciteorderinternal@0=\count330
+\blx@entrysetcounter=\count331
+\blx@biblioinstance=\count332
 \labelnumberwidth=\skip57
 \labelalphawidth=\skip58
 \biblabelsep=\skip59
@@ -428,12 +230,12 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibinitsep=\skip62
 \bibparsep=\skip63
 \bibhang=\skip64
-\blx@bcfin=\read3
-\blx@bcfout=\write4
+\blx@bcfin=\read2
+\blx@bcfout=\write3
 \blx@langwohyphens=\language90
-\c@mincomprange=\count354
-\c@maxcomprange=\count355
-\c@mincompwidth=\count356
+\c@mincomprange=\count333
+\c@maxcomprange=\count334
+\c@mincompwidth=\count335
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/blx-dm.def
@@ -441,74 +243,74 @@ File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count357
-\c@savedafterword=\count358
-\c@annotator=\count359
-\c@savedannotator=\count360
-\c@author=\count361
-\c@savedauthor=\count362
-\c@bookauthor=\count363
-\c@savedbookauthor=\count364
-\c@commentator=\count365
-\c@savedcommentator=\count366
-\c@editor=\count367
-\c@savededitor=\count368
-\c@editora=\count369
-\c@savededitora=\count370
-\c@editorb=\count371
-\c@savededitorb=\count372
-\c@editorc=\count373
-\c@savededitorc=\count374
-\c@foreword=\count375
-\c@savedforeword=\count376
-\c@holder=\count377
-\c@savedholder=\count378
-\c@introduction=\count379
-\c@savedintroduction=\count380
-\c@namea=\count381
-\c@savednamea=\count382
-\c@nameb=\count383
-\c@savednameb=\count384
-\c@namec=\count385
-\c@savednamec=\count386
-\c@translator=\count387
-\c@savedtranslator=\count388
-\c@shortauthor=\count389
-\c@savedshortauthor=\count390
-\c@shorteditor=\count391
-\c@savedshorteditor=\count392
-\c@labelname=\count393
-\c@savedlabelname=\count394
-\c@institution=\count395
-\c@savedinstitution=\count396
-\c@lista=\count397
-\c@savedlista=\count398
-\c@listb=\count399
-\c@savedlistb=\count400
-\c@listc=\count401
-\c@savedlistc=\count402
-\c@listd=\count403
-\c@savedlistd=\count404
-\c@liste=\count405
-\c@savedliste=\count406
-\c@listf=\count407
-\c@savedlistf=\count408
-\c@location=\count409
-\c@savedlocation=\count410
-\c@organization=\count411
-\c@savedorganization=\count412
-\c@origlocation=\count413
-\c@savedoriglocation=\count414
-\c@origpublisher=\count415
-\c@savedorigpublisher=\count416
-\c@publisher=\count417
-\c@savedpublisher=\count418
-\c@language=\count419
-\c@savedlanguage=\count420
-\c@origlanguage=\count421
-\c@savedoriglanguage=\count422
-\c@pageref=\count423
-\c@savedpageref=\count424
+\c@afterword=\count336
+\c@savedafterword=\count337
+\c@annotator=\count338
+\c@savedannotator=\count339
+\c@author=\count340
+\c@savedauthor=\count341
+\c@bookauthor=\count342
+\c@savedbookauthor=\count343
+\c@commentator=\count344
+\c@savedcommentator=\count345
+\c@editor=\count346
+\c@savededitor=\count347
+\c@editora=\count348
+\c@savededitora=\count349
+\c@editorb=\count350
+\c@savededitorb=\count351
+\c@editorc=\count352
+\c@savededitorc=\count353
+\c@foreword=\count354
+\c@savedforeword=\count355
+\c@holder=\count356
+\c@savedholder=\count357
+\c@introduction=\count358
+\c@savedintroduction=\count359
+\c@namea=\count360
+\c@savednamea=\count361
+\c@nameb=\count362
+\c@savednameb=\count363
+\c@namec=\count364
+\c@savednamec=\count365
+\c@translator=\count366
+\c@savedtranslator=\count367
+\c@shortauthor=\count368
+\c@savedshortauthor=\count369
+\c@shorteditor=\count370
+\c@savedshorteditor=\count371
+\c@labelname=\count372
+\c@savedlabelname=\count373
+\c@institution=\count374
+\c@savedinstitution=\count375
+\c@lista=\count376
+\c@savedlista=\count377
+\c@listb=\count378
+\c@savedlistb=\count379
+\c@listc=\count380
+\c@savedlistc=\count381
+\c@listd=\count382
+\c@savedlistd=\count383
+\c@liste=\count384
+\c@savedliste=\count385
+\c@listf=\count386
+\c@savedlistf=\count387
+\c@location=\count388
+\c@savedlocation=\count389
+\c@organization=\count390
+\c@savedorganization=\count391
+\c@origlocation=\count392
+\c@savedoriglocation=\count393
+\c@origpublisher=\count394
+\c@savedorigpublisher=\count395
+\c@publisher=\count396
+\c@savedpublisher=\count397
+\c@language=\count398
+\c@savedlanguage=\count399
+\c@origlanguage=\count400
+\c@savedoriglanguage=\count401
+\c@pageref=\count402
+\c@savedpageref=\count403
 \shorthandwidth=\skip65
 \shortjournalwidth=\skip66
 \shortserieswidth=\skip67
@@ -532,19 +334,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count425
-\c@textcitetotal=\count426
-\c@textcitemaxnames=\count427
-\c@biburlbigbreakpenalty=\count428
-\c@biburlbreakpenalty=\count429
-\c@biburlnumpenalty=\count430
-\c@biburlucpenalty=\count431
-\c@biburllcpenalty=\count432
+\c@textcitecount=\count404
+\c@textcitetotal=\count405
+\c@textcitemaxnames=\count406
+\c@biburlbigbreakpenalty=\count407
+\c@biburlbreakpenalty=\count408
+\c@biburlnumpenalty=\count409
+\c@biburlucpenalty=\count410
+\c@biburllcpenalty=\count411
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count433
+\c@smartand=\count412
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -554,8 +356,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count434
-\c@bbx:relatedtotal=\count435
+\c@bbx:relatedcount=\count413
+\c@bbx:relatedtotal=\count414
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -584,14 +386,15 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2025-01-18 L3 programming layer (loader) 
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count436
-\l__pdf_internal_box=\box65
+\l__color_backend_stack_int=\count415
+\l__pdf_internal_box=\box54
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-01-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/blx-case-expl3.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/l3packages/xparse/xparse.sty
+
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/blx-case-expl3.sty (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
@@ -600,21 +403,21 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count437
-\Gm@cntv=\count438
-\c@Gm@tempcnt=\count439
-\Gm@bindingoffset=\dimen259
-\Gm@wd@mp=\dimen260
-\Gm@odd@mp=\dimen261
-\Gm@even@mp=\dimen262
-\Gm@layoutwidth=\dimen263
-\Gm@layoutheight=\dimen264
-\Gm@layouthoffset=\dimen265
-\Gm@layoutvoffset=\dimen266
-\Gm@dimlist=\toks44
+\Gm@cnth=\count416
+\Gm@cntv=\count417
+\c@Gm@tempcnt=\count418
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks32
 )
-\c@theorem=\count440
-\c@corollary=\count441
+\c@theorem=\count419
+\c@corollary=\count420
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./final.aux)
@@ -636,17 +439,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
  (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count442
-\scratchdimen=\dimen267
-\scratchbox=\box66
-\nofMPsegments=\count443
-\nofMParguments=\count444
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count445
-\MPscratchDim=\dimen268
-\MPnumerator=\count446
-\makeMPintoPDFobject=\count447
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count421
+\scratchdimen=\dimen161
+\scratchbox=\box55
+\nofMPsegments=\count422
+\nofMParguments=\count423
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count424
+\MPscratchDim=\dimen162
+\MPnumerator=\count425
+\makeMPintoPDFobject=\count426
+\everyMPtoPDFconversion=\toks34
 ) (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -661,7 +464,7 @@ File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `final.bcf'.
+\openout3 = `final.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'final.bbl' found.
@@ -703,7 +506,7 @@ Package biblatex Info: Reference segment=0 on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<vu-griffioen.pdf, id=4, 597.23125pt x 845.1575pt>
+<vu-griffioen.pdf, id=1, 597.23125pt x 845.1575pt>
 File: vu-griffioen.pdf Graphic file (type pdf)
 <use vu-griffioen.pdf>
 Package pdftex.def Info: vu-griffioen.pdf  used on input line 34.
@@ -736,10 +539,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [8]
 
 [9]
+./final.tex:345: Missing $ inserted.
+<inserted text> 
+                $
+l.345 ... this term in any redex will have a \beta
+                                                   -redex in it.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./final.tex:346: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.346 	\item
+             The redex $\lambda x . (xyz[y \leftarrow a] w)$ is a LOU redex ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./final.tex:346: Missing $ inserted.
+<inserted text> 
+                $
+l.346 	\item T
+              he redex $\lambda x . (xyz[y \leftarrow a] w)$ is a LOU redex ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 
 [10]
 
-[11] (./final.aux)
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 412--414
+
+ []
+
+
+
+[12]
+
+[13] (./final.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -749,19 +590,19 @@ Package logreq Info: Writing requests to 'final.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22495 strings out of 473201
- 460495 string characters out of 5689025
- 1257400 words of memory out of 5000000
- 45422 multiletter control sequences out of 15000+600000
+ 12060 strings out of 473201
+ 227161 string characters out of 5689025
+ 1057871 words of memory out of 5000000
+ 35198 multiletter control sequences out of 15000+600000
  572873 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,25n,91p,1385b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,25n,81p,1385b,1272s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr6.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texli
 ve-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on final.pdf (11 pages, 260222 bytes).
+Output written on final.pdf (13 pages, 265288 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

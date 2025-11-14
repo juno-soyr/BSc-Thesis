@@ -12,7 +12,7 @@
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
-\usepackage{tikz}
+
 
 \usepackage[backend=biber]{biblatex}
 \addbibresource{final.bib}
@@ -69,10 +69,10 @@ Vrije Universiteit Amsterdam
 \end{center}
 
 \begin{abstract}
-  The idea of computational Invariance is one that is essential to complexity theory, ever since Van Emde Boas proposed it~\cite{machine-models}. While this paper relates to many areas of computability theory, we will focus on the invariance of $\lambda$-calculus. Accattoli and Dal Lago proposed, using a calculus with explicit substitutions called the \textbf{Linear Substitution Calculus}, a reduction strategy that relates polynomially to Turing Machines when only time complexity is concerned. In this paper we will introduce said calculus and strategy, and provide an example of how they relate to the classical untyped $\lambda$-calculus .\end{abstract}
+  The idea of computational Invariance is one that is essential to complexity theory, ever since Van Emde Boas proposed it~\cite{machine-models}. While this paper relates to many areas of computability theory, we will focus on the invariance of $\lambda$-calculus. Accattoli and Dal Lago proposed, using a calculus with explicit substitutions called the \textbf{Linear Substitution Calculus}, a reduction strategy that relates polynomially to Turing Machines when only time complexity is concerned. In this paper we will introduce said calculus and strategy and provide an example of how they relate to the classical untyped $\lambda$-calculus, as well as showing that this relation holds both for addition using Church Numerals.\end{abstract}
 \section{Introduction}
 During the start of the 20th century, the idea of computability began to be a main mathematical problem. David Hilbert posed the following question in his set of problems to solve during the 20th century: What does it mean for a function to be \textit{computable}? \\
-The first step in answering this question would be to define the concept of \textit{computability}. Intuitively, computability is a property of problems or functions that can be solved by some mechanical process. Formally, the set of computable functions can be defined as every function $f : \mathbb{N}^k \rightarrow \mathbb{N}$ for which there exists an effective procedure to compute $f(x)$, where $\mathbb{N}^k$ represents a tuple of natural numbers. By effective procedure we refer to a deterministic collection of operations that can be performed to a collection of symbolic inputs in order to produce a corresponding symbolic output-- cite theory of recursive functions and effective computability --. \\
+The first step in answering this question would be to define the concept of \textit{computability}. Intuitively, computability is a property of problems or functions that can be solved by some mechanical process. Formally, the set of computable functions can be defined as every function $f : \mathbb{N}^k \rightarrow \mathbb{N}$ for which there exists an effective procedure to compute $f(x)$, where $\mathbb{N}^k$ represents a tuple of natural numbers. By effective procedure we refer to a deterministic collection of operations that can be performed to a collection of symbolic inputs in order to produce a corresponding symbolic output. \\
  Both Alonzo Church and Alan Turing proved almost simultaneously that there exists a model defining the group of computable functions, the former through general recursive functions and the latter with the conceptual \enquote{Turing} machines.
  Besides the computability of said functions, both models provide a method of studying the effective procedure for any function that is computable.
 
@@ -172,12 +172,14 @@ $\beta$-reduction is a relation $\Lambda \times \Lambda$ based on the substituti
 \begin{equation}
 	\beta : ( \lambda x.M ) N \rightarrow M \{ x:=N \}
 \end{equation}
-A \textit{$\beta$-redex} is a term or subterm that is of the form $(\lambda x . M)N$, that is, a subterm that accepts a$\beta$-reduction step.
-Now when talking about introducing a \enquote{computational cost}, $\beta$-reduction is the reasonable choice, as it seems to provide a relation to transitions in a Turing machine. However, this relation is not exact, and therefore, we cannot use $\beta$-reduction as a cost model for $\lambda$-calculus.
 An example, using the previous term:
 \begin{equation*}
   ( \lambda xy. yxz ) M N \xrightarrow{1}_{\beta}  (\lambda y . y M z ) N \xrightarrow{1}_{\beta} N M z
 \end{equation*}
+
+A \textit{$\beta$-redex} is a term or subterm that is of the form $(\lambda x . M)N$, that is, a subterm that accepts a$\beta$-reduction step.
+Now when talking about introducing a \enquote{computational cost}, $\beta$-reduction is the reasonable choice, as it seems to provide a relation to transitions in a Turing machine. However, this relation is not exact, and therefore, we cannot use $\beta$-reduction as a cost model for $\lambda$-calculus.
+
 \subsection{Leftmost Outermost}
 When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms $M \in \Lambda : M \xrightarrow{*} F(M)$. That is, there exists one and only one term to which $M$ reduces in this map. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $M \xrightarrow{n} F^n(M)$. \\
 The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. This is a normalizing strategy where if $M$ is not in normal form, and there exists such a normal form , the leftmost-outermost redex is reduced until it is. Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. As previously stated, TRS have a notion of ordering that is based on strings, but for a better understanding of it, it could also be seen as a tree. The ordering introduced by Accattoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
@@ -304,8 +306,8 @@ and the contextual unfolding $t\downarrow_S$ as:
 Here are two examples to better illustrate the behavior:
 \begin{equation}
 	\begin{split}
-	& \lambda x . xyz[y \leftarrow u]\downarrow = \lambda x . (xuz)[y \leftarrow u] \\ 
-	& \lambda y . yx [x \leftarrow y][y \leftarrow z]\downarrow = \lambda y.yz[x \leftarrow y'][y' \leftarrow z]
+	& \lambda x . xyz[y \leftarrow u]\downarrow = \lambda x . (xuz)\\ 
+	& \lambda y . yx [x \leftarrow y][y \leftarrow z]\downarrow = \lambda y.yz
 	\end{split}
 \end{equation}
 Notice the variable renaming on the second example in order to avoid variable capture.
@@ -328,8 +330,8 @@ The definition of \textit{usefulness} in ~\cite{beta-invariance} of a substituti
 \begin{enumerate}
   \item Contains a $\beta$-redex,
   \item Or is an abstraction and S is an applicative context, that is, a context of the form $A ::= S\langle Lt \rangle$.
-        EXAMPLES
 \end{enumerate}
+A brief example of an applicative context: $\lambda x . (\lambda y . y[x \leftarrow x]w)(abc)$. Do notice that substitution context are also shallow contexts.
 We now extend our definition of the complete LO order on redexes to the LSC by introducing a new rule:
 \begin{center}
   Substitution: If $C \prec_p t$ and $D \prec_p$ then $C[x \leftarrow u] \prec_L t[x \leftarrow D]$.
@@ -338,7 +340,14 @@ Therefore, we can define the \textbf{Leftmost Outermost Useful redex}:
 \begin{center}
   A redex $R$ of a term $t$ is considered the leftmost outermost useful redex of $t$ if $R \prec_{LO} Q$ for every other useful redex $Q$ of $t$. We write $t \rightarrow_{LOU} u$ for the step reducing the leftmost outermost useful redex of t.
 \end{center}
-\subsection{Size exploding family}
+A couple of examples:
+\begin{enumerate}
+	\item The redex $\lambda x . ( y t w) [t \leftarrow \lambda x . x]$ is a Leftmost Outermost Useful redex due to the fact that the contextual unfolding of this term in any redex will have a \beta -redex in it.
+	\item The redex $\lambda x . (xyz[y \leftarrow a] w)$ is a LOU redex due to the fact that it is an applicative context.
+	
+	\item The redex $\lambda x . (xyz[y \leftarrow a])$ is not an applicative context.
+\end{enumerate}
+\subsection{Size exploding family revisited}
 In these examples we will forego the definition of the usual LO order on contexts and will focus solely on usefulness for the sake of convenience.
 Using the term $t_2$ as a first example, the first step is to split the term into (shallow) contexts, and order them according to the LO total order. In this term there is only one outermost context and it is a $dB$ redex, which is inherently useful. Therefore, the first step will be:
 \begin{equation*}
@@ -354,15 +363,15 @@ At this point, the polynomial algorithm introduced in~\cite{beta-invariance} to 
 It is important to note that due to this example only requiring head substitution, the Linear Head Reduction introduced in~\cite{invariance-of-cost-model} suffices, but the LOU strategy is necessary for reaching normal form in every case.
 
 \section{Generalizing Invariance}
-As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance, but that does not mean that it is the only one. Accattoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
+As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a Turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance, but that does not mean that it is the only one. Accattoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
 \subsection{High level implementation systems}
 The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want specifically termintation and polynomial overhead.
 \[\rightsquigarrow \text{normalizes iff } {\rightsquigarrow}_{X} \text{normalizes}\]
 Furthermore,
 \[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^2) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
-While there exists a proof for both of these statements in~\cite{beta-invariance}, we will not delve into it. We will instead, show that the implementation of addition and multiplication in the LSC follow these bounds.
+While there exists a proof for both of these statements in~\cite{beta-invariance}, we will not delve into it. We will instead, show that the implementation of addition in the LSC follow these bounds.
 \section{Examples}
-There is an encoding from the natural numbers to the untyped $\lambda$-calculus, developed by Alonzo Church, called Church Numerals. We will denote church numerals using $\ulcorner n \urcorner$:
+There is an encoding from the natural numbers to the untyped $\lambda$-calculus, developed by Alonzo Church, called Church Numerals. This encoding uses the number of applications of a term. We will denote church numerals using $\ulcorner n \urcorner$:
 \begin{equation}
 	\begin{split}
 		& \ulcorner 0 \urcorner = \lambda f x . x \\
@@ -371,8 +380,36 @@ There is an encoding from the natural numbers to the untyped $\lambda$-calculus,
 \end{equation}
 
 \subsection{Addition}
-Addition using church numerals is defined by the term $\textit{add} = \lambda mnfx.m(n f ) x$, which applied to 2 other numerals will result the sum of them. An example:
--- todo --
+Addition using church numerals is defined by the term $\textit{add} = \lambda mnfx.m f(nfx)$, which applied to 2 other numerals will result the sum of them. An example:
+\begin{equation*}
+	\begin{split}
+	& \textit{add} \ \ulcorner 4 \urcorner \ulcorner 3 \urcorner = (\lambda mnfx.m f(nfx)(\lambda fx.f(f(f(f(x)))))(\lambda fx. f(f(f(x)))) \rightarrow_{\beta}^2 \\
+ &	\lambda fx. \ulcorner 4 \urcorner f ( \ulcorner 3 \urcorner f x ) \rightarrow_{\beta} \\ 
+ 	& \lambda fx. (\lambda x . f(f(f(f(x')))))( \ulcorner 3 \urcorner f x ) \rightarrow_{\beta} \\
+	& \lambda f x. f ( f ( f ( f (\ulcorner 3 \urcorner f x ) ) ) ) \rightarrow_{\beta}^2 \lambda fx. f ( f ( f ( f ( f ( f ( f ( x ) ) ) ) ) ) ) 
+\end{split}
+\end{equation*}
+While on the untyped $\lambda$-calculus addition takes a constant amount of time, this is due to the fact that the replacement operation has a constant cost, something that is not very practical when talking about complexity measure. We will now show that the implementation of addition in the LSC with LOU reductions takes a linear amount of steps, therefore following the invariance results. 
+For readability, we will forego the explicit substitutions that have been used, but it is important to note that in order to remove them from the term completely, a linear amount of time is required at most.
+\begin{equation}
+	\begin{split}
+		& (\lambda mnfx.m f (n f x)) \ulcorner a \urcorner \ulcorner b \urcorner \rightarrow_{dB} \\
+		& (\lambda nfx. m f (n f x )[m \leftarrow \ulcorner a \urcorner ]) \ulcorner b \urcorner \rightarrow_{dB} \\
+		& (\lambda fx. mf (n f x)[m \leftarrow \ulcorner a \urcorner])[n \leftarrow \ulcorner b \urcorner] \rightarrow_{ls} \\
+		& (\lambda fx. \ulcorner a \urcorner f (n f x)[\cdots])[n \leftarrow \ulcorner b \urcorner] \rightarrow_{ls} \\
+		& (\lambda fx. \ulcorner a \urcorner f (\urcorner b \ulcorner f x)[\cdots])[\cdots] \rightarrow_{dB} \\
+		& (\lambda fx.(\lambda x' .f'^a(x')[f'\leftarrow f])(\ulcorner b \urcorner f x)) \xrightarrow[ls]{a} \\
+		& (\lambda fx. (\lambda x' .f^a(x')) (\ulcorner b \urcorner f x)) \rightarrow_{dB} \\
+		& (\lambda fx. (f^a(x')[x' \leftarrow \ulcorner b \urcorner f x])) \rightarrow_{ls} \\
+		& (\lambda fx. (f^a(\ulcorner b \urcorner f x))) \rightarrow_{dB} \\
+		& (\lambda fx. f^a((\lambda x''.f''^b(x'')[f'' \leftarrow f]x))) \xrightarrow[ls]{b}\\
+		& (\lambda fx. f^a(\lambda x''.f^b(x''))x) \rightarrow_{dB} \\
+		& (\lambda fx. f^a(f^b(x''))[x'' \leftarrow x]) 
+	\end{split}
+\end{equation}
+As we can see, addition takes at most $\Theta (a + b)$ steps for any two numbers $a, b$, which is linearly related to the size of the initial term. The unfolding of the resulting term, which consists of just replacing $x''$ with $x$ is also equal to the normal form of addition of 2 numbers in $\lambda$-calculus, and there is no possible LOU step from the last term to take. We can conclude that addition in the LSC is invariant with respect to its classical counterpart.
 \section{Conclusion}
+As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.  \\
+This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition and multiplication, which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC. \\ 
 \printbibliography{}
 \end{document}
