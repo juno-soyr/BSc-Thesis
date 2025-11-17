@@ -1,7 +1,7 @@
 PWD /home/soyr/Documents/BSc-Thesis/Report/final
 INPUT /nix/store/w5jd5nxqccmd8wx3dfna0b41lsy0fkzg-texlive-combined-full-2024-final/share/texmf-var/web2c/texmf.cnf
 INPUT /nix/store/w5jd5nxqccmd8wx3dfna0b41lsy0fkzg-texlive-combined-full-2024-final/share/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT final.tex
+INPUT /home/soyr/Documents/BSc-Thesis/Report/final/final.tex
 OUTPUT final.log
 INPUT /nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/article.cls
 INPUT /nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/article.cls

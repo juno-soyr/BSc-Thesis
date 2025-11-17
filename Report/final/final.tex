@@ -111,7 +111,7 @@ This subject has a large body of literature, and we only consider a small fragme
  The reflexive and transitive closures of reductions are denoted as $\xrightarrow{0}$ and $\xrightarrow{i}$ for some $i > 0$ respectively. It is important to note that reductions do not have symmetric properties. For every $(a,b) \in R$, given that $a \neq b$, there is no ordered pair $(b,a) \in R$. \\
  An element $a \in A$ with a reduction relation $R$ defined on $A$ is said to be in normal form if $\nexists b \in A \ \text{s.t} \ (a,b) \in R$.
  A finite or infinite sequence of reduction steps is called a reduction sequence.
- A term is normalizing in $R$ if it can reach a normal form after a finite reduction sequence. If there is a unique reduction sequence from said term to its normal form, then we say the term is \textbf{strongly normalizing}(SN). If not, we say it is \textbf{weakly normalizing}(WN). \\
+ A term is normalizing in $R$ if it can reach a normal form after a finite reduction sequence. If all reduction sequences from a term lead to its normal form then we say the term is \textbf{strongly normalizing}(SN). If there exist one or more reduction sequences from a term to its normal form, but not all sequences terminate, we say it is \textbf{weakly normalizing}(WN). \\
 The idea of $\lambda$-calculus, or its current use, is based on the idea of computability of functions. When talking about functions there are two main ways to view them. The \textit{extensional} view, which observes only the mapping from input to output, and the \textit{intensional} view, which treats functions not as just a mapping, but a rule. This means that if two functions are given by the same formula, they are \textit{intensionally equal}. This allows mathematicians and computer scientists to talk about the behavior of a function outside just what it produces~\cite{selinger}.
 
 The $\lambda$-calculus uses the intensional view of functions to treat them as expressions, and analyze their behavior and, more importantly, their computability. \\
@@ -134,19 +134,10 @@ We also introduce a relation $\prec_p$, called the \textbf{prefix} relation, bet
 \begin{equation*}
   u,t \in \Lambda ; C \langle u \rangle = t \implies C \prec_t u
 \end{equation*}
-\subsubsection{Conversion}
+\subsubsection{$\alpha$-Conversion}
 This section will be introduced non-mathematically, since an intuitive understanding of $\alpha$-conversion suffices to understand the main points of the proof. However, to understand the more finer points, the reader should again refer to~\cite{barendregt1984lambda}.
-When referring to conversion in the $\lambda$-calculus, it is usually in the context of renaming bound variables. As these variables are already \enquote{locked} in regards to an abstraction, any renaming of these with the abstraction to another variable name is an idempotent operation, and can be done at any time.
-The need for this comes from the unintentional possible binding of a variable during a substitution step. Revisiting the previous example:
-\begin{equation}
-  \begin{split}
-    & \text{Let } F = \lambda xy.yxz \text{, then } \forall M, N: \\
-    & FMN = NMz
-  \end{split}
-\end{equation}
-This would follow from the inductive definition of substitution, however, when taking $M = y$ and $N = x$, substituting these terms into the expression leads to the equality $xyz = xxz$, an obvious contradiction.
-This comes due to the fact that the substitution of $N$ in $M$ should not capture any free variables in $N$.
-
+When referring to $\alpha$-conversion in the $\lambda$-calculus, it is usually in the context of renaming bound variables. As these variables are already \enquote{locked} in regards to an abstraction, any renaming of these with the abstraction to another variable name is an idempotent operation, and can be done at any time.
+The need for this comes from the unintentional possible binding of a variable during a substitution step. In order to understand why this is needed, lets introduce a basic notion of substitution. 
 
 \paragraph{Substitution} This topic will be expanded on Section~\ref{reduction}, but a basic understanding is provided here.
 The result of substituting $N$ for the free occurrences of $x$ in $M$ (notation $M \{ x:= N \} $) is inductively defined as:
@@ -160,10 +151,10 @@ The result of substituting $N$ for the free occurrences of $x$ in $M$ (notation 
 \end{equation*}
 A free variable is any variable not bound by an abstraction. For example:
 \begin{equation*}
-  (\lambda x y . y x z )
+  (\lambda x y . y x z ) (y)
 \end{equation*}
-In this term, $y$ and $z$ are not bound, therefore free, while $x$ is bound by the abstraction $\lambda x$.
-When replacing terms it is important to take care not to accidentally bind a free variable by mistake. That is why when replacing terms, if any free variables would become bound by the replacement, they must be renamed. This is called $\alpha$-conversion.
+In this term, $z$ is not bound,  while $x$ and $y$ are bound by the abstraction $\lambda xy$. When reducing this term, $\lambda x y . y x z$ must be renamed for the varyable $y$ not to be unintentionally bound
+ by $\lambda y$: $(\lambda x w . w x z) (y)$.
 Note that we use braces to denote \textit{implicit} substitutions due to the fact that when introducing \textit{explicit} substitutions we will use the classical brackets, but when reading literature of the classical lambda-calculus, square brackets will mean implicit substitution.
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
 
@@ -172,17 +163,18 @@ $\beta$-reduction is a relation $\Lambda \times \Lambda$ based on the substituti
 \begin{equation}
 	\beta : ( \lambda x.M ) N \rightarrow M \{ x:=N \}
 \end{equation}
-An example, using the previous term:
+An example:
 \begin{equation*}
-  ( \lambda xy. yxz ) M N \xrightarrow{1}_{\beta}  (\lambda y . y M z ) N \xrightarrow{1}_{\beta} N M z
+  ( \lambda xy. yxz ) (yx) (ab) \xrightarrow{1}_{\beta}  (\lambda w . w (yx) z ) (ab) \xrightarrow{1}_{\beta} (ab) (yx) z
 \end{equation*}
 
-A \textit{$\beta$-redex} is a term or subterm that is of the form $(\lambda x . M)N$, that is, a subterm that accepts a$\beta$-reduction step.
-Now when talking about introducing a \enquote{computational cost}, $\beta$-reduction is the reasonable choice, as it seems to provide a relation to transitions in a Turing machine. However, this relation is not exact, and therefore, we cannot use $\beta$-reduction as a cost model for $\lambda$-calculus.
+A \textit{$\beta$-redex} is a term or subterm that is of the form $(\lambda x . M)N$, that is, a subterm that accepts a $\beta$-reduction step.
+Now when talking about introducing a \enquote{computational cost}, $\beta$-reduction is the reasonable starting point, as it seems to provide a relation to transitions in a Turing machine. However, this relation is not exact, and therefore, we cannot use $\beta$-reduction as a cost model for $\lambda$-calculus.
 
 \subsection{Leftmost Outermost}
-When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms $M \in \Lambda : M \xrightarrow{*} F(M)$. That is, there exists one and only one term to which $M$ reduces in this map. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $M \xrightarrow{n} F^n(M)$. \\
-The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. This is a normalizing strategy where if $M$ is not in normal form, and there exists such a normal form , the leftmost-outermost redex is reduced until it is. Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. As previously stated, TRS have a notion of ordering that is based on strings, but for a better understanding of it, it could also be seen as a tree. The ordering introduced by Accattoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
+When talking about reduction strategies, we refer to a map $F : \Lambda \rightarrow \Lambda$ such that for all terms not in normal form, there exist at least one term such that $M \rightarrow^1 F(M)$. That is, there exists at least one term to which $M$ reduces in this map while it is not in normal form. Strategies are defined as terminating if for every $M$ with a normal form, for some $n \in \mathbb{N}$,$ F^{n} (M)$ is in normal form, where $M \rightarrow F^n(M)$. \\
+The reduction strategy that~\cite{beta-invariance} uses is named Leftmost Outermost. 
+Formally, we can define this in the syntax of contexts inductively, but first we introduce the notion of ordering on terms. The ordering introduced by Accattoli and Dal Lago in their paper is based on the idea of contexts, generalizing the notion and allowing for relative positioning of subterms without needing to understand or define the whole term. It is defined as follows~\cite{beta-invariance}:
 \begin{enumerate}
   \item Outside-in order:
         \begin{enumerate}
@@ -199,21 +191,24 @@ Both of these orderings are partial orders in relation to terms. A total order i
 \begin{center}
   If $C \prec_{O} D$ and $C \prec_{L} D$ then $C \prec_{LO} D$.
 \end{center}
+Now that we defined the order of contexts, we can define the leftmost-outermost redex as a context $R\langle u \rangle = t$ s.t for every other context $C$, $R \prec_{LO} C$. 
 This means that every term $t \in \Lambda$ has at most one leftmost-outermost redex, and therefore every reduction sequence using this strategy is deterministic. The Leftmost Outermost strategy therefore reduces the leftmost outermost redex always, and it is a strongly normalizing strategy. An example:
 \begin{equation*}
-  (\lambda x . (\lambda y . y x) z) (y y (\lambda x . x) y) \xrightarrow[LO]{1} (\lambda y . y (y y (\lambda x . x) y )) z
+  (\lambda x . (\lambda y . y x) z) (y y (\lambda x . x) y) \xrightarrow[LO]{1} (\lambda w . w (y y (\lambda x . x) y )) z
 \end{equation*}
 Let us introduce a more conceptual view of what these orderings represent: Imagine an infinite term $t_\infty$. Imagine that this term contains every possible $\lambda$-term as a subterm. Viewing the term as a tree, at the root of the term, there will always be a single-hole context, $\langle \cdot \rangle$, in which the term could be plugged: $\langle t_\infty \rangle = t_\infty$. If we go a level deeper, we will encounter an application of 2 contexts, lets call them $C_1$ and $C_2$ (2 because the application of contexts is a binary relationship that can be extended to multiple terms by association). These two contexts will in turn have two contexts inside and so on and so forth. Since the term $t_\infty$ has every subterm in it, we will have infinite contexts containing contexts before reaching an abstraction, in order to consider every infinite sized term, but we know that at the end of this nesting of contexts, we will most certainly encounter every possible variable, since there can be no applications or abstractions without variables. Thus, every variable $x \in \Lambda$ and every context surrounding a variable $C_x$, are at the end of the outside-in order with respect to \textbf{every other context}. In other words: $D \prec_O C_x , \forall D \in \mathcal{C}$ where $\mathcal{C}$ represents the set of all contexts. \\
 Now, it is clear that for every context that is not surrounding a variable, except for the empty context $\langle \cdot \rangle$, there exists a context both above and below, so: $\forall C \in \mathcal{C}, \exists D_1, D_2 \ s.t \ D_1 \prec_O C \prec_O D_2$. \\ This context however, has no relation to contexts that either do not contain it, or are not contained in it. In order to relate contexts with no ordering based on $\prec_O$, we can use the (relative) position of contexts inside a common ancestor. Lets say at one point of $t_\infty$ there is a context $C_0$ with 2 contexts inside of it, $C_1,C_2$. Lets also say that the application of these 2 contexts is in the form $C_0 = C_1C_2$. We can then say that $C_1 \prec_L C_2$, or that $C_1$ is \enquote*{to the left} of $C_2$. Since every context except contexts surrounding variables is composed of exactly 2 contexts, this creates a relation between contexts which are not contained in one another.
 \\
 Intuitively, it is easy to see how we have just defined the only two possible orderings on a binary tree, and so with both these orderings, there is no 2 terms that are on the same ouside-in position and left-to-right position.
+
+This is a strongly-normalizing strategy, as well as every term having a unique reduction sequence, meaning that while a term $t$ is not in normal form, there is only one possible leftmost outermost redex to reduce.
 \subsection{Size-exploding family}
 As mentioned in the introduction, there is a family of terms in $\lambda$ that, in a linear number of steps, reduces to a term of exponential size. While the invariance result of Accattoli and Dal Lago does not concern itself with space invariance, it is important to note that due to the design of Turing Machines, they have a conceptually different relation between space and time complexity as $\lambda$ does. While the former has the space complexity be bound by the time complexity, that is, the number of used cells on the tape must be equal or less to the amount of times the head moves, the latter has the opposite. In $\lambda$-calculus, time complexity, or the amount of $\beta$-reduction steps, is bound by the size of the inital and final size. That means that to provide an accurate invariance result, we not only need to fix the inconsistencies with the number of reduction steps in $\lambda$, but we must also take care to show the normal form of a term in a way that is at least polynomially related to the size of the initial term, and the number of steps taken, closing the gap between the two ideas.
 \\ 
-Consider the example provided by Accattoli and Dal Lago in~\cite{beta-invariance}. It is introduced here to make the following sections easier to follow. We will also define the ordering of the subterms, and show that $LO$ is a total order on it.
+Consider the example provided by Accattoli and Dal Lago in~\cite{beta-invariance}. It is introduced here to make the following sections easier to follow.
 \begin{center}
   Let $u = yxx$, and consider the sequence of terms $t_{n} \in \Lambda_{Exp}$  \\ for $n \in \mathbb{N}$ be defined inductively as \\
-  $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$.
+  $t_{0} = u \ , \ t_{n + 1} = (\lambda x.t_{n})u$ for every $n \in \mathbb{N}$, and let its normal form be defined as $r_n$.
 \end{center}
 
 \begin{lemma}\label{lemma1}
@@ -252,14 +247,14 @@ Consider the example provided by Accattoli and Dal Lago in~\cite{beta-invariance
   \end{enumerate}
 \end{proof}
 \begin{theorem}
-Every $\lambda$-term $t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-reduction steps to a term $r_n$, with $|r_n| \in O(2^n)$.
+Every $\lambda$-term $t \in \Lambda_{Exp}$ reduces in $n$ LO $\beta$-reduction steps to a term $r_n$, with $|r_n| \in \Omega(2^n)$.
 \end{theorem}
 \begin{proof}
 It follows from Lemma 2.1 and 2.2.
 \end{proof}
 
 As an example for the rest of the paper, we will use the term $t_{2}$ from this family. In order to define the ordering of this term, it must be first converted to a context based syntax:
-\[ C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle \]
+\[ C_{0} \langle \lambda x. C_{1} \langle \lambda x. C_{3} \langle C_{4} \langle yxx \rangle C_{5} \langle yxx \rangle \rangle C_{2} \langle yxx \rangle \rangle \rangle \]
 An ordering on this term in $LO$ would then be:
 \begin{equation}
  C_{0} \prec_{LO} C_{1} \prec_{LO} C_{2} \prec_{LO} C_{3} \prec_{LO} C_{4} \prec_{LO} C_{5}
@@ -268,11 +263,11 @@ by means of the contextual closure of $LO$.
 
 For further reading on the syntax and axioms of the lambda calculus, refer to~\cite{barendregt1984lambda}.
 \section{Linear Substitution Calculus}
-In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in~\ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced 
+In order to properly illustrate the properties of the LSC, we will use as an example the \textbf{size exploding} family that was introduced in section~\ref{intro-lambda}. Any member of this family could be a good example, but for brevity, this paper will use the previously introduced 
 \begin{equation}
 	t_{3} \equiv \lambda x.((\lambda x. (yxx))(yxx)(yxx))(yxx)
-\end{equation}. 
-As explained before, this term, under regular $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
+\end{equation}
+As explained before, this term, under $\beta$-reduction, will evaluate to an exponential length in a number of steps linear to its size, the main obstacle in the invariance of $\lambda$.
 The linear substitution calculus is based in \textbf{explicit substitutions}, as oposed to the regular implicit substitutions that $beta$-reduction produces. The grammar is defined as follows:
 \begin{equation}
   t, u, r, p = x \ | \ \lambda x.t \ | \ tu \ | \ t[x \leftarrow u]
@@ -331,7 +326,7 @@ The definition of \textit{usefulness} in ~\cite{beta-invariance} of a substituti
   \item Contains a $\beta$-redex,
   \item Or is an abstraction and S is an applicative context, that is, a context of the form $A ::= S\langle Lt \rangle$.
 \end{enumerate}
-A brief example of an applicative context: $\lambda x . (\lambda y . y[x \leftarrow x]w)(abc)$. Do notice that substitution context are also shallow contexts.
+A brief example of an applicative context: $\lambda x . (\lambda y . y[y \leftarrow x]w)(abc)$. Do notice that substitution context are also shallow contexts.
 We now extend our definition of the complete LO order on redexes to the LSC by introducing a new rule:
 \begin{center}
   Substitution: If $C \prec_p t$ and $D \prec_p$ then $C[x \leftarrow u] \prec_L t[x \leftarrow D]$.
@@ -342,9 +337,8 @@ Therefore, we can define the \textbf{Leftmost Outermost Useful redex}:
 \end{center}
 A couple of examples:
 \begin{enumerate}
-	\item The redex $\lambda x . ( y t w) [t \leftarrow \lambda x . x]$ is a Leftmost Outermost Useful redex due to the fact that the contextual unfolding of this term in any redex will have a \beta -redex in it.
+	\item The redex $\lambda x . ( y t w) [t \leftarrow \lambda x . x]$ is a Leftmost Outermost Useful redex due to the fact that the contextual unfolding of this term in any redex will have a $\beta$-redex in it.
 	\item The redex $\lambda x . (xyz[y \leftarrow a] w)$ is a LOU redex due to the fact that it is an applicative context.
-	
 	\item The redex $\lambda x . (xyz[y \leftarrow a])$ is not an applicative context.
 \end{enumerate}
 \subsection{Size exploding family revisited}
@@ -375,7 +369,7 @@ There is an encoding from the natural numbers to the untyped $\lambda$-calculus,
 \begin{equation}
 	\begin{split}
 		& \ulcorner 0 \urcorner = \lambda f x . x \\
-		& \ulcorner n \urcorner = \lambda f x . f^n (x) = \lambda f x . f_0 ( f_1 ( f_2 ... ( f_n ( x ) ... )
+		& \ulcorner n \urcorner = \lambda f x . f^n (x) = \lambda f x . f_0 ( f_1 ( f_2 ... ( f_n ( x ) ... )))
 	\end{split}
 \end{equation}
 
@@ -383,7 +377,7 @@ There is an encoding from the natural numbers to the untyped $\lambda$-calculus,
 Addition using church numerals is defined by the term $\textit{add} = \lambda mnfx.m f(nfx)$, which applied to 2 other numerals will result the sum of them. An example:
 \begin{equation*}
 	\begin{split}
-	& \textit{add} \ \ulcorner 4 \urcorner \ulcorner 3 \urcorner = (\lambda mnfx.m f(nfx)(\lambda fx.f(f(f(f(x)))))(\lambda fx. f(f(f(x)))) \rightarrow_{\beta}^2 \\
+	& \textit{add} \ \ulcorner 4 \urcorner \ulcorner 3 \urcorner = (\lambda mnfx.m f(nfx)(\lambda fx.f(f(f(f(x))))))(\lambda fx. f(f(f(x)))) \rightarrow_{\beta}^2 \\
  &	\lambda fx. \ulcorner 4 \urcorner f ( \ulcorner 3 \urcorner f x ) \rightarrow_{\beta} \\ 
  	& \lambda fx. (\lambda x . f(f(f(f(x')))))( \ulcorner 3 \urcorner f x ) \rightarrow_{\beta} \\
 	& \lambda f x. f ( f ( f ( f (\ulcorner 3 \urcorner f x ) ) ) ) \rightarrow_{\beta}^2 \lambda fx. f ( f ( f ( f ( f ( f ( f ( x ) ) ) ) ) ) ) 
