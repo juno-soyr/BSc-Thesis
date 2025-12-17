@@ -313,6 +313,10 @@ We introduce here the operational semantics of the LSC. There are two elementary
     &S \langle x \rangle [x \leftarrow u] \rightarrow_{ls} S \langle u \rangle [x \leftarrow u]
   \end{split}
 \end{equation}
+Using an example to show both steps, lets consider the term $(\lambda x.xy)(foo)$. This term can be contextually defined as $L \langle (\lambda x.xy) \rangle (foo)$:
+\begin{equation*}
+  (\lambda x.xy)(\text{foo}) \rightarrow_{dB} xy[x \leftarrow \text{foo}] = S \langle xy \rangle [x \leftarrow \text{foo}] \rightarrow_{ls} (\text{foo})y
+\end{equation*}
 It is important to note that we work modulo $\alpha$-conversion on the $dB$ steps, and that the linear substitution step is assumed not to capture variables.
 Based on this,~\cite{beta-invariance} introduces a new reduction strategy, called \textbf{Leftmost-Outermost Useful} or \textbf{LOU} which we will use to show that the size explosion family does indeed not grow exponentially in the LSC under this strategy. It is important to note that while the Size-exploding family does not grow exponentially under the Linear Head Reduction of the LSC~\cite{invariance-of-cost-model}, it would never reach normal form if we included an application before the initial term, and so, an example of the use of LOU on it will show that even when completely reducing the term, the length increase will have a polynomial relation to the size of the initial term.
 
@@ -345,19 +349,20 @@ A couple of examples:
 In these examples we will forego the definition of the usual LO order on contexts and will focus solely on usefulness for the sake of convenience.
 Using the term $t_2$ as a first example, the first step is to split the term into (shallow) contexts, and order them according to the LO total order. In this term there is only one outermost context and it is a $dB$ redex, which is inherently useful. Therefore, the first step will be:
 \begin{equation*}
-  (\lambda x . (\lambda x . yxx) (yxx))(yxx) \rightarrow_{dB} (\lambda x . yxx)(yxx)[x \leftarrow yx'x']
+  (\lambda x . (\lambda x . yxx) (yxx))(yxx) \rightarrow_{dB} (\lambda x . yxx)(yx'x')[x' \leftarrow yxx]
 \end{equation*}
 Note the $\alpha$-conversion to avoid unwanted variable capture.
 We can then perform another $dB$ step, arriving to the term
 \begin{equation*}
-  (yxx)[x \leftarrow yx'x'][x' \leftarrow yx''x'']
+  (yx''x'')[x'' \leftarrow yx'x'][x' \leftarrow yxx]
 \end{equation*}
 At this point, the polynomial algorithm introduced in~\cite{beta-invariance} to find useful $ls$ steps is necessary, although in this paper we will compute them by hand. There is obviously no possible $\beta$-redex of the unfolding of this term, and since there is no abstraction, we can safely say that this term is it $dB$-normal form and $ls$-normal form.
 
 It is important to note that due to this example only requiring head substitution, the Linear Head Reduction introduced in~\cite{invariance-of-cost-model} suffices, but the LOU strategy is necessary for reaching normal form in every case.
 
 \section{Generalizing Invariance}
-As stated before the measure employed to analyze the time invariance of lambda calculus is the number of transitions in a Turing machine. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance, but that does not mean that it is the only one. Accattoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
+As stated before, the measure employed to analyze the time invariance of general algorithms is the number of transitions in a Turing machine, but the $\lambda$-calculus is ill-suited to provide a good relation between its computational steps and Turing Machines. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance,
+ but that does not mean that it is the only one. Accattoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
 \subsection{High level implementation systems}
 The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want specifically termintation and polynomial overhead.
 \[\rightsquigarrow \text{normalizes iff } {\rightsquigarrow}_{X} \text{normalizes}\]
@@ -383,7 +388,19 @@ Addition using church numerals is defined by the term $\textit{add} = \lambda mn
 	& \lambda f x. f ( f ( f ( f (\ulcorner 3 \urcorner f x ) ) ) ) \rightarrow_{\beta}^2 \lambda fx. f ( f ( f ( f ( f ( f ( f ( x ) ) ) ) ) ) ) 
 \end{split}
 \end{equation*}
-While on the untyped $\lambda$-calculus addition takes a constant amount of time, this is due to the fact that the replacement operation has a constant cost, something that is not very practical when talking about complexity measure. We will now show that the implementation of addition in the LSC with LOU reductions takes a linear amount of steps, therefore following the invariance results. 
+Looking at the general case of addition of two church numerals $n,m$:
+\begin{equation*}
+  \begin{split}
+  & (\lambda mnfx. m f (n f x) ) (\lambda f'x'. f'^a(x')) (\lambda f''x''. f''^b(x'')) \rightarrow_{LO} \\
+  & (\lambda nfx. (\lambda f'x'. f'^a(x')) f (n f x)) (\lambda f''x''. f''^b(x'')) \rightarrow_{LO} \\
+  & \lambda fx. (\lambda f'x'. f'^a(x')) f ((\lambda f''x''. f''^b(x'')) f x) \rightarrow_{LO} \\
+  & \lambda fx. (\lambda x'. f^a(x')) ((\lambda f''x''. f''^b(x''))f x) \rightarrow_{LO} \\
+  & \lambda fx . f^a((\lambda f''x''. f''^b(x''))f x) \rightarrow_{LO} \\
+  & \lambda fx . f^a ((\lambda x''.f^b(x'')) x) \rightarrow_{LO} \\ 
+  & \lambda fx. f^a (f^b(x)) = \lambda fx. f^{a + b}(x) = \ulcorner a + b \urcorner 
+  \end{split}
+\end{equation*}
+As we can see, on the untyped classical $\lambda$-calculus addition takes a constant amount of time,due to the fact that the replacement operation has a constant cost, something that is not very practical when talking about complexity measure. We will now show that the implementation of addition in the LSC with LOU reductions takes a linear amount of steps, therefore following the invariance results. 
 For readability, we will forego the explicit substitutions that have been used, but it is important to note that in order to remove them from the term completely, a linear amount of time is required at most.
 \begin{equation}
 	\begin{split}
@@ -391,7 +408,7 @@ For readability, we will forego the explicit substitutions that have been used, 
 		& (\lambda nfx. m f (n f x )[m \leftarrow \ulcorner a \urcorner ]) \ulcorner b \urcorner \rightarrow_{dB} \\
 		& (\lambda fx. mf (n f x)[m \leftarrow \ulcorner a \urcorner])[n \leftarrow \ulcorner b \urcorner] \rightarrow_{ls} \\
 		& (\lambda fx. \ulcorner a \urcorner f (n f x)[\cdots])[n \leftarrow \ulcorner b \urcorner] \rightarrow_{ls} \\
-		& (\lambda fx. \ulcorner a \urcorner f (\urcorner b \ulcorner f x)[\cdots])[\cdots] \rightarrow_{dB} \\
+		& (\lambda fx. \ulcorner a \urcorner f (\ulcorner b \urcorner f x)[\cdots])[\cdots] \rightarrow_{dB} \\
 		& (\lambda fx.(\lambda x' .f'^a(x')[f'\leftarrow f])(\ulcorner b \urcorner f x)) \xrightarrow[ls]{a} \\
 		& (\lambda fx. (\lambda x' .f^a(x')) (\ulcorner b \urcorner f x)) \rightarrow_{dB} \\
 		& (\lambda fx. (f^a(x')[x' \leftarrow \ulcorner b \urcorner f x])) \rightarrow_{ls} \\
@@ -401,9 +418,13 @@ For readability, we will forego the explicit substitutions that have been used, 
 		& (\lambda fx. f^a(f^b(x''))[x'' \leftarrow x]) 
 	\end{split}
 \end{equation}
-As we can see, addition takes at most $\Theta (a + b)$ steps for any two numbers $a, b$, which is linearly related to the size of the initial term. The unfolding of the resulting term, which consists of just replacing $x''$ with $x$ is also equal to the normal form of addition of 2 numbers in $\lambda$-calculus, and there is no possible LOU step from the last term to take. We can conclude that addition in the LSC is invariant with respect to its classical counterpart.
+As we can see, addition takes $\Theta (a + b)$ steps for any two numbers $a, b$, which is linearly related to the size of the initial term. The unfolding of the resulting term, which consists of just replacing $x''$ with $x$ is also equal to the normal form of addition of 2 numbers in $\lambda$-calculus, and there is no possible LOU step from the last term to take. We can conclude that addition in the LSC is invariant with respect to its classical counterpart. As an example, let us look at the addition of 4 and 3 again, but this time in the contex of the LSC with LOU reductions:
+\begin{equation}
+  \begin{split}
+\end{split}
+\end{equation}
 \section{Conclusion}
-As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.  \\
-This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition and multiplication, which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC. \\ 
+As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.  
+This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition , which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC. \\ 
 \printbibliography{}
 \end{document}
