@@ -421,10 +421,23 @@ For readability, we will forego the explicit substitutions that have been used, 
 As we can see, addition takes $\Theta (a + b)$ steps for any two numbers $a, b$, which is linearly related to the size of the initial term. The unfolding of the resulting term, which consists of just replacing $x''$ with $x$ is also equal to the normal form of addition of 2 numbers in $\lambda$-calculus, and there is no possible LOU step from the last term to take. We can conclude that addition in the LSC is invariant with respect to its classical counterpart. As an example, let us look at the addition of 4 and 3 again, but this time in the contex of the LSC with LOU reductions:
 \begin{equation}
   \begin{split}
-\end{split}
+    & (\lambda mnfx.m f (n f x)) \ulcorner 4 \urcorner \ulcorner 3 \urcorner \rightarrow_{dB} \\
+    & (\lambda nfx. m f (n f x )[m \leftarrow \ulcorner 4 \urcorner ]) \ulcorner 3 \urcorner \rightarrow_{dB} \\
+    & (\lambda fx. mf (n f x)[m \leftarrow \ulcorner 4 \urcorner])[n \leftarrow \ulcorner 3 \urcorner] \rightarrow_{ls} \\
+    & (\lambda fx. \ulcorner 4 \urcorner f (n f x)[\cdots])[n \leftarrow \ulcorner 3 \urcorner] \rightarrow_{ls} \\
+    & (\lambda fx. \ulcorner 4 \urcorner f (\ulcorner 3 \urcorner f x)[\cdots])[\cdots] \rightarrow_{dB} \\
+    & (\lambda fx.(\lambda x' .f'^4(x')[f'\leftarrow f])(\ulcorner 3 \urcorner f x)) \xrightarrow[ls]{4} \\
+    & (\lambda fx. (\lambda x' .f^4(x')) (\ulcorner 3 \urcorner f x)) \rightarrow_{dB} \\
+    & (\lambda fx. (f^4(x')[x' \leftarrow \ulcorner 3 \urcorner f x])) \rightarrow_{ls} \\
+    & (\lambda fx. (f^4(\ulcorner 3 \urcorner f x))) \rightarrow_{dB} \\
+    & (\lambda fx. f^4((\lambda x''.f''^3(x'')[f'' \leftarrow f]x))) \xrightarrow[ls]{3}\\
+    & (\lambda fx. f^4(\lambda x''.f^3(x''))x) \rightarrow_{dB} \\
+    & (\lambda fx. f^4(f^3(x''))[x'' \leftarrow x])
+  \end{split}
 \end{equation}
+Which, if unfolded, is equal to the church numeral $\ulcorner 7 \urcorner$.
 \section{Conclusion}
 As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.  
-This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition , which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC. \\ 
+This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition, which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC.\\
 \printbibliography{}
 \end{document}
