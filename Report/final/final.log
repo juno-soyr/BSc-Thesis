@@ -1,139 +1,139 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  10 DEC 2025 17:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  18 DEC 2025 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **final.tex
 (./final.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/base/size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count196
-\c@section=\count197
-\c@subsection=\count198
-\c@subsubsection=\count199
-\c@paragraph=\count266
-\c@subparagraph=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
+\bibindent=\dimen148
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/keyval.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/graphics.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/trig.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics-cfg/graphics.cfg
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics-def/pdftex.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen142
-\Gin@req@width=\dimen143
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsmath/amsgen.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen144
+\ex@=\dimen151
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsmath/amsbsy.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen145
+\pmbraise@=\dimen152
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsmath/amsopn.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count270
+\inf@bad=\count283
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count271
-\leftroot@=\count272
+\uproot@=\count284
+\leftroot@=\count285
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count273
-\DOTSCASE@=\count274
+\classnum@=\count286
+\DOTSCASE@=\count287
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\Mathstrutbox@=\box53
+\strutbox@=\box54
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen146
+\big@size=\dimen153
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count275
+\macc@depth=\count288
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count276
+\c@MaxMatrixCols=\count289
 \dotsspace@=\muskip17
-\c@parentequation=\count277
-\dspbrk@lvl=\count278
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
 \tag@help=\toks19
-\row@=\count279
-\column@=\count280
-\maxfields@=\count281
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
 \andhelp@=\toks20
-\eqnshift@=\dimen147
-\alignsep@=\dimen148
-\tagshift@=\dimen149
-\tagwidth@=\dimen150
-\totwidth@=\dimen151
-\lineht@=\dimen152
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
 \@envbody=\toks21
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amscls/amsthm.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -145,12 +145,12 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip56
 \dth@everypar=\toks28
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsfonts/amssymb.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsfonts/amsfonts.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -158,134 +158,134 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/inputenc.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/csquotes/csquotes.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/etoolbox/etoolbox.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count282
+\etb@tempcnta=\count295
 )
-\csq@reset=\count283
-\csq@gtype=\count284
-\csq@glevel=\count285
-\csq@qlevel=\count286
-\csq@maxlvl=\count287
-\csq@tshold=\count288
+\csq@reset=\count296
+\csq@gtype=\count297
+\csq@glevel=\count298
+\csq@qlevel=\count299
+\csq@maxlvl=\count300
+\csq@tshold=\count301
 \csq@ltx@everypar=\toks31
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/csquotes/csquotes.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/csquotes/csquotes.cfg
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/biblatex.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/generic/infwarerr/infwarerr.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/generic/iftex/iftex.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/generic/ltxcmds/ltxcmds.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/kvoptions/kvoptions.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/kvsetkeys/kvsetkeys.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/logreq/logreq.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count289
+\lrq@indent=\count302
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/logreq/logreq.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/ifthen.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/url/url.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count290
-\c@listtotal=\count291
-\c@listcount=\count292
-\c@liststart=\count293
-\c@liststop=\count294
-\c@citecount=\count295
-\c@citetotal=\count296
-\c@multicitecount=\count297
-\c@multicitetotal=\count298
-\c@instcount=\count299
-\c@maxnames=\count300
-\c@minnames=\count301
-\c@maxitems=\count302
-\c@minitems=\count303
-\c@citecounter=\count304
-\c@maxcitecounter=\count305
-\c@savedcitecounter=\count306
-\c@uniquelist=\count307
-\c@uniquename=\count308
-\c@refsection=\count309
-\c@refsegment=\count310
-\c@maxextratitle=\count311
-\c@maxextratitleyear=\count312
-\c@maxextraname=\count313
-\c@maxextradate=\count314
-\c@maxextraalpha=\count315
-\c@abbrvpenalty=\count316
-\c@highnamepenalty=\count317
-\c@lownamepenalty=\count318
-\c@maxparens=\count319
-\c@parenlevel=\count320
-\blx@tempcnta=\count321
-\blx@tempcntb=\count322
-\blx@tempcntc=\count323
-\c@blx@maxsection=\count324
-\blx@maxsegment@0=\count325
-\blx@notetype=\count326
-\blx@parenlevel@text=\count327
-\blx@parenlevel@foot=\count328
-\blx@sectionciteorder@0=\count329
-\blx@sectionciteorderinternal@0=\count330
-\blx@entrysetcounter=\count331
-\blx@biblioinstance=\count332
+\c@tabx@nest=\count303
+\c@listtotal=\count304
+\c@listcount=\count305
+\c@liststart=\count306
+\c@liststop=\count307
+\c@citecount=\count308
+\c@citetotal=\count309
+\c@multicitecount=\count310
+\c@multicitetotal=\count311
+\c@instcount=\count312
+\c@maxnames=\count313
+\c@minnames=\count314
+\c@maxitems=\count315
+\c@minitems=\count316
+\c@citecounter=\count317
+\c@maxcitecounter=\count318
+\c@savedcitecounter=\count319
+\c@uniquelist=\count320
+\c@uniquename=\count321
+\c@refsection=\count322
+\c@refsegment=\count323
+\c@maxextratitle=\count324
+\c@maxextratitleyear=\count325
+\c@maxextraname=\count326
+\c@maxextradate=\count327
+\c@maxextraalpha=\count328
+\c@abbrvpenalty=\count329
+\c@highnamepenalty=\count330
+\c@lownamepenalty=\count331
+\c@maxparens=\count332
+\c@parenlevel=\count333
+\blx@tempcnta=\count334
+\blx@tempcntb=\count335
+\blx@tempcntc=\count336
+\c@blx@maxsection=\count337
+\blx@maxsegment@0=\count338
+\blx@notetype=\count339
+\blx@parenlevel@text=\count340
+\blx@parenlevel@foot=\count341
+\blx@sectionciteorder@0=\count342
+\blx@sectionciteorderinternal@0=\count343
+\blx@entrysetcounter=\count344
+\blx@biblioinstance=\count345
 \labelnumberwidth=\skip57
 \labelalphawidth=\skip58
 \biblabelsep=\skip59
@@ -297,86 +297,86 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language90
-\c@mincomprange=\count333
-\c@maxcomprange=\count334
-\c@mincompwidth=\count335
+\c@mincomprange=\count346
+\c@maxcomprange=\count347
+\c@mincompwidth=\count348
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/blx-dm.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count336
-\c@savedafterword=\count337
-\c@annotator=\count338
-\c@savedannotator=\count339
-\c@author=\count340
-\c@savedauthor=\count341
-\c@bookauthor=\count342
-\c@savedbookauthor=\count343
-\c@commentator=\count344
-\c@savedcommentator=\count345
-\c@editor=\count346
-\c@savededitor=\count347
-\c@editora=\count348
-\c@savededitora=\count349
-\c@editorb=\count350
-\c@savededitorb=\count351
-\c@editorc=\count352
-\c@savededitorc=\count353
-\c@foreword=\count354
-\c@savedforeword=\count355
-\c@holder=\count356
-\c@savedholder=\count357
-\c@introduction=\count358
-\c@savedintroduction=\count359
-\c@namea=\count360
-\c@savednamea=\count361
-\c@nameb=\count362
-\c@savednameb=\count363
-\c@namec=\count364
-\c@savednamec=\count365
-\c@translator=\count366
-\c@savedtranslator=\count367
-\c@shortauthor=\count368
-\c@savedshortauthor=\count369
-\c@shorteditor=\count370
-\c@savedshorteditor=\count371
-\c@labelname=\count372
-\c@savedlabelname=\count373
-\c@institution=\count374
-\c@savedinstitution=\count375
-\c@lista=\count376
-\c@savedlista=\count377
-\c@listb=\count378
-\c@savedlistb=\count379
-\c@listc=\count380
-\c@savedlistc=\count381
-\c@listd=\count382
-\c@savedlistd=\count383
-\c@liste=\count384
-\c@savedliste=\count385
-\c@listf=\count386
-\c@savedlistf=\count387
-\c@location=\count388
-\c@savedlocation=\count389
-\c@organization=\count390
-\c@savedorganization=\count391
-\c@origlocation=\count392
-\c@savedoriglocation=\count393
-\c@origpublisher=\count394
-\c@savedorigpublisher=\count395
-\c@publisher=\count396
-\c@savedpublisher=\count397
-\c@language=\count398
-\c@savedlanguage=\count399
-\c@origlanguage=\count400
-\c@savedoriglanguage=\count401
-\c@pageref=\count402
-\c@savedpageref=\count403
+\c@afterword=\count349
+\c@savedafterword=\count350
+\c@annotator=\count351
+\c@savedannotator=\count352
+\c@author=\count353
+\c@savedauthor=\count354
+\c@bookauthor=\count355
+\c@savedbookauthor=\count356
+\c@commentator=\count357
+\c@savedcommentator=\count358
+\c@editor=\count359
+\c@savededitor=\count360
+\c@editora=\count361
+\c@savededitora=\count362
+\c@editorb=\count363
+\c@savededitorb=\count364
+\c@editorc=\count365
+\c@savededitorc=\count366
+\c@foreword=\count367
+\c@savedforeword=\count368
+\c@holder=\count369
+\c@savedholder=\count370
+\c@introduction=\count371
+\c@savedintroduction=\count372
+\c@namea=\count373
+\c@savednamea=\count374
+\c@nameb=\count375
+\c@savednameb=\count376
+\c@namec=\count377
+\c@savednamec=\count378
+\c@translator=\count379
+\c@savedtranslator=\count380
+\c@shortauthor=\count381
+\c@savedshortauthor=\count382
+\c@shorteditor=\count383
+\c@savedshorteditor=\count384
+\c@labelname=\count385
+\c@savedlabelname=\count386
+\c@institution=\count387
+\c@savedinstitution=\count388
+\c@lista=\count389
+\c@savedlista=\count390
+\c@listb=\count391
+\c@savedlistb=\count392
+\c@listc=\count393
+\c@savedlistc=\count394
+\c@listd=\count395
+\c@savedlistd=\count396
+\c@liste=\count397
+\c@savedliste=\count398
+\c@listf=\count399
+\c@savedlistf=\count400
+\c@location=\count401
+\c@savedlocation=\count402
+\c@organization=\count403
+\c@savedorganization=\count404
+\c@origlocation=\count405
+\c@savedoriglocation=\count406
+\c@origpublisher=\count407
+\c@savedorigpublisher=\count408
+\c@publisher=\count409
+\c@savedpublisher=\count410
+\c@language=\count411
+\c@savedlanguage=\count412
+\c@origlanguage=\count413
+\c@savedoriglanguage=\count414
+\c@pageref=\count415
+\c@savedpageref=\count416
 \shorthandwidth=\skip65
 \shortjournalwidth=\skip66
 \shortserieswidth=\skip67
@@ -394,50 +394,50 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/blx-compat.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/biblatex.def
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count404
-\c@textcitetotal=\count405
-\c@textcitemaxnames=\count406
-\c@biburlbigbreakpenalty=\count407
-\c@biburlbreakpenalty=\count408
-\c@biburlnumpenalty=\count409
-\c@biburlucpenalty=\count410
-\c@biburllcpenalty=\count411
+\c@textcitecount=\count417
+\c@textcitetotal=\count418
+\c@textcitemaxnames=\count419
+\c@biburlbigbreakpenalty=\count420
+\c@biburlbreakpenalty=\count421
+\c@biburlnumpenalty=\count422
+\c@biburlucpenalty=\count423
+\c@biburllcpenalty=\count424
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count412
+\c@smartand=\count425
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/bbx/numeric.bbx
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/bbx/standard.bbx
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count413
-\c@bbx:relatedtotal=\count414
+\c@bbx:relatedcount=\count426
+\c@bbx:relatedtotal=\count427
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/cbx/numeric.cbx
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -454,59 +454,58 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/biblatex.cfg
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-06-09 L3 programming layer (loader) 
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count415
-\l__pdf_internal_box=\box54
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count428
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             2025-06-09 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/blx-case-expl3.sty
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/l3packages/xparse/xparse.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/blx-case-expl3.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/geometry/geometry.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/generic/iftex/ifvtex.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count416
-\Gm@cntv=\count417
-\c@Gm@tempcnt=\count418
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
+\Gm@cnth=\count429
+\Gm@cntv=\count430
+\c@Gm@tempcnt=\count431
+\Gm@bindingoffset=\dimen160
+\Gm@wd@mp=\dimen161
+\Gm@odd@mp=\dimen162
+\Gm@even@mp=\dimen163
+\Gm@layoutwidth=\dimen164
+\Gm@layoutheight=\dimen165
+\Gm@layouthoffset=\dimen166
+\Gm@layoutvoffset=\dimen167
 \Gm@dimlist=\toks32
 )
-\c@theorem=\count419
-\c@corollary=\count420
+\c@theorem=\count432
+\c@corollary=\count433
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./final.aux)
@@ -527,37 +526,37 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/context/base/mkii/supp-pdf.mkii
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count421
-\scratchdimen=\dimen161
+\scratchcounter=\count434
+\scratchdimen=\dimen168
 \scratchbox=\box55
-\nofMPsegments=\count422
-\nofMParguments=\count423
+\nofMPsegments=\count435
+\nofMParguments=\count436
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count424
-\MPscratchDim=\dimen162
-\MPnumerator=\count425
-\makeMPintoPDFobject=\count426
+\MPscratchCnt=\count437
+\MPscratchDim=\dimen169
+\MPnumerator=\count438
+\makeMPintoPDFobject=\count439
 \everyMPtoPDFconversion=\toks34
 )
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/biblatex/lbx/english.lbx
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -613,22 +612,22 @@ Package pdftex.def Info: vu-griffioen.pdf  used on input line 34.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsfonts/umsa.fd
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsfonts/umsb.fd
+(/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.2025070
+3-texmfdist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 [1
 
-{/nix/store/w5jd5nxqccmd8wx3dfna0b41lsy0fkzg-texlive-combined-full-2024-final/s
-hare/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./vu-griffioen.pdf>]
+{/nix/store/iqwym5y415jsx00dr801mkix3qlqi4ad-texlive-combined-full-2025.2025070
+3/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./vu-griffioen.pdf>]
 
 [2]
 
@@ -649,7 +648,7 @@ hare/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./vu-griffioen.pdf>]
 [10]
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
@@ -659,49 +658,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--429
 
 [13] (./final.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
  ***********
 Package logreq Info: Writing requests to 'final.run.xml'.
 \openout1 = `final.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12060 strings out of 473201
- 227161 string characters out of 5689025
- 1058871 words of memory out of 5000000
- 35198 multiletter control sequences out of 15000+600000
- 572873 words of font info for 90 fonts, out of 8000000 for 9000
+ 12057 strings out of 467888
+ 227298 string characters out of 5405403
+ 1065458 words of memory out of 5000000
+ 40498 multiletter control sequences out of 15000+600000
+ 640861 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,25n,81p,1385b,1272s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final
--texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></nix/store/q4gbqp2pph3mw2
-jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-c
-ombined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-tex
-mfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/q4gbqp2pph3mw2jp5k
-wg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combi
-ned-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></nix/st
-ore/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhw
-wwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full
--2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr6.pfb></nix/store/q4gbq
-p2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-te
-xlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-fin
-al-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/q4gbqp2pph3mw
-2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-
-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-tex
-mfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb></nix/store/q4gbqp2pph3mw
-2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on final.pdf (13 pages, 266216 bytes).
+ 63i,25n,66p,1385b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250
+703-texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></nix/store/a4xk35zqigj
+pqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-tex
+live-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmcsc
+10.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.
+20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/a4xk35
+zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9
+s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-20
+25.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/a4xk
+35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id
+9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-20
+25.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/a4xk3
+5zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id
+9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2
+025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb></nix/store/a4
+xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fo
+nts/type1/public/amsfonts/cm/cmtt10.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm
+6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts
+/symbols/msam10.pfb></nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combin
+ed-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on final.pdf (13 pages, 263542 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
