@@ -1,12 +1,22 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["biber final"] 1766070636.83669 "final.bcf" "final.bbl" "final" 1766071289.67409 0
   "final.bcf" 1766071289.46301 109800 89fccebe36abd2454af5032800c2ac78 "pdflatex"
   "final.bib" 1761407536.84873 2903 239dae5de6f0c10d98fb5214d5df429d ""
+=======
+["biber final"] 0 "final.bcf" "final.bbl" "final" 1766021117.42862 -1
+  "final.bcf" 1766021117.34191 109870 260238f70a3f88b58c3cf2d5548f1be6 "pdflatex"
+  "final.bib" 1766017136.29303 2903 239dae5de6f0c10d98fb5214d5df429d ""
+>>>>>>> 7719d6944b9845d68aaef47b12ed87687e481bba
   (generated)
   "final.bbl"
   "final.blg"
   (rewritten before read)
+<<<<<<< HEAD
 ["pdflatex"] 1766071287.53384 "final.tex" "final.pdf" "final" 1766071289.67465 0
+=======
+["pdflatex"] 1766021116.58653 "final.tex" "final.pdf" "final" 1766021117.42891 0
+>>>>>>> 7719d6944b9845d68aaef47b12ed87687e481bba
   "/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1 1004 54797486969f23fa377b128694d548df ""
   "/nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -106,11 +116,19 @@
   "/nix/store/iqwym5y415jsx00dr801mkix3qlqi4ad-texlive-combined-full-2025.20250703/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5523663 2f5522d17e5e21940fd28a97f41151ca ""
   "/nix/store/iqwym5y415jsx00dr801mkix3qlqi4ad-texlive-combined-full-2025.20250703/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3600500 a51f802efbaa82e7bf066eda39b37570 ""
   "/nix/store/iqwym5y415jsx00dr801mkix3qlqi4ad-texlive-combined-full-2025.20250703/share/texmf-var/web2c/texmf.cnf" 1 44455 c55fbb9a57446a86a2cab443acb5bd78 ""
+<<<<<<< HEAD
   "final.aux" 1766071289.45901 4735 453f23c445f2de2a1af68ec81b0de0ba "pdflatex"
   "final.bbl" 1766070639.09134 11507 d68c292f394938074c67e897eada4307 "biber final"
   "final.run.xml" 1766071289.46601 2307 960225060f1d0826e5d1dde2e500e2ff "pdflatex"
   "final.tex" 1766071287.15696 38658 71419bab1b3691919e0c2c9d1eb0d6c5 ""
   "vu-griffioen.pdf" 1756113892.55038 20513 084e4cc788c8fa5f0f470bf17dfa40d1 ""
+=======
+  "final.aux" 1766021117.33991 4804 90fe7559abb8e678ea9a1a681d7d1c6f "pdflatex"
+  "final.bbl" 1766017136.29303 11507 d68c292f394938074c67e897eada4307 "biber final"
+  "final.run.xml" 1766021117.34191 2307 960225060f1d0826e5d1dde2e500e2ff "pdflatex"
+  "final.tex" 1766021116.2949 39941 24e6204afffe5447e829b2cfaf29c16e ""
+  "vu-griffioen.pdf" 1766017136.29503 20513 084e4cc788c8fa5f0f470bf17dfa40d1 ""
+>>>>>>> 7719d6944b9845d68aaef47b12ed87687e481bba
   (generated)
   "final.aux"
   "final.bcf"
