@@ -364,7 +364,7 @@ It is important to note that due to this example only requiring head substitutio
 As stated before, the measure employed to analyze the time invariance of general algorithms is the number of transitions in a Turing machine, but the $\lambda$-calculus is ill-suited to provide a good relation between its computational steps and Turing Machines. By means of the Linear Substitution Calculus, it is possible to represent even size-exploding terms in Turing machines in polynomial time. The LOU strategy is one strategy that has the properties required for invariance,
  but that does not mean that it is the only one. Accattoli and Dal Lago in~\cite{beta-invariance} showed that any strategy having the following properties could be an adequate candidate for time invariance.
 \subsection{High level implementation systems}
-The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want specifically termintation and polynomial overhead(ADD SPECIFICATION OF SQUIG ARROW).
+The purpose of the high level implementation system definition is to provide a rewriting system invariant to $\lambda$-calculus. This step is a bridge of sorts in between $\lambda$-calculus and Turing Machines. For this, we need to define this class of rewriting systems, and which properties should they satisfy in order to be invariant to $\lambda$-calculus. We want specifically termintation and polynomial overhead. We will represent a reduction sequence in the classical $\lambda$-calculus with $\rightsquigarrow$ and a reduction sequence under the LSC with $\rightsquigarrow_X$:
 \[\rightsquigarrow \text{normalizes iff } {\rightsquigarrow}_{X} \text{normalizes}\]
 Furthermore,
 \[t {\rightsquigarrow}_{X}^k u \text{ iff } t {\rightsquigarrow}^h u\downarrow \text{with } O(h) \in O(k^2) \text{ for some } n \in \mathbb{N} \text{ and } n \leq 0 \]
@@ -437,11 +437,14 @@ As we can see, addition takes $\Theta (a + b)$ steps for any two numbers $a, b$,
 \end{equation}
 Which, if unfolded, is equal to the church numeral $\ulcorner 7 \urcorner$.
 \section{Conclusion}
-WHAT HAVE I DONE
+We have proven that the LSC, and more specifically, LSC under LOU reduction is invariant with respect to $\lambda$-calculus and LO reductions in the context of addition of Church numerals, as well as provide a formal proof for the size-exploding family.
 
-As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.  
+As we have seen, the LOU strategy of the LSC provides a solution for the Size-exploding problem, as well as provide an accurate cost model when referring only to time complexity. This cost model can be seen in our implementation of addition, which takes $\Theta(n)$ time, where $n$ is the length of the term. This is clearly in bounds for Accattoli's and Dal Lago's paper on invariance, since it is clearly inside a polynomial bound.
+
+
 This solution could lead to a more practical use of $\lambda$-calculus in computer science. Not only being used for proof assistants or theoretical models, but maybe provide a safer way to represent operations computationally. Of course, there are still many issues with this encoding, starting for the fact that even if it has a quadratic bound relating to the classical model of $\lambda$-calculus, operations such as addition, which take a constant number of steps in the classical way, now take a linear number of steps at least. This means that even if there was a way to practically implement $\lambda$-calculus, there is virtually no way of representing operations that would take a constant amount of time in the LSC.\\
 
-PERSONAL OUTLOOK
+Future work could focus on the extrapolation of this invariance result to the more practical area of typed $\lambda$-calculus. This could improve performance of type-checkers, proof assistants and other real-world applications. Another possible avenue is expanding the invariance result in order to remove the explicit substitutions.
+
 \printbibliography{}
 \end{document}
