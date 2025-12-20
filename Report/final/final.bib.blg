@@ -1,0 +1,5 @@
+[0] Config.pm:308> INFO - This is Biber 2.21 (beta)
+[0] Config.pm:311> INFO - Logfile is 'final.bib.blg'
+[124] biber:340> INFO - === vr dec 19, 2025, 19:38:20
+[287] Utils.pm:410> ERROR - Cannot find 'final.bib.bcf'!
+[288] Biber.pm:136> INFO - ERRORS: 1

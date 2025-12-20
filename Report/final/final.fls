@@ -124,6 +124,11 @@ INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.202
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/tex/latex/biblatex/lbx/english.lbx
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT final.bcf
+INPUT final.bbl
+INPUT ./final.bbl
+INPUT ./final.bbl
+INPUT ./final.bbl
+INPUT final.bbl
 INPUT ./vu-griffioen.pdf
 INPUT ./vu-griffioen.pdf
 INPUT ./vu-griffioen.pdf
@@ -188,11 +193,14 @@ INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.202
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/cm/cmti7.tfm
+INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT final.aux
 INPUT final.run.xml
 OUTPUT final.run.xml
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
@@ -203,5 +211,6 @@ INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.202
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /nix/store/a4xk35zqigjpqbrdindypnn14fm6id9s-texlive-combined-full-2025.20250703-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
